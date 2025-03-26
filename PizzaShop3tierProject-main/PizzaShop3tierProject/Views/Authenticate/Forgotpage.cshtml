@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout="~/Views/Shared/_LayoutForLogin.cshtml";
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+ 
+
+
+
+            <div class="text-md-left text-sm-center text-center">
+                <h4 class="mb-3">Forgot Password</h4>
+            </div>
+            <p class="msg">Enter your email and we'll send you a link to reset the password.</p>
+            <form class="d-flex flex-column">
+                <div class="input-group mb-2">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required>
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                    <p id="invalid-feedback" class="validation-msg"></p>
+                
+                <button type="submit" class="btn btn-nonprimary" id="submit">Submit</button>
+                <div class="mt-2 text-center">
+                    <a href="/Authenticate/Login">Back To Login</a>
+                </div>
+            </form>
+           <script>
+            const regExpForEmail = /^[a-zA-Z0-9._-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+              $("#submit").click((e) => {
+                    e.preventDefault();
+                    
+                    var email=$("#email").val().trim();
+                    if(email == ""){
+                        $("#invalid-feedback").text("Please Enter Email.")
+                        return;
+                    }
+                    if(!regExpForEmail.test(email)){
+                        $("#invalid-feedback").text("Please Enter Valid Email.")
+                        return;
+                    }
+
+                    if(email){
+                         $.ajax({
+                        url: "/Authenticate/Forgotpage",
+                        type:"POST",
+                        data:{
+                            email:email,
+                        },
+                        success: (response) => {
+                            if(response.success){
+                                window.location = "/Authenticate/Login";
+                            }else{
+                                window.location.reload();
+                            }
+                        },
+                        error: ()=>{
+                        }
+                    });
+
+                    }
+                })
+        </script>

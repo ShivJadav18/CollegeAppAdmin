@@ -1,0 +1,242 @@
+@model PizzaShop.Repository.ViewModels.ProfileViewModel;
+
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="content w-100 ms-2 p-2" id="content">
+    <div class="first-part d-flex justify-content-between">
+        <h2>My Profile</h2>
+    </div>
+    <div class="add-user-form m-2">
+        <div class="background-profile w-100">
+            <img src="~/images/profile_div_bg.jpg" alt="backgroung-profile" class="h-100 w-100">
+        </div>
+        <div class="user-info d-flex justify-content-between align-items-center w-100 m-2 p-2">
+            <div class="d-flex">
+                @{
+                    string imageurl = String.IsNullOrEmpty(Model.Imageurl) ? Url.Content("~/images/Default_pfp.svg.png") :
+                    Url.Content("~/" + Model.Imageurl);
+                }
+                <img src=@imageurl alt="profile-pic" id="imageShown" class="rounded-circle profile-info-pic m-2"
+                    height="90">
+                <i class="fa fa-camera" aria-hidden="true" id="camera-icon"></i>
+
+                <div class="align-items-center ">
+                    <h4>@Html.DisplayFor(model => model.Username)</h4>
+                    <p id="role">@Html.DisplayFor(model => model.Rolename)</p>
+                </div>
+            </div>
+            <p>@Html.DisplayFor(model => model.Email)</p>
+        </div>
+        <form class="col m-2" action="/User/MyProfile" method="post" enctype="multipart/form-data">
+            <input type="file" asp-for="ProfileImage" class="d-none" accept="image/*" id="image-input" />
+            <input type="hidden" value="@Html.DisplayFor(model => model.Email)" name="Email">
+            <input type="hidden" asp-for="Imageurl">
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="Firstname" id="firstname" placeholder="First Name"
+                            value="@Html.DisplayFor(model => model.Firstname)" />
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <p class="validation-msg">@Html.ValidationMessageFor(model => model.Firstname)</p>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="Lastname" id="lastname" placeholder="Last Name"
+                            value="@Html.DisplayFor(model => model.Lastname)" />
+                        <label for="lastname">Last Name</label>
+                    </div>
+                    <p class="validation-msg">@Html.ValidationMessageFor(model => model.Lastname)</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="Username" id="username" placeholder="User Name"
+                            value="@Html.DisplayFor(model => model.Username)" />
+                        <label for="username">User Name</label>
+                    </div>
+                    <p class="validation-msg">@Html.ValidationMessageFor(model => model.Username)</p>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="Contactnumber" id="phone" placeholder="Phone"
+                            value="@Html.DisplayFor(model => model.Contactnumber)" />
+                        <label for="phone">Phone</label>
+                    </div>
+                    <p class="validation-msg">@Html.ValidationMessageFor(model => model.Contactnumber)</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="row mb-3">
+                    <div class="dropdown col">
+                        <div class="form-floating">
+                            <select class="form-select" class="h-100" id="CountrySelect" asp-for="Country"
+                                aria-label="Default select example" name="Country">
+                                <option value="@Model.Country" selected>@Model.Country</option>
+                            </select>
+                            <label>Country</label>
+                        </div>
+                        <p class="validation-msg">@Html.ValidationMessageFor(model => model.Country)</p>
+                    </div>
+                    <div class="dropdown col">
+                        <div class="form-floating">
+                            <select class="form-select" id="stateSelect" class="h-100" asp-for="State"
+                                aria-label="Default select example" name="State">
+                                <option value="@Model.State" selected>@Model.State</option>
+                            </select>
+                            <label for="stateSelect">State</label>
+                        </div>
+                        <p class="validation-msg">@Html.ValidationMessageFor(model => model.State)</p>
+                    </div>
+                    <div class="dropdown col">
+                        <div class="form-floating">
+                            <select class="form-select" class="h-100" id="citySelect" asp-for="City"
+                                aria-label="Default select example" name="City">
+                                <option value="@Model.City" selected>@Model.City</option>
+                            </select>
+                            <label for="citySelect">City</label>
+                        </div>
+                        <p class="validation-msg">@Html.ValidationMessageFor(model => model.City)</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" name="Address"
+                                id="address">@Html.DisplayFor(model => model.Address)</textarea>
+                            <label for="address">Address</label>
+                        </div>
+                        <p class="validation-msg">@Html.ValidationMessageFor(model => model.Address)</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="zipcode" name="Zipcode" placeholder="Zipcode"
+                                value="@Html.DisplayFor(model => model.Zipcode)" />
+                            <label for="zipcode">Zipcode</label>
+                        </div>
+                        <p class="validation-msg">@Html.ValidationMessageFor(model => model.Zipcode)</p>
+                    </div>
+                </div>
+                <div class="row w-100 align-items-center justify-content-end">
+                    <button class="btn btn-nonprimary imp m-2" id="update" type="submit">Update</button>
+                    <button class="btn btn-nonprimary imp" id="Cancle">Cancle</button>
+                </div>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(() => {
+        var role = $("role");
+        var updatebtn = $("#update");
+        var canclebtn = $("#Cancle");
+
+        var cameraicon = $("#camera-icon");
+        var inputfieldimage = $("#image-input");
+
+        cameraicon.on("click", (e) => {
+            inputfieldimage.click();
+        });
+
+        $("#image-input").change(function (event) {
+            let file = event.target.files[0];
+
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#imageShown").attr("src", e.target.result); // Set preview
+                };
+                reader.readAsDataURL(file);
+
+            }
+        });
+
+        let apiKey = "QVByWkJ5UWc1aWlXTUxZYW1KcVR5Q0p5cExuZGYyR2J2cWhqM000SA==";
+        let apiBaseUrl = "https://api.countrystatecity.in/v1";
+
+        // Load countries
+        $.ajax({
+            url: `${apiBaseUrl}/countries`,
+            type: "GET",
+            headers: { "X-CSCAPI-KEY": apiKey },
+            success: function (countries) {
+                let countrySelect = $("#CountrySelect");
+                $.each(countries, function (index, country) {
+                    countrySelect.append(`<option value="${country.name}" data-code="${country.iso2}">${country.name}</option>`);
+                });
+            },
+            error: function () {
+                alert("Error fetching countries.");
+            }
+        });
+
+        $("#CountrySelect").change(function () {
+            let countryName = $(this).val();
+            let countryCode = $("#CountrySelect option:selected").attr("data-code"); // Get ISO2 Code
+            $("#selectedCountry").val(countryName);
+
+            if (countryCode) {
+                $.ajax({
+                    url: `${apiBaseUrl}/countries/${countryCode}/states`,
+                    type: "GET",
+                    headers: { "X-CSCAPI-KEY": apiKey },
+                    success: function (states) {
+                        let stateSelect = $("#stateSelect");
+                        stateSelect.empty().append('<option selected></option>');
+                        $.each(states, function (index, state) {
+                            stateSelect.append(`<option value="${state.name}" data-code="${state.iso2}">${state.name}</option>`);
+                        });
+                        $("#citySelect").empty().append('<option selected></option>');
+                    },
+                    error: function () {
+                        alert("Error fetching states.");
+                    }
+                });
+            }
+        });
+
+        // Load cities when a state is selected
+        $("#stateSelect").change(function () {
+            let stateName = $(this).val();
+            let stateCode = $("#stateSelect option:selected").attr("data-code");
+            let countryCode = $("#CountrySelect option:selected").attr("data-code");
+            $("#selectedState").val(stateName);
+
+            if (countryCode && stateCode) {
+                $.ajax({
+                    url: `${apiBaseUrl}/countries/${countryCode}/states/${stateCode}/cities`,
+                    type: "GET",
+                    headers: { "X-CSCAPI-KEY": apiKey },
+                    success: function (cities) {
+                        let citySelect = $("#citySelect");
+                        citySelect.empty().append('<option selected></option>');
+                        $.each(cities, function (index, city) {
+                            citySelect.append(`<option value="${city.name}">${city.name}</option>`);
+                        });
+                    },
+                    error: function () {
+                        alert("Error fetching cities.");
+                    }
+                });
+            }
+        });
+
+        $("#citySelect").change(function () {
+            $("#selectedCity").val($(this).val());
+        });
+
+        canclebtn.click((e) => {
+            e.preventDefault()
+            window.location = "/Dashboard/Dashboardpage"
+        })
+    })
+</script>

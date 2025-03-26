@@ -1,0 +1,103 @@
+@{
+    ViewData["Title"] = "Change Password Page";
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div class="content w-100 p-2">
+    <div class="first-part">
+            <h2>Change Password</h2>
+    </div>
+
+    <div class="change-pass-form">
+
+        <form class="w-100 m-2">
+            <div>
+                <p>Enter a new password to update your account credentials.</p>
+            </div>
+            <input type="hidden">
+            <div class="form-floating m-2 w-50">
+                <input type="password" class="form-control" id="currentPassword" name="Currentpass" placeholder="Password">
+                <label for="currentPassword">Current Password</label>
+            </div>
+            <p class="validation-msg" id="current-pass-msg"></p>
+            <div class="form-floating m-2 w-50">
+                <input type="password" class="form-control" id="New-Password" name="Newpass" placeholder="Password">
+                <label for="New-Password">New Password</label>
+            </div>
+            <p class="validation-msg" id="new-pass-msg"></p>
+            <div class="form-floating m-2 w-50">
+                <input type="password" class="form-control" id="cnfNewPassword" name="Cnfpass" placeholder="Password">
+                <label for="cnfNewPassword">Confirm New Password</label>
+            </div>
+            <p class="validation-msg" id="confirm-pass-msg"></p>
+            <div class="row w-50 align-items-center justify-content-start">
+                <button class="btn btn-nonprimary imp m-2" id="update" type="submit">Update</button>
+                <button class="btn btn-nonprimary imp" id="Cancle">Cancle</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready( () => {
+        $("#Cancle").on("click", (e) => {
+            e.preventDefault();
+            window.location = "/Dashboard/Dashboardpage";
+        })
+        $("#update").on("click", (e) => {
+            e.preventDefault();
+
+            var passwordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@@$%^&*-]).{8,}$/;
+
+            var currentPassword = $("#currentPassword").val().trim();
+            var Newpass = $("#New-Password").val().trim();
+            var confpass = $("#cnfNewPassword").val().trim();
+
+            if(currentPassword == ""){
+                $("#current-pass-msg").text("Please Enter Current Password.");
+                return;
+            }
+            if(Newpass == ""){
+                $("#new-pass-msg").text("Please Enter New Password.");
+                return;
+            }
+            if(confpass == ""){
+                $("#confirm-pass-msg").text("Please Enter Confirm Password.");
+                return;
+            }
+            if(!passwordPattern.test(Newpass)){
+                 $("#new-pass-msg").text("The password must contain 1 special character,1 number,1 small character,1 capital character and must be 8 character long.");
+                return;
+            }
+            $.ajax({
+                url : "/User/Changepass",
+                type : "POST",
+                data : {
+                    Currentpass : $("#currentPassword").val().trim(),
+                    Newpass : $("#New-Password").val().trim(),
+                    Cnfpass : $("#cnfNewPassword").val().trim()
+                },
+                success : (response) => {
+                    if(response.success){
+                        alert("your password is successfully changed.")
+                        window.location = "/Dashboard/Dashboardpage"
+                    }else{
+                        window.location.reload();
+                    }
+                }
+            })
+
+
+        })
+        $("#currentPassword").on("input",() => {
+            $("#current-pass-msg").text("");
+        })
+        $("#New-Password").on("input",() => {
+            $("#new-pass-msg").text("");
+        })
+        $("#cnfNewPassword").on("input",() => {
+            $("#confirm-pass-msg").text("");
+        })
+    })
+</script>

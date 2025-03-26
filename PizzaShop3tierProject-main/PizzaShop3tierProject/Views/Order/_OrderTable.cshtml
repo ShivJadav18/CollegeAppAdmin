@@ -1,0 +1,89 @@
+@model PizzaShop.Repository.ViewModels.OrdersPaginationView
+@{
+    var totalpage = (int)Math.Ceiling(((double)Model.totalorders / (double)Model.count));
+}
+<table class="table table-responsive">
+    <thead>
+        <th data-sorttype = "1">#Order <i class="fa fa-long-arrow-up sort-order for-point" aria-hidden="true" data-sortmeth = "0"></i> <i class="fa fa-long-arrow-down sort-order for-point" aria-hidden="true" data-sortmeth = "1"></i></th>
+        <th data-sorttype = "2">Date <i class="fa fa-long-arrow-up sort-order for-point" aria-hidden="true" data-sortmeth = "0"></i> <i class="fa fa-long-arrow-down sort-order for-point" aria-hidden="true" data-sortmeth = "1"></i></th>
+        <th data-sorttype = "3">Customer <i class="fa fa-long-arrow-up sort-order for-point" aria-hidden="true" data-sortmeth = "0"></i> <i class="fa fa-long-arrow-down sort-order for-point" aria-hidden="true" data-sortmeth = "1"></i></th>
+        <th>Status</th>
+        <th>Payment Mode</th>
+        <th>Rating</th>
+        <th data-sorttype = "4">Total Amount <i class="fa fa-long-arrow-up sort-order for-point" aria-hidden="true" data-sortmeth = "0"></i> <i class="fa fa-long-arrow-down sort-order for-point" aria-hidden="true" data-sortmeth = "1"></i></th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+
+        @foreach(var order in Model.ordersElementViews){
+            <tr>
+                <td>#@order.order_id</td>
+                <td>@order.date.ToShortDateString()</td>
+                <td>@order.customer</td>
+                <td>@order.status</td>
+                <td>@order.payment_mode</td>
+                <td>
+                   @for(int i = 1 ;i<=5 ; i++){
+                    if(i<=order.rating){
+                        <span class="fa fa-star orange" aria-hidden="true"></span>
+                    }else{
+                        <span class="fa fa-star-o orange"></span>
+                    }
+                   }
+                </td>
+                <td>@order.total_amount</td>
+                <td>
+                    <i class="fa fa-file-pdf-o me-2 for-point file-down" aria-hidden="true"></i>
+                    <i class="fa fa-eye for-point" aria-hidden="true"></i>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="d-flex justify-content-end  p-2">
+    <div class="dropdown d-flex justify-content-center align-items-center w-25">
+        <p class="w-50 text-center m-2">Modifiers per page</p>
+        <select name="itemCount" id="OrdersCount" asp-for="@Model.count" class="form-control w-25">
+            <option value="5" selected>5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+    </div>
+    <div class="d-flex align-items-center">
+        <p class="m-2">Showing 1..5 of 14</p>
+        <div class="paging d-flex justify-content-around align-items-center">
+            <button class="btn border" id="prevOrders"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button class="btn border" id="nextOrders"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+
+        if(@Model.pageno == 1){
+            $("#prevOrders").prop("disabled",true)
+        }
+        if(@totalpage <= @Model.pageno){
+            $("#nextOrders").prop("disabled", true);
+        }
+        $("#prevOrders").click(function(){
+            loadOrders(@Model.pageno - 1);
+        })
+        $("#nextOrders").click(function(){
+            loadOrders(@Model.pageno + 1);
+        })
+        $("#OrdersCount").change(function(){
+            loadOrders(1);
+        })
+        $(".sort-order").click(function(){
+            loadOrders(1,$(this).closest("th").data("sorttype"),$(this).data("sortmeth"));
+        })
+        $(".file-down").click(function(){
+            let url = `/Order/ForPdfDownload`;
+
+            window.location.href = url;
+
+        })
+    })
+</script>

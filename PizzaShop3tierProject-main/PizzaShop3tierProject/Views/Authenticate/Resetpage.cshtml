@@ -1,0 +1,114 @@
+@{
+    ViewData["titel"] = "reset page";
+    Layout = "~/Views/Shared/_LayoutForLogin.cshtml";
+    bool validResetToken = true;
+
+    string token = Context.Request.Query["token"];
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="text-md-left text-sm-center text-center">
+    <h4 class="mb-3">Reset Password</h4>
+</div>
+
+<form class="d-flex flex-column">
+    <div class="input-group mb-2">
+        <input type="password" class="form-control pass-in" name="Password" placeholder="New Password" id="pass"
+            aria-label="Password" aria-describedby="basic-addon1" required>
+        <span class="input-group-text" id="eye-icon">
+            <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
+        </span>
+    </div>
+    <p class="validation-msg" id="pass-msg"></p>
+    <div class="input-group mb-2">
+        <input type="password" class="form-control pass-in" name="conf-pass" placeholder="Confirm New Password" id="conf-pass"
+            aria-label="Password" aria-describedby="basic-addon1" required>
+        <span class="input-group-text" id="eye-icon1">
+            <i class="fa fa-eye" id="eye1" aria-hidden="true"></i>
+        </span>
+    </div>
+    <p class="validation-msg" id="cnf-msg"></p>
+
+    <button class="btn btn-nonprimary" id="submit" type="submit">Submit</button>
+    <div class="mt-2 text-center">
+        <a href="/Authenticate/Login">Back To Login</a>
+    </div>
+
+</form>
+<script>
+    @* validating password and conf password *@
+        $("#submit").click((e) => {
+            e.preventDefault();
+
+            var passwordPattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@@$%^&*-]).{8,}$/;
+
+    @* taking input by id *@
+            var pass = $("#pass").val();
+            var cnfpass = $("#conf-pass").val();
+
+    @* console.log(pass); *@
+    @* console.log(cnfpass); *@
+            if (pass == "") {
+                $("#pass-msg").text("Please Enter New password.");
+                return;
+            }
+            if (cnfpass == "") {
+                $("#cnf-msg").text("Please Enter confirm password.");
+                return;
+            }
+            
+                if (!passwordPattern.test(pass)) {
+                    $("#pass-msg").text("The password must contain 1 special character,1 number,1 small character,1 capital character and must be 8 character long.");
+                    return;
+                }
+                $.ajax({
+                    url: "/Authenticate/Resetpage/?token=@token",
+                    type: "POST",
+                    data: {
+                        password: pass,
+                        Cnfpass :cnfpass
+                    },
+                    success: (response) => {
+                        if (response.success) {
+                            window.location = "/Authenticate/Login"
+                        } else {
+                            window.location.reload();
+                        }
+                    },
+                    error: () => {
+                    }
+                });
+            
+        })
+    $("#pass").on("input", () => {
+        $("#pass-msg").text("");
+    })
+    $("#conf-pass").on("input", () => {
+        $("#cnf-msg").text("");
+    })
+
+    $("#eye-icon").click(function(e){
+            if($("#pass").attr("type") === "password"){
+                $("#pass").attr("type","text")
+                $(this).empty();
+                $(this).append("<i class='fa fa-eye-slash' aria-hidden='true'></i>")
+            }else{
+                $("#pass").attr("type","password")
+                $(this).empty();
+                $(this).append("<i class='fa fa-eye' id='eye' aria-hidden='true'></i>")
+            }
+        })
+        $("#eye-icon1").click(function(e){
+            if($("#conf-pass").attr("type") === "password"){
+                $("#conf-pass").attr("type","text")
+                $(this).empty();
+                $(this).append("<i class='fa fa-eye-slash' aria-hidden='true'></i>")
+            }else{
+                $("#conf-pass").attr("type","password")
+                $(this).empty();
+                $(this).append("<i class='fa fa-eye' id='eye' aria-hidden='true'></i>")
+            }
+        })
+
+</script>

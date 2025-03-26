@@ -1,0 +1,502 @@
+@model PizzaShop.Repository.ViewModels.TableandSectionViewModel
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<div class="content w-100 ms-2 p-2 " id="content">
+    <div class="first-part d-flex justify-content-between pr-2">
+        <h2>Sections/Tables</h2>
+    </div>
+    <div class="tab-content h-75 m-3">
+        <div class="main-content tab-pane active shadow rounded row d-flex p-2 " id="home">
+
+            <div class="col-lg-2 d-lg-block d-none Sections-list-sec sidebarformodules m-2">
+                <div class="header d-flex justify-content-between align-items-center p-1">
+                    <h4 class="text-center Section">Sections</h4>
+                    <div class="btn add-Section" data-bs-target="#AddSection" data-bs-toggle="modal">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <nav class="sidebar overflow-y-scroll" style="height: 60vh;" id="spc">
+                    <div class="list-group list-group-flush">
+                        @foreach (var sec in Model.sections)
+                        {
+                            <div class="list-group-item list-group-item-action Sections d-flex justify-content-between align-items-center"
+                                data-sectionid="@sec.SectionId">
+                                <div class="d-flex align-items-center ">
+                                    <i class="fa fa-th m-2" aria-hidden="true"></i>
+                                    @sec.Name
+                                </div>
+                                <div class="d-flex align-items-center d-none">
+                                    <i class="fa fa-pencil Edit-Section m-3" aria-hidden="true"></i>
+                                    <i class="fa fa-trash-o delete-Section-btn" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </nav>
+            </div>
+            <div class="modal fade" id="delete-section-conf" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                            <p>Are you sure you want to delete this Section?</p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-nonsecondary imp" id="section-delete-btn"
+                                data-bs-dismiss="modal">Yes</button>
+                            <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="AddSection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header b-0">
+                            <h5 class="modal-title" id="staticBackdropLabel">Add Section</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="d-flex flex-column">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="Sectionname" placeholder="Section Name">
+                                    <label for="Sectionname">Name</label>
+                                </div>
+                                <p class="validation-msg" id="Add-section-name"></p>
+                                <div class="form-floating mb-3">
+                                    <textarea name="SectionDescription" class="w-100 form-control"
+                                        id="SectionDescription"></textarea>
+                                    <label for="SectionDescription">Description</label>
+                                </div>
+                                <p class="validation-msg" id="Add-section-description"></p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-nonprimary imp" id="Save-new-section">Save</button>
+                            <button type="button" class="btn btn-nonsecondary no-imp"
+                                data-bs-dismiss="modal">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="EditSection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header b-0">
+                            <h5 class="modal-title" id="staticBackdropLabel">Edit Section</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="d-flex flex-column">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="Sectionnameedit"
+                                        placeholder="Section Name">
+                                    <label for="Sectionname">Name</label>
+                                </div>
+                                <p class="validation-msg" id="Add-section-name-edit"></p>
+                                <div class="form-floating mb-3">
+                                    <textarea name="SectionDescription" class="w-100 form-control"
+                                        id="SectionDescriptionedit"></textarea>
+                                    <label for="SectionDescription">Description</label>
+                                </div>
+                                <p class="validation-msg" id="Add-section-description-edit"></p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-nonprimary imp" id="Save-Edit-section">Save</button>
+                            <button type="button" class="btn btn-nonsecondary no-imp"
+                                data-bs-dismiss="modal">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex p-2">
+                    <div class="header col">
+                        <h4 class="Section">Tables</h4>
+                    </div>
+                    <form class="d-flex justify-content-end col">
+                        <div class="input-group w-25 m-2">
+                            <input type="text" class="form-control" id="search-table" placeholder="Search" />
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="btn delete-btn m-2" id="delete-multiple-tables">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="btn imp m-2" id="Add-Table">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            New Table
+                        </div>
+                    </form>
+                </div>
+                <div class="modal fade" id="addTableModal" tabindex="-1" role="dialog" aria-labelledby="addTableModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered " role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5">
+                                    Add Table
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex  flex-column gap-3 ">
+
+                                <div class="d-flex gap-2">
+
+                                    <div class="form-floating  col custom-focus ">
+                                        <input type="text" class="form-control" id="Tablename" placeholder="">
+                                        <label for="Tablename" style="background: none;">Name*</label>
+                                        <p class="validation-msg" id="tablename-msg"></p>
+                                    </div>
+                                    <div class="form-floating col custom-focus" id="SectionId">
+                                        <select id="selectedSection" class="form-select">
+                                            @foreach (var sec in Model.sections)
+                                            {
+                                                <option value="@sec.SectionId">@sec.Name</option>
+                                            }
+                                        </select>
+                                        <label for="Category" style="background: none;">Section*</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex gap-2">
+
+                                    <div class="form-floating  col custom-focus ">
+                                        <input type="number" class="form-control" id="tableCapacity" placeholder="">
+                                        <label for="tableCapacity" style="background: none;">Capacity*</label>
+                                        <p class="validation-msg" id="tableCapacity-msg"></p>
+                                    </div>
+                                    <div class="form-floating col custom-focus" id="Status">
+                                        <select id="tableStatus" class="form-select">
+                                            <option value="true">Available</option>
+                                            <option value="false">Occupied</option>
+                                        </select>
+                                        <label for="Itemtype" style="background: none;">Status*</label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary bg-header imp " id="saveaddTable">Save
+                                </button>
+                                <button type="button" class="btn border-dark no-imp me-3"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="editTableModal" tabindex="-1" role="dialog" aria-labelledby="editTableModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered " role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5">
+                                    Edit Table
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex  flex-column gap-3 ">
+
+                                <div class="d-flex gap-2">
+
+                                    <div class="form-floating  col custom-focus ">
+                                        <input type="text" class="form-control" id="Tablenameedit" placeholder="">
+                                        <label for="Tablenameedit" style="background: none;">Name*</label>
+                                        <p class="validation-msg" id="tablename-msg-edit"></p>
+                                    </div>
+                                    <div class="form-floating col custom-focus" id="SectionIdedit">
+                                        <select id="selectedSectionEdit" class="form-select">
+                                            @foreach (var sec in Model.sections)
+                                            {
+                                                <option value="@sec.SectionId">@sec.Name</option>
+                                            }
+                                        </select>
+                                        <label for="selectedSectionEdit" style="background: none;">Section*</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex gap-2">
+
+                                    <div class="form-floating  col custom-focus ">
+                                        <input type="number" class="form-control" id="tableCapacityedit" placeholder="">
+                                        <label for="tableCapacityedit" style="background: none;">Capacity*</label>
+                                        <p class="validation-msg" id="tableCapacity-msg-edit"></p>
+                                    </div>
+                                    <div class="form-floating col custom-focus" id="Status">
+                                        <select id="tableStatusEdit" class="form-select">
+                                            <option value="true">Available</option>
+                                            <option value="false">Occupied</option>
+                                        </select>
+                                        <label for="tableStatusEdit" style="background: none;">Status*</label>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer d-flex justify-content-end">
+                                <button type="button" class="btn btn-primary bg-header imp " id="saveeditTable">Save
+                                </button>
+                                <button type="button" class="btn border-dark no-imp me-3"
+                                    data-bs-dismiss="modal">Cancel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="delete-multiple-Table-conf" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning"
+                                    class="warning-img">
+                                <p>Are you sure you want to delete these Tables?</p>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn btn-nonsecondary imp"
+                                    id="multiple-table-delete-btn">Yes</button>
+                                <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tables-partial overflow-y-scroll" style="height: 60vh;" id="tables-partial">
+                    @await Html.PartialAsync("_Tables", Model.tables)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        window.section_id = @Model.sections[0].SectionId;
+        $(".Sections").mouseenter(function () {
+            $(this).children().last().removeClass("d-none");
+
+        })
+
+        $(".Sections").mouseleave(function () {
+            $(this).children().last().addClass("d-none");
+        })
+
+        $("#Save-new-section").click(function (e) {
+            e.preventDefault();
+
+            var SectionName = $("#Sectionname").val();
+            var SectionDescription = $("#SectionDescription").val();
+            var isvalid = true;
+            if (SectionName == "") {
+                $("#Add-section-name").text("Section name can not be Empty.");
+                isvalid = false;
+            }
+            if (SectionDescription == "") {
+                $("#Add-section-description").text("Section Description can not be Empty.");
+                isvalid = false;
+            }
+
+            if (!isvalid) {
+                return;
+            }
+
+            $.ajax({
+                url: "/TableandSection/Addsection",
+                type: "POST",
+                data: {
+                    Sectionname: SectionName,
+                    Description: SectionDescription
+                },
+                success: (response) => {
+                    window.location.reload();
+                }
+            })
+        })
+
+        $(".Edit-Section").click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            section_id = $(this).closest(".Sections").data("sectionid");
+
+            $.ajax({
+                url: "/TableandSection/EditSection",
+                type: "GET",
+                data: {
+                    sectionid: section_id
+                },
+                success: (response) => {
+                    if (response.success) {
+                        $("#Sectionnameedit").val(response.name);
+                        $("#SectionDescriptionedit").text(response.description);
+                        $("#EditSection").modal("show");
+                    }
+                }
+            })
+
+        })
+        $("#Save-Edit-section").click(function (e) {
+            e.preventDefault();
+
+            var SectionName = $("#Sectionnameedit").val();
+            var SectionDescription = $("#SectionDescriptionedit").val();
+            var isvalid = true;
+            if (SectionName == "") {
+                $("#Add-section-name-edit").text("Section name can not be Empty.");
+                isvalid = false;
+            }
+            if (SectionDescription == "") {
+                $("#Add-section-description-edit").text("Section Description can not be Empty.");
+                isvalid = false;
+            }
+
+            if (!isvalid) {
+                return;
+            }
+
+            $.ajax({
+                url: "/TableandSection/EditSection",
+                type: "POST",
+                data: {
+                    SectionId: section_id,
+                    Name: SectionName,
+                    Description: SectionDescription
+                },
+                success: (response) => {
+                    window.location.reload();
+                }
+            })
+
+        })
+        $(".delete-Section-btn").click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            section_id = $(this).closest(".Sections").data("sectionid");
+
+            $("#delete-section-conf").modal("show");
+
+        })
+
+        $("#section-delete-btn").click(function (e) {
+
+            $.ajax({
+                url: "/TableandSection/DeleteSection",
+                data: {
+                    sectionid: section_id
+                },
+                success: (response) => {
+                    window.location.reload();
+                }
+            })
+
+        })
+        $("#search-table").on("input", function () {
+            loadTables(1);
+        })
+
+        $(".Sections").click(function () {
+            section_id = $(this).data("sectionid");
+            loadTables(1);
+        })
+
+        $("#Add-Table").click(function (e) {
+            $(".validation-msg").each(function () {
+                $(this).text("");
+            })
+            $("#addTableModal").modal("show");
+        })
+
+        $("#saveaddTable").click(function (e) {
+            var name = $("#Tablename").val();
+            var Capacity = $("#tableCapacity").val();
+            var status = $("#tableStatus").val();
+            var sectionid = $("#selectedSection").val();
+
+            var isvalid = true;
+            if (name == "") {
+                $("#tablename-msg").text("Table name can not be Empty.");
+                isvalid = false;
+            }
+            if (Capacity == "") {
+                $("#tableCapacity-msg").text("Table Capacity can not be Empty.");
+                isvalid = false;
+            }
+
+            if (!isvalid) {
+                return;
+            }
+
+            $.ajax({
+                url: "/TableandSection/AddTable",
+                data: {
+                    name: name,
+                    Capacity: Capacity,
+                    status: status,
+                    sectionid: sectionid
+                },
+                success: (response) => {
+                    window.location.reload();
+                }
+            })
+        })
+        $("#delete-multiple-tables").click(function (e) {
+            $("#delete-multiple-Table-conf").modal("show");
+        })
+         var tableIds = []
+        $("#multiple-table-delete-btn").click(function(e){
+            $(".tables-checkboxes:checked").each(function () {
+                var id = $(this).closest("tr").data("tableid");
+                tableIds.push(id);
+            })
+            console.log(tableIds)
+         
+            $.ajax({
+                url: "/TableandSection/DeleteMultipleTables",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ ids : tableIds }),
+                success: (response) => {
+                    window.location.reload();
+                }
+            })
+
+        })
+    })
+        
+    function loadTables(pageno) {
+        var count = $("#TablesCount").val();
+        var searchval = $("#search-table").val().toLowerCase();
+        $.ajax({
+            url: "/TableandSection/GetTables",
+            data: {
+                sectionid: section_id,
+                searchval: searchval,
+                count: count,
+                pageno: pageno
+            },
+            success: (data) => {
+                $("#tables-partial").html(data);
+            }
+        })
+    }
+</script>

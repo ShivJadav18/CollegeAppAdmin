@@ -1,0 +1,150 @@
+﻿@using System.Security.Claims
+@{
+    var username = User.FindFirst("UserName")?.Value;
+    string controller = ViewContext.RouteData.Values["controller"]?.ToString();
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PizzaShopApp</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <div class="container-fluid row align-items-center justify-content-center p-0 w-100">
+         <div class="side-bar col-auto offcanvas-lg offcanvas-start" id="side-bar">
+            <div class="dash-logo-container w-100  d-flex align-items-center justify-content-center offcanvas-header">
+                <div class="logo-container w-100 h-100 d-flex justify-content-center align-items-center">
+                <img src="~/images/WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png" style="width: 170px; height: 60px;" alt="header-logo">
+                @* <div class="btn no-imp" id="sidebar-close">
+                    <i class="fa fa-close"></i>
+                </div> *@
+                </div>
+                <a class=" d-md-none btn-close" data-bs-toggle="offcanvas" href="#side-bar" role="button"
+            aria-controls="offcanvasExample"></a>
+            </div>
+           <nav class="sidebar offcanvas-body">
+                <div class="list-group list-group-flush">
+                    <a href="~/Dashboard/Dashboardpage" class="list-group-item list-group-item-action @(controller == "Dashboard" ? "custom-active" : "") ">
+                        <i class="fa fa-table m-2" aria-hidden="true"></i>Dashboard
+                    </a>
+                    <a href="/User/Userslist" class="list-group-item list-group-item-action @(controller == "User" ? "custom-active" : "")">
+                        <i class="fa fa-users m-2" aria-hidden="true"></i>Users
+                    </a>
+                    <a href="/Role/Roleselect" class="list-group-item list-group-item-action @(controller == "Role" ? "custom-active" : "")">
+                        <i class="fa fa-user-times m-2" aria-hidden="true"></i>Role and Permission
+                    </a>
+                    <a href="/MenuModule/ItemAndModifier" class="list-group-item list-group-item-action @(controller == "MenuModule" ? "custom-active" : "")">
+                        <i class="fa fa-product-hunt m-2" aria-hidden="true"></i>Product
+                    </a>
+                    @* <a href="/TableandSection/TableandSectionView" class="list-group-item list-group-item-action @(controller == "TableandSection" ? "custom-active" : "")">
+                        <i class="fa fa-stop m-2" aria-hidden="true"></i>Table and Section
+                    </a> *@
+                    <a href="/TaxandFees/TaxandFeespage" class="list-group-item list-group-item-action @(controller == "TaxandFees" ? "custom-active" : "")">
+                        <i class="fa fa-money m-2" aria-hidden="true"></i>Taxes and Fees
+                    </a>
+                    <a href="/Order/OrdersView" class="list-group-item list-group-item-action @(controller == "Order" ? "custom-active" : "")">
+                        <i class="fa fa-calendar-check-o m-2" aria-hidden="true"></i>Orders
+                    </a>
+                    <a href="/Customer/CustomerView" class="list-group-item list-group-item-action @(controller == "Customer" ? "custom-active" : "")">
+                        <i class="fa fa-user-circle-o m-2" aria-hidden="true"></i>Customer
+                    </a>
+                </div>
+           </nav>
+        </div>
+        <div class="nav-content d-flex flex-column col p-0 w-100 h-100 " id="nav-content">
+            <nav class="navbar  d-flex justify-content-between align-items-center w-100 px-2">
+                <div class="nav navbar-nav m-2" id="menu">
+                    <a data-bs-toggle="offcanvas" class="d-lg-none d-block" href="#side-bar">
+                        <i class="fa fa-table" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="nav navbar-nav profile dropdown">
+                    <a
+                        data-mdb-dropdown-init
+                        class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                        href="#"
+                        id="navbarDropdownMenuAvatar"
+                        role="button"
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                        aria-expanded="false"
+        >
+                    <img src="~/images/Default_pfp.svg.png" class="h-100 w-100 rounded-circle"  height="25" alt="profile">
+                    </a>
+                    <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuAvatar"
+                        >
+                        <li>
+                            <div class="dropdown-item d-flex align-items-center justify-content-center dropdown-profile-part">
+                                <img src="~/images/Default_pfp.svg.png" class=" rounded-circle"  height="40" alt="profile">
+                                <p class="m-0">@username</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/User/MyProfile"><i class="fa fa-user m-2" aria-hidden="true"></i>My profile</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a class="dropdown-item" href="/User/Changepass"><i class="fa fa-repeat m-2" aria-hidden="true"></i>Change Password</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-sign-out m-2" aria-hidden="true"></i>Logout</a>
+                        </li>
+                    </ul>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-body text-center">
+                              <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                              <p>Are you sure you want to Logout?</p>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                              <button type="button" class="btn btn-nonsecondary imp" data-bs-dismiss="modal" id="logout-btn">Yes</button>
+                              <button type="button" class="btn btn-nonsecondary imp" data-bs-dismiss="modal">No</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+             @await Html.PartialAsync("_Notification")
+             @RenderBody()
+        </div>
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(document).ready(() => {
+            $("#logout-btn").on("click", (e) => {
+
+                $.ajax({
+                    url : "/User/Logout",
+                    success : (response) => {
+                        if(response.success){
+                            alert("user is successfully logged out.");
+                            window.location = '/Authenticate/Login';
+                        } else {
+                            alert("There is a problem in logging you out.");
+                        }
+                    },
+                    error : (error) => {
+
+                    }
+                })
+
+            })
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@model PizzaShop.Repository.ViewModels.OrdersPaginationView
+
+<div class="content ms-2 p-2" id="content">
+
+    <div class="Order-Header">
+        <div class="d-flex justify-content-between first-part mb-2">
+            <h2>Orders</h2>
+            <div class="d-md-flex  align-items-center justify-content-end w-100">
+                <div class="input-group w-25 m-2">
+                    <input type="number" class="form-control" id="search-orders" placeholder="Search" />
+                    <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+                <div class="form-controll  w-25 m-2">
+                    <select name="Status-Search" id="Status-Search" class="form-select Orders-filters"
+                        placeholder="Select Status">
+                        <option value="All Status" selected>All Status</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Completed">Completed</option>
+                        <option value="InProgress">InProgress</option>
+                        <option value="Running">Running</option>
+                        <option value="Served">Served</option>
+                        <option value="Failed">Failed</option>
+                    </select>
+                </div>
+                <div class="form-controll w-25 m-2">
+                    <select name="Time-Search" id="Time-Search" class="form-select Orders-filters"
+                        placeholder="Select Time">
+                        <option value="All Time">All Time</option>
+                        <option value="Last 7 days">Last 7 days</option>
+                        <option value="Last 30 days">Last 30 days</option>
+                        <option value="Current Month">Current Month</option>
+                    </select>
+                </div>
+                <button class="rounded btn-nonprimary " id="Export">Export</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end w-100">
+                <div class="d-md-flex flex-column flex-sm-row justify-content-end align-items-center gap-2 mb-3 me-2 w-100">
+                    <div class="form-floating w-25">
+                        <input type="date" name="fromDate" id="fromDate" class="form-control" placeholder="Start Date">
+                        <label for="fromDate">From Date</label>
+                    </div>
+                    <div class="form-floating w-25">
+                        <input type="date" name="toDate" id="toDate" class="form-control" placeholder="End Date">
+                        <label for="toDate">To Date</label>
+                    </div>
+                    <button class="rounded btn-nonprimary filter-btn me-2" style="color: white !important;" id="search-orders-time">Search</button>
+                    <button class="btn  filter-btn" id="clear-search">Clear</button>
+                </div>
+        </div>
+    </div>
+    <div class="orders-table rounded shadow" id="orders-table">
+        @await Html.PartialAsync("_OrderTable",Model)
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(()=>{
+        $("#search-orders").on("input",function(){
+            loadOrders(1);
+        })
+
+        $("#Status-Search").change(function(){
+            loadOrders(1);
+        })
+         $("#Time-Search").change(function(){
+            loadOrders(1);
+        })
+        $("#search-orders-time").on("click",function(){
+            loadOrders(1);
+        })
+        $("#clear-search").click(function(){
+            $("#search-orders").val("");
+            $("#OrdersCount").val(5);
+            $("#Status-Search").val("All Status");
+            $("#Time-Search").val("All Time");
+            $("#fromDate").val(null);
+            $("#toDate").val(null);
+            loadOrders(1);
+        })
+
+        $("#Export").click(function(){
+        var searchval = $("#search-orders").val();
+        var status = $("#Status-Search").val();
+        var time = $("#Time-Search").val();
+            let url = `/Order/ForExportExcel?time=${encodeURIComponent(time)}&status=${encodeURIComponent(status)}&searchString=${encodeURIComponent(searchval)}`;
+
+            window.location.href = url;
+
+        })
+
+    })
+    function loadOrders(pageno,order = 0,sortmethod = -1){
+        var searchval = $("#search-orders").val();
+        var count = $("#OrdersCount").val();
+        var status = $("#Status-Search").val();
+        var time = $("#Time-Search").val();
+        var from = $("#fromDate").val();
+        var to = $("#toDate").val();
+
+        $.ajax({
+            url : "/Order/GetOrdersForPagination",
+            data : {
+                count : count,
+                searchval : searchval,
+                pageno : 1,
+                status : status,
+                timefil : time,
+                from : from,
+                todate : to,
+                order : order,
+                sortmethod : sortmethod
+            },
+            success : (data) => {
+                $("#orders-table").html(data);
+            }
+        })
+    }
+    @* function loadOrdersForSearch(){
+        var from = $("#fromDate").val();
+        var to = $("#toDate").val();
+        $.ajax({
+            url : "/Order/GetOrdersForSearch",
+            data : {
+                from : from,
+                to : to
+            },
+            success : (data) => {
+                $("#orders-table").html(data);
+            }
+        })
+
+    } *@
+</script>

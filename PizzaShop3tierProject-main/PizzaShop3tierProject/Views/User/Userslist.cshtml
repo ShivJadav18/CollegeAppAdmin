@@ -1,0 +1,63 @@
+@model PizzaShop.Repository.ViewModels.Userlistmodel
+
+@{
+    ViewData["Title"] = "Users Info";
+}
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="content w-100 ms-2 p-2 " id="content">
+    <div class="first-part ms-2 d-flex justify-content-between">
+        <h2>Users</h2>
+        <form class="d-flex">
+            <div class="form-group m-1">
+                <input type="text" id="searchin" class="form-control" placeholder="Search" />
+            </div>
+            <a href="~/User/Adduser" class="btn btn-nonprimary m-1 imp d-flex align-items-center justify-content-center">
+            <i class="fa fa-plus me-2" aria-hidden="true"></i>
+            <p class="m-0">
+                Add User
+            </p>
+            </a>
+            <!-- <button class="btn btn-nonprimary m-1" id="adduser">Add User</button> -->
+        </form>
+    </div>
+
+    <div class="tbl m-2 p-2 d-flex flex-column table-responsive shadow" id="UserTable">
+        @await Html.PartialAsync("_UserTable", Model)
+    </div>
+    <script>
+        $(document).ready(() => {
+
+            $("#searchin").on("input", (e) => {
+                setTimeout(() => { loadUsers(1, $("#searchin").val()) }, 500);
+            })
+
+        })
+        var count = $("#userCount").val();
+        var nextbtn = $("#next");
+        var prev = $("#prev");
+
+        function loadUsers(pageNo, searchval) {
+            count = $("#userCount").val();
+            $.ajax({
+                url: "/User/UserslistafterFirstTime",
+                type: "GET",
+                data: {
+                    count: count,
+                    pageno: pageNo,
+                    searchval: searchval
+                },
+                success: (data) => {
+                    $("#UserTable").html(data);
+                },
+                error: (error) => {
+                    alert("Fail to Load!");
+                }
+            })
+        }
+
+
+    </script>
+</div>

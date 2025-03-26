@@ -1,0 +1,37 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PizzaShopApp.styles.css" asp-append-version="true" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+</head>
+<body>
+     <partial name="_Notification"/>
+    <div class="container-fluid p-0 background-color for-auth row align-items-center justify-content-center">
+        <div class="left-section col-6 text-center d-none d-lg-block p-0">
+            <img src="~/images/AdobeStock_1025552026_Preview.jpeg" class="shadow rounded d-block w-100 h-100" alt="hero-image">
+        </div>
+        <div class="right-section d-flex flex-column justify-content-center col-lg-6 col-md-12 col-sm-12 col-12">
+           <div class="logo-container w-100 rounded mb-2 d-flex justify-content-center align-items-center" >
+            <div class="w-50 rounded d-flex justify-content-center shadow" style="background-color: #ffffff;">
+                <img src="~/images/WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png" style="width: 170px; height: 60px;" alt="header-logo">
+            </div>
+                @* <div class="btn no-imp" id="sidebar-close">
+                    <i class="fa fa-close"></i>
+                </div> *@
+                </div>
+             @RenderBody()
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

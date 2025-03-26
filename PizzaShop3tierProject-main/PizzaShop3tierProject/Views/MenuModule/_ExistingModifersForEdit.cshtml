@@ -1,0 +1,79 @@
+@model PizzaShop.Repository.ViewModels.Modifiers
+    @{
+    var totalpage = (int)Math.Ceiling(((double)Model.totalmodifiers / (double)Model.count));
+}
+
+<table class="table table-borderless">
+
+    <thead>
+        <th class="">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input " value="" id="select-all-existing-edit" />
+                <label for="p1" class="header-per form-check-label">
+                    <h3 class="header-per">Name</h3>
+                </label>
+            </div>
+        </th>
+        <th class="text-center">Unit</th>
+        <th class="text-center">Rate</th>
+        <th class="text-center">Quantity</th>
+
+    </thead>
+    @foreach (var modifier in Model.modifiers)
+    {
+        <tr data-modifierid="@modifier.ModifierId" data-modifiername="@modifier.Modifiername">
+            <td class="">
+                <div class="form-check  mb-3">
+                    <input type="checkbox" class="form-check-input Existing-Modifier-Checkbox-edit" value="" id="p2" />
+                    <label for="p2" class=" form-check-label">@modifier.Modifiername</label>
+                </div>
+            </td>
+            <td class="text-center">@modifier.Unit.Shortname</td>
+            <td class="text-center">@modifier.Rate</td>
+            <td class="text-center">@modifier.Quantity</td>
+
+        </tr>
+    }
+</table>
+<div class="d-flex justify-content-end">
+    <div class="dropdown d-flex justify-content-center align-items-center w-25">
+        <p class="w-50 text-center m-2">Modifiers per page</p>
+        <select name="itemCount" asp-for = "count" id="ModifierCountInEditModal" class="form-control w-25">
+            <option value="5" selected>5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+    </div>
+    <div class="d-flex align-items-center">
+        <p class="m-2">Showing 1..5 of 14</p>
+        <div class="paging d-flex justify-content-around align-items-center">
+            <button class="btn" id="prevmodifiersmodaledit"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button class="btn" id="nextmodifiersmodaledit"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
+<script>
+    if (@totalpage <= @Model.pageno) {
+            $("#nextmodifiersmodaledit").prop("disabled", true);
+        }
+        if (@Model.pageno == 1) {
+            $("#prevmodifiersmodaledit").prop("disabled", true);
+        }
+        $("#ModifierCountInEditModal").change(() => {
+            loadExistingModifiersEdit(1);
+        });
+
+         $("#nextmodifiersmodaledit").on("click", () => {
+
+            loadExistingModifiersEdit(@Model.pageno+1);
+        });
+
+        $("#prevmodifiersmodaledit").on("click", () => {
+            loadExistingModifiersEdit( @Model.pageno-1);
+        })
+
+        $("#select-all-existing-edit").change(function() {
+            $(".Existing-Modifier-Checkbox-edit").prop("checked",$(this).is(":checked"));
+        })
+
+</script>

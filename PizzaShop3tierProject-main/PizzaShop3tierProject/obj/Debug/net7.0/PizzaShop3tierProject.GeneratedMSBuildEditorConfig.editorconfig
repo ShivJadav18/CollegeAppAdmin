@@ -1,0 +1,161 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PizzaShop3tierProject
+build_property.RootNamespace = PizzaShop3tierProject
+build_property.ProjectDir = D:\ElectronicsApp\PizzaShop3tierProject-main\PizzaShop3tierProject\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ElectronicsApp\PizzaShop3tierProject-main\PizzaShop3tierProject
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Authenticate/Forgotpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRlXEZvcmdvdHBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Authenticate/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRlXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Authenticate/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRlXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Authenticate/Resetpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRlXFJlc2V0cGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Customer/CustomerView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Dashboard/Dashboardpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZHBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/ErrorPage/errorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlXGVycm9yUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/ItemAndModifier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxJdGVtQW5kTW9kaWZpZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/_ExistingModifersForEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxfRXhpc3RpbmdNb2RpZmVyc0ZvckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/_ExistingModifiers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxfRXhpc3RpbmdNb2RpZmllcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/_ItemPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxfSXRlbVBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/_Items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxfSXRlbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/_ModifierPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxfTW9kaWZpZXJQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/MenuModule/_modifiers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudU1vZHVsZVxfbW9kaWZpZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Order/OrderPdfView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJQZGZWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Order/OrdersView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJzVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Order/_OrderTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX09yZGVyVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Role/Permission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxQZXJtaXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Role/Roleselect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxSb2xlc2VsZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Shared/_LayoutforLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRmb3JMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/TableandSection/TableandSectionView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVhbmRTZWN0aW9uXFRhYmxlYW5kU2VjdGlvblZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/TableandSection/_Tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVhbmRTZWN0aW9uXF9UYWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/TaxandFees/TaxandFeespage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YW5kRmVlc1xUYXhhbmRGZWVzcGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/TaxandFees/_TaxesTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YW5kRmVlc1xfVGF4ZXNUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/User/Adduser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGR1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/User/Changepass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGFuZ2VwYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/User/MyProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeVByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/User/Userslist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2Vyc2xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/User/_UserTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVXNlclRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ElectronicsApp/PizzaShop3tierProject-main/PizzaShop3tierProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ems1q76b5q

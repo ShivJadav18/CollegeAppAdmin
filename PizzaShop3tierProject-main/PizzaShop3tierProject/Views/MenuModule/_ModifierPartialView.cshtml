@@ -1,0 +1,812 @@
+@model PizzaShop.Repository.ViewModels.ModifierGroupandModifier
+@using Newtonsoft.Json
+@* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script> *@
+@* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> *@
+
+<div class="col-2 categories-list-sec sidebarformodules">
+    <div class="header d-flex justify-content-between align-items-center w-100" id="xyz">
+        <div class="d-flex justify-content-between w-100">
+
+            <h5 class="text-center Category">Modifier Group</h5>
+            <div class="btn add-Category" id = "Add-Modifier-Group-Btn">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="modal fade" id="AddModifierGroup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header b-0">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Modifier Group</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="AddModifierGroupName"
+                                    placeholder="Modifier Group Name">
+                                <label for="ModifierGroupName">Name</label>
+                                <p id="AddModifierGroupNameMsg" class="validation-msg"></p>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea type="text" class="form-control" id="AddModifierGroupDescription"
+                                    placeholder="Modifier Group Description"></textarea>
+                                <label for="ModifierGroupDescription">Description</label>
+                                <p id="AddModifierGroupDescriptionMsg" class="validation-msg"></p>
+                            </div>
+                            <p data-bs-target="#AddExistingModifier" data-bs-toggle="modal" class="text-decoration-none"
+                                id="Add-existing-group">+ Add Existing Modifier Group.</p>
+                        </form>
+                        <div class="d-flex flex-wrap" id="Selected-Existing-Modifiers">
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-nonprimary imp" id="Add-Modifier-Group-btn">Save</button>
+                        <button type="button" class="btn btn-nonsecondary no-imp"
+                            data-bs-dismiss="modal">Cancle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="AddExistingModifier" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header b-0">
+                        <h5 class="modal-title" id="staticBackdropLabel">Select Existing Modifier</h5>
+                        <button type="button" class="btn-close" data-bs-target="#AddModifierGroup"
+                            data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">   
+                        <div class="w-50">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="SearchModifierNameModal" placeholder="Search Modifier Name">
+                                <label for="SearchMOdifierNameInModal">Search</label>
+                            </div>
+                        </div>  
+                        <div id="ExistingModifiersPartial">
+                            @Html.Partial("_ExistingModifiers",Model.modifiers2)                                                
+                        </div>                   
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <button type="button" class="btn btn-nonprimary imp" data-bs-target="#AddModifierGroup" data-bs-toggle="modal" id="Add-Existing-modifier-btn">Add</button>
+                        <button type="button" class="btn btn-nonsecondary no-imp" data-bs-target="#AddModifierGroup"
+                            data-bs-toggle="modal">Cancle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="sidebar overflow-y-scroll" style="height: 60vh;" id="spc">
+        <div class="list-group list-group-flush" id="modifier-groups-cont">
+            @{
+                int i = 0; string sel = "";
+            }
+            @foreach (var modifiergroup in Model.modifiergroups)
+            {
+                if (i == 0)
+                {
+                    sel = "selected-category-modifier";
+                }
+                <div class="list-group-item list-group-item-action modifiergroups d-flex justify-content-between align-items-center for-point @sel"
+                    data-modifiergroupid="@modifiergroup.ModifiergroupId" id="@i">
+                    <div class="d-flex align-items-center ">
+                        <i class="fa fa-th m-2" aria-hidden="true"></i>
+                        @modifiergroup.Groupname
+                    </div>
+                    <div class="d-flex align-items-center d-none">
+                        <i class="fa fa-pencil Edit-modifiergroup m-3" aria-hidden="true"></i>
+                        <i class="fa fa-trash-o delete-modifiergroup-btn" aria-hidden="true"></i>
+                    </div>
+                </div>
+                sel = "";
+                i++;
+            }
+        </div>
+        <div class="modal fade" id="EditModifierGroup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header b-0">
+                        <h5 class="modal-title" id="staticBackdropLabel">Edit Modifier Group</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="EditModifierGroupName"
+                                    placeholder="Modifier Group Name">
+                                <label for="EditModifierGroupName">Name</label>
+                                <p class="validation-msg" id="EditModifierGroupNameMsg"></p>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea type="text" class="form-control" id="EditModifierGroupDescription"
+                                    placeholder="Modifier Group Description"></textarea>
+                                <label for="EditModifierGroupDescription">Description</label>
+                                <p class="validation-msg" id="EditModifierGroupDescriptionMsg"></p>
+                            </div>
+                            <p data-bs-target="#AddExistingModifierForEdit" data-bs-toggle="modal" class="text-decoration-none"
+                                id="Add-existing-group-inedit">+ Add Existing Modifier Group.</p>
+                        </form>
+                        <div class="d-flex flex-wrap" id="Selected-Existing-Modifiers-foredit">
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-nonprimary imp" id="Edit-Modifier-Group-btn">Save</button>
+                        <button type="button" class="btn btn-nonsecondary no-imp"
+                            data-bs-dismiss="modal">Cancle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="AddExistingModifierForEdit" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header b-0">
+                        <h5 class="modal-title" id="staticBackdropLabel">Select Existing Modifier</h5>
+                        <button type="button" class="btn-close" data-bs-target="#EditModifierGroup"
+                            data-bs-toggle="modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" >   
+                        <div class="w-50">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="SearchModifierNameEditModal" placeholder="Search Modifier Name">
+                                <label for="SearchModifierNameEditModal">Search</label>
+                            </div>
+                        </div>  
+                        <div id="ExistingModifiersPartialInEdit">
+                            @Html.Partial("_ExistingModifersForEdit",Model.modifiers2)                                                
+                        </div>                   
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <button type="button" class="btn btn-nonprimary imp" data-bs-target="#EditModifierGroup" data-bs-toggle="modal" id="Add-Existing-modifier-Edit-btn">Add</button>
+                        <button type="button" class="btn btn-nonsecondary no-imp" data-bs-target="#EditModifierGroup"
+                            data-bs-toggle="modal">Cancle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="delete-ModifierGroup-conf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                    <p>Are you sure you want to delete this Modifier Group?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-nonsecondary imp" id="ModifierGroup-delete-btn">Yes</button>
+                    <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="delete-multiplemodifiers-conf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                    <p>Are you sure you want to delete these Modifiers?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-nonsecondary imp" id="delete-multiplemodifiers-conf-btn">Yes</button>
+                    <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+</div>
+<div class="items-list-sec col">
+    <div class="header">
+        <h5 class="Category">Modifiers</h5>
+    </div>
+    <form class="d-flex justify-content-end">
+        <div class="input-group w-25 m-2">
+            <input type="text" class="form-control" id="search-modifier" placeholder="Search" />
+            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div class="btn delete-btn m-2" id="delete-multiple-modifiers">
+            <i class="fa fa-trash-o"  aria-hidden="true"></i>
+        </div>
+        <div class="btn imp m-2" data-bs-target="#addModifiers" data-bs-toggle="modal">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            New Modifier
+        </div>
+    </form>
+    <div class="modal fade text-black" id="addModifiers" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="addModifiersModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="addModifiersLabel">
+                    Add New Modifier
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <div class=" form-floating mb-3">
+                            <select role="button" class="form-select" id="modifierGroupAdd"
+                                aria-label="Floating label select example">
+                                @foreach (var  modifierGroup in Model.modifiergroups)
+                                        {
+                                            <option value="@modifierGroup.ModifiergroupId">@modifierGroup.Groupname</option>
+                                        }
+                            </select>
+                            <label for="modifierGroupAdd">Select Modifier Group(s)</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="ModifierNameAdd" placeholder="First Name">
+                            <label for="ModifierNameAdd">Name </label>
+                        </div>
+                        <p class="text-danger" id="ModifierNameAdd-msg"></p>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <div class="form-floating ">
+                            <input id="modifireRateAdd" type="number" class="form-control form-control-lg " placeholder="Rate"/>
+                            <label for="modifireRateAdd" class="tab-text">Rate</label>
+                        </div>
+                        <p class="text-danger" id="ModifierRateAdd-msg"></p>
+                    </div>
+                    <div class="col-sm-4  mb-3">
+                        <div class="form-floating">
+                            <input id="modifierQuantityAdd" type="number" class="form-control form-control-lg "
+                                placeholder="Quantity" />
+                            <label for="modifierQuantityAdd" class="tab-text">Quantity</label>
+                        </div>
+                         <p class="text-danger" id="modifierQuantityAdd-msg"></p>
+                    </div>
+                    <div class="col-sm-4 form-floating mb-3">
+                        <div class=" form-floating mb-3">
+                            <select role="button" class="form-select" id="modifierUnitAdd"
+                                aria-label="Floating label select example">
+                               <option selected>Select Unit</option>
+                               <option value="1">Pcs</option>
+                               <option value="2">gm</option>
+                            </select>
+                            <label for="modifierUnitAdd">Unit*</label>
+                        </div>
+                         <p class="text-danger" id="modifierUnitAdd-msg"></p>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <textarea class="form-control" id="modifierDescriptionAdd" rows="3"
+                            placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end gap-3">
+                    <button id="saveModifierAdd" class="btn btn-primary p-2 px-4 border-0 rounded-1 text-white ">
+                        Save
+                    </button>
+                    <button type="button" class="blue-text p-2 px-4 rounded-1 bg-transparent "
+                        style="border: 1px solid #2272ac" data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modifiers-partial overflow-y-scroll" style="height: 60vh;" id="modifiers-partial">
+        @Html.Partial("_modifiers", Model.modifiers1)
+    </div>
+     <div class="modal fade text-black" id="EditModifier" data-bs-backdrop="static" tabindex="-1"
+    aria-labelledby="editModifiersModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="editModifiersLabel">
+                    Edit Modifier
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <div class=" form-floating mb-3">
+                            <select role="button" class="form-select" id="modifierGroupEdit"
+                                aria-label="Floating label select example">
+                                @foreach (var  modifierGroup in Model.modifiergroups)
+                                        {
+                                            <option value="@modifierGroup.ModifiergroupId">@modifierGroup.Groupname</option>
+                                        }
+                            </select>
+                            <label for="modifierGroupAdd">Select Modifier Group(s)</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="ModifierNameEdit" placeholder="First Name">
+                            <label for="ModifierNameEdit">Name </label>
+                        </div>
+                        <p class="text-danger" id="ModifierNameEdit-msg"></p>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                        <div class="form-floating ">
+                            <input id="modifireRateEdit" type="number" class="form-control form-control-lg " placeholder="Rate"/>
+                            <label for="modifireRateEdit" class="tab-text">Rate</label>
+                        </div>
+                        <p class="text-danger" id="ModifierRateEdit-msg"></p>
+                    </div>
+                    <div class="col-sm-4  mb-3">
+                        <div class="form-floating">
+                            <input id="modifierQuantityEdit" type="number" class="form-control form-control-lg "
+                                placeholder="Quantity" />
+                            <label for="modifierQuantityEdit" class="tab-text">Quantity</label>
+                        </div>
+                         <p class="text-danger" id="modifierQuantityEdit-msg"></p>
+                    </div>
+                    <div class="col-sm-4 form-floating mb-3">
+                        <div class=" form-floating mb-3">
+                            <select role="button" class="form-select" id="modifierUnitEdit"
+                                aria-label="Floating label select example">
+                               <option selected>Select Unit</option>
+                               <option value="1">Pcs</option>
+                               <option value="2">gm</option>
+                            </select>
+                            <label for="modifierUnitEdit">Unit*</label>
+                        </div>
+                         <p class="text-danger" id="modifierUnitEdit-msg"></p>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <textarea class="form-control" id="modifierDescriptionEdit" rows="3"
+                            placeholder="Description"></textarea>
+                            <input type="hidden" id = "ModifieridForEdit">
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end gap-3">
+                    <button id="saveModifierEdit" class="btn btn-primary p-2 px-4 border-0 rounded-1 text-white ">
+                        Save
+                    </button>
+                    <button type="button" class="blue-text p-2 px-4 rounded-1 bg-transparent "
+                        style="border: 1px solid #2272ac" data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $(document).ready(() => {
+       
+        var modifiersNames = [];
+        var modifiersIds = [];
+        window.modifiergroupid = @Model.modifiergroups[0].ModifiergroupId;
+        $(".modifiergroups").click(function (e) {
+            $("#modifier-groups-cont").find(".selected-category-modifier").removeClass("selected-category-modifier");
+            $(this).addClass("selected-category-modifier");
+
+            modifiergroupid = $(this).data("modifiergroupid");
+            searchval = $("#search-modifier").val();
+            loadModifiers(searchval, 1)
+        })
+        $("#Add-Modifier-Group-Btn").click(function (e) {
+            $("#Selected-Existing-Modifiers").empty();
+            modifiersNames = [];
+            modifiersIds = [];
+            $(".Existing-Modifier-Checkbox").prop("checked",false);
+            $(".validation-msg").text("");
+            $("#AddModifierGroup").modal("show");
+        })
+        var group_id_Edit = null;
+        $(".Edit-modifiergroup").click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            modifiersNames = [];
+            modifiersIds = [];
+             group_id_Edit = $(this).closest(".modifiergroups").data("modifiergroupid");
+             $("#Selected-Existing-Modifiers-foredit").empty();
+
+            $.ajax({
+                url : "/MenuModule/EditModifierGroup",
+                data : {
+                    groupid : group_id_Edit
+                },
+                success : (response) => {
+                    if(response.success){
+                    $("#EditModifierGroupName").val(response.name);
+                    $("#EditModifierGroupDescription").val(response.description);
+                    console.log(response.modifiersname);
+                    $.each(response.modifiersname,function (index,value) {
+                        modifiersNames.push(value)
+                        $("#Selected-Existing-Modifiers-foredit").append(`<div class = 'rounded-pill d-flex align-items-center Selected-Existing-Modifiers-list-Edit Selected-Existing-Modifiers-list-css'  data-modifierindex = ${index}><p class = "m-0">${value}</p><i class="fa fa-times Remove-Modifier-Edit" id = "${value}" aria-hidden="true"></i></div>`);
+                    })
+                    $.each(response.ids , function(index,value){
+                        modifiersIds.push(value);
+                    })
+                    $(".Remove-Modifier-Edit").click(function (e) {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    var index = $(this).closest("div").data("modifierindex");
+                    $(this).closest("div").remove();
+                    modifiersIds.splice(index, 1)
+                    console.log(index)
+                    console.log(modifiersIds);
+                })
+                    $(".validation-msg").text("");
+                    $("#EditModifierGroup").modal("show");
+                    }else{
+                            alert("You are not authorized to edit Modifier Group.");
+                        }
+                }
+            })
+
+        })
+        $("#SearchModifierNameEditModal").on("input" , function(e){
+            loadExistingModifiersEdit(1);
+        })
+        $("#Edit-Modifier-Group-btn").click(function (e) {
+            console.log("edit",modifiersIds);
+            var name = $("#EditModifierGroupName").val();
+            var description = $("#EditModifierGroupDescription").val();
+            var isvalid = true
+
+            if(name == ""){
+                $("#EditModifierGroupNameMsg").text("Name can not be empty.");
+                isvalid = false
+            }
+            if(description == ""){
+                $("#EditModifierGroupDescriptionMsg").text("Description can not be empty.");
+                isvalid = false
+            }
+
+            if(!isvalid){
+                return;
+            }
+
+            $.ajax({
+                url : "/MenuModule/EditModifierGroup",
+                type : "POST",
+                contentType : "application/json",
+                data : JSON.stringify({ groupid : group_id_Edit ,Groupname : $("#EditModifierGroupName").val() ,  Description : $("#EditModifierGroupDescription").val() ,modifiersIds : modifiersIds }),
+                success : (response) => {
+                    window.location.reload();
+                }
+            })
+
+        })
+        $(".modifiergroups").mouseenter(function () {
+            $(this).children().last().removeClass("d-none");
+
+        })
+
+        $(".modifiergroups").mouseleave(function () {
+            $(this).children().last().addClass("d-none");
+        })
+        var modifiergroupid_for_del = null;
+        $(".delete-modifiergroup-btn").click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            modifiergroupid_for_del = $(this).closest(".modifiergroups").data("modifiergroupid");
+            console.log(modifiergroupid_for_del)
+            console.log($(this).closest(".modifiergroups").data("modifiergroupid"))
+            $("#delete-ModifierGroup-conf").modal("show");
+
+        })
+
+        $("#ModifierGroup-delete-btn").click(function () {
+            $.ajax({
+                url : "/MenuModule/RemoveModifierGroup",
+                data : {
+                    modifiergroupid : modifiergroupid_for_del
+                },
+                success : (response) => {
+                    if(typeof response == "string"){
+                          alert("You are not authorized to delete Modifier Group.");
+                         return;
+                    }                     
+                    window.location.reload();              
+                }
+            })
+        })
+
+        $("#search-modifier").on("input", function (e) {
+            var searchval = $(this).val();
+            loadModifiers(searchval, 1)
+        })
+        
+        $("#Add-Existing-modifier-btn").click(function () {
+            $("#Selected-Existing-Modifiers").empty();
+            $(".Existing-Modifier-Checkbox:checked").each(function () {
+                var modifiername = $(this).closest("tr").data("modifiername");
+                var modifierid = $(this).closest("tr").data("modifierid");               
+                if(!modifiersIds.includes(modifierid)){
+                    modifiersIds.push(modifierid);
+                }
+                if(!modifiersNames.includes(modifiername)){
+                    modifiersNames.push(modifiername);
+                }
+            })
+                console.log(modifiersNames)
+                console.log(modifiersIds)
+            $.each(modifiersNames, function (index, value) {
+                $("#Selected-Existing-Modifiers").append(
+                    `<div class = " d-flex align-items-center rounded-pill Selected-Existing-Modifiers-list Selected-Existing-Modifiers-list-css"  data-modifierindex = ${index}>
+                    <p class = "m-0">${value}</p><i class="fa fa-times Remove-Modifier" id = "${value}" aria-hidden="true"></i></div>`)
+            })
+           
+                $(".Remove-Modifier").click(function (e) {
+                    alert()
+                    e.stopPropagation()
+                    e.preventDefault()
+                    var index = $(this).closest("div").data("modifierindex");
+                    $(this).closest("div").remove();
+                    modifiersIds.splice(index, 1)
+                    console.log(index)
+                    console.log(modifiersIds);
+                })
+        })
+        $("#Add-Existing-modifier-Edit-btn").click(function () {
+            
+            $("#Selected-Existing-Modifiers-foredit").empty();
+            $(".Existing-Modifier-Checkbox-edit:checked").each(function () {
+                var modifiername = $(this).closest("tr").data("modifiername");
+                var modifierid = $(this).closest("tr").data("modifierid");
+                console.log("dsfdsf",modifierid)               
+                if(!modifiersIds.includes(modifierid)){
+                    modifiersIds.push(modifierid);
+                }
+                if(!modifiersNames.includes(modifiername)){
+                    modifiersNames.push(modifiername);
+                }
+            })
+            console.log(modifiersNames)
+            console.log("add",modifiersIds)
+            $.each(modifiersNames, function (index, value) {
+                $("#Selected-Existing-Modifiers-foredit").append(`<div class = 'rounded-pill d-flex align-items-center Selected-Existing-Modifiers-list Selected-Existing-Modifiers-list-css'  data-modifierindex = ${index}><p class = "m-0">${value}</p><i class="fa fa-times Remove-Modifier-Edit" id = "${value}" aria-hidden="true"></i></div>`)
+            })
+                $(".Remove-Modifier-Edit").click(function (e) {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    var index = $(this).closest("div").data("modifierindex");
+                    $(this).closest("div").remove();
+                    modifiersIds.splice(index, 1)
+                    console.log(index)
+                    console.log(modifiersIds);
+                })
+        })
+        $("#Add-Modifier-Group-btn").click(function () {
+            var name = $("#AddModifierGroupName").val();
+            var Description = $("#AddModifierGroupDescription").val();
+
+            if (!name) {
+                $("#AddModifierGroupNameMsg").text("Please Enter Name.");
+                return;
+            }
+            if (!Description) {
+                $("#AddModifierGroupDescriptionMsg").text("Please Enter Description.");
+                return;
+            }
+
+            console.log(Description)
+            console.log(modifiersIds)
+            $.ajax({
+                url: "/MenuModule/AddModifierGroup",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ Description: Description, Groupname: name, modifiersIds: modifiersIds }),
+                success: (response) => {
+                    if(typeof response == "string"){
+                          alert("You are not authorized to add Modifier Group.");
+                         return;
+                    }                        
+                    window.location.reload();           
+                },
+                error: (error) => {
+                    alert(error.message);
+                }
+            })
+
+        })
+
+    $("#saveModifierAdd").click(function() {
+        alert()
+        var name = $("#ModifierNameAdd").val();
+        var Description = $("#modifierDescriptionAdd").val();
+        var groupid = $("#modifierGroupAdd").val();
+        var Quantity = $("#modifierQuantityAdd").val();
+        var Rate = $("#modifireRateAdd").val();
+        var Unit = $("#modifierUnitAdd").val();
+        var isvalid = true;
+       
+            if(!name){
+                $("#ModifierNameAdd-msg").text("Please enter modifiername");
+                isvalid = false;
+            }
+            if(!Rate){
+                $("#ModifierRateAdd-msg").text("Please enter rate");
+                isvalid = false;
+            }
+            if(!Quantity){
+                $("#modifierQuantityAdd-msg").text("Please enter quantity");
+                isvalid = false;
+            }
+            if(!Unit){
+                $("#modifierUnitAdd-msg").text("Please enter unit");
+                isvalid = false;
+            }
+
+            var ratepattern = /^[1-9]+\.[1-9]{2}$/;
+            var Quantitypattern = /^[1-9]+$/
+
+            if (!Quantitypattern.test(Quantity)) {
+                $("#Quantity-msg").text("Quantity can only contain number.");
+                isvalid = false;
+            }
+
+            if(isvalid){
+
+                $.ajax({
+                    url : "/MenuModule/AddModifier",
+                    type : "POST",
+                    data : {
+                        Modifiername : name,
+                        Rate : Rate,
+                        UnitId : Unit,
+                        Quantity : Quantity,
+                        Description : Description,
+                        GroupId : groupid
+                    },
+                    success : (response) => {
+                        if(typeof response == "string"){
+                          alert("You are not authorized to add Modifier.");
+                         return;
+                    }      
+                        window.location.reload();
+                    }
+                })
+
+            }
+    })
+
+    $("#saveModifierEdit").click(function() {
+        var name = $("#ModifierNameEdit").val();
+        var Rate = $("#modifireRateEdit").val();
+        var Quantity = $("#modifierQuantityEdit").val();
+        var Unit = $("#modifierUnitEdit").val();
+        var Description = $("#modifierDescriptionEdit").val();
+        var groupid = $("#modifierGroupEdit").val();
+
+        if(!name){
+                $("#ModifierNameEdit-msg").text("Please enter modifiername");
+                isvalid = false;
+            }
+            if(!Rate){
+                $("#ModifierRateEdit-msg").text("Please enter rate");
+                isvalid = false;
+            }
+            if(!Quantity){
+                $("#modifierQuantityEdit-msg").text("Please enter quantity");
+                isvalid = false;
+            }
+            if(!Unit){
+                $("#modifierUnitEdit-msg").text("Please enter unit");
+                isvalid = false;
+            }
+
+            var ratepattern = /^[1-9]+\.[1-9]{2}$/;
+            var Quantitypattern = /^[1-9]+$/
+
+            if (!Quantitypattern.test(Quantity)) {
+                $("#modifierQuantityEdit-msg").text("Quantity can only contain number.");
+                isvalid = false;
+            }
+
+            $.ajax({
+                url : "/MenuModule/EditModifier",
+                type : "POST",
+                data : {
+                    Modifiername : name,
+                    Rate : Rate,
+                    UnitId : Unit,
+                    Quantity : Quantity,
+                    Description : Description,
+                    GroupId : groupid,
+                    ModifierId : $("#ModifieridForEdit").val()
+                },
+                success : (response) => {
+                    window.location.reload();
+                }
+            })
+
+    })
+    $("#SearchModifierNameModal").on("input",function() {
+            loadExistingModifiers(1)
+        })
+    var multiple_ids = []
+    $("#delete-multiple-modifiers").click(function () {
+        multiple_ids = []
+        $(".modifiers-checkboxes:checked").each(function () {
+            var id = $(this).closest("tr").data("modifierid");
+            multiple_ids.push(id);
+        })
+        $("#delete-multiplemodifiers-conf").modal("show");
+    })
+
+    $("#delete-multiplemodifiers-conf-btn").click(function () {
+
+        $.ajax({
+            url : "/MenuModule/DeleteMultipleModifiers",
+            type : "POST",
+            contentType : "application/json",
+            data : JSON.stringify({ids : multiple_ids}),
+            success : (response) => {
+                console.log(response)
+                if(typeof response == "string"){
+                    alert("You are not authorized to delete modifiers.");
+                    return;
+                }
+                
+                window.location.reload();
+            }
+        })
+
+    })
+
+    })
+    function loadModifiers(searchval, pageno) {
+        var count = $("#ModifierCount").val();
+        $.ajax({
+            url: "/MenuModule/GetModifiersFunction",
+            data: {
+                groupid: modifiergroupid,
+                searchval: searchval.toLowerCase(),
+                count: count,
+                pageno: pageno
+            },
+            success: (data) => {
+                $("#modifiers-partial").html(data);
+            }
+        })
+    }
+    function loadExistingModifiers(pageno){
+        var count = $("#ModifierCountInAddModal").val();
+        $.ajax({
+            url: "/MenuModule/PaginationForExistingModifiers",
+            data: {
+                searchval: $("#SearchModifierNameModal").val(),
+                count: count,
+                pageno: pageno,
+            },
+            success: (data) => {
+                $("#ExistingModifiersPartial").html(data);
+            }
+        })
+    }
+    function loadExistingModifiersEdit(pageno){
+         var count = $("#ModifierCountInEditModal").val();
+        $.ajax({
+            url: "/MenuModule/PaginationForExistingModifiersInEdit",
+            data: {
+                searchval: $("#SearchModifierNameEditModal").val(),
+                count: count,
+                pageno: pageno,
+               
+            },
+            success: (data) => {
+                $("#ExistingModifiersPartialInEdit").html(data);
+            }
+        })
+    }
+</script>

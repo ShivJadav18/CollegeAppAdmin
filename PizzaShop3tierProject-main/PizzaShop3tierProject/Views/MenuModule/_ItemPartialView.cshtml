@@ -1,0 +1,1096 @@
+@model PizzaShop.Repository.ViewModels.ItemsandCategories
+@using PizzaShop.Repository.ViewModels;
+@using PizzaShop.Repository.Data;
+@* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script> *@
+<div class="col-lg-2 d-lg-block d-none categories-list-sec sidebarformodules" >
+    <div class="header d-flex justify-content-between align-items-center p-1">
+        <h5 class="text-center Category">Company</h5>
+        <div class="btn add-Category">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+        <div class="modal fade" id="AddCategory" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header b-0">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Company</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="Categoryname" placeholder="Category Name">
+                                <label for="Categoryname">Name</label>
+                            </div>
+                            <p class="validation-msg" id="Add-category-msg-name"></p>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="CategoryDescription"
+                                    placeholder="Category Description">
+                                <label for="CategoryDescription">Description</label>
+                                <p class="validation-msg" id="Add-category-msg-description"></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-nonprimary imp" id="Save-new-category">Save</button>
+                        <button type="button" class="btn btn-nonsecondary no-imp"
+                            data-bs-dismiss="modal">Cancle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="sidebar overflow-y-scroll" style="height: 60vh;" id="spc">
+        <div class="list-group list-group-flush" id="categories-cont">
+            @{
+                int i = 0; string sel = "";
+            }
+            @foreach (var category in Model.categories)
+            {
+                if (i == 0)
+                {
+                    sel = "selected-category-modifier";
+                }
+                <div class="list-group-item list-group-item-action Categories d-flex justify-content-between align-items-center for-point @sel"
+                    data-categoryid="@category.CategoryId" id="@i">
+                    <div class="d-flex align-items-center ">
+                        <i class="fa fa-th m-2" aria-hidden="true"></i>
+                        @category.Categoryname
+                    </div>
+                    <div class="d-flex align-items-center d-none">
+                        <i class="fa fa-pencil Edit-Category m-3" aria-hidden="true"></i>
+                        <i class="fa fa-trash-o delete-category-btn" aria-hidden="true"></i>
+                    </div>
+                </div>
+                sel = "";
+                i++;
+            }
+        </div>
+    </nav>
+    <div class="modal fade" id="EditCategory" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header b-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="CategoryEditname" placeholder="Category Name">
+                            <label for="CategoryEditname">Name</label>
+                        <p class="validation-msg" id="namecat-edit"></p>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="CategoryEditDescription"
+                                placeholder="Category Description">
+                            <label for="CategoryEditDescription">Description</label>
+                        <p class="validation-msg" id="descriptioncat-edit"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-nonprimary imp" id="Save-Edit-category">Save</button>
+                    <button type="button" class="btn btn-nonsecondary no-imp" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="delete-category-conf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                    <p>Are you sure you want to delete this Category?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-nonsecondary imp" id="category-delete-btn"
+                        data-bs-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="items-list-sec col" id="items-list-sec">
+    <div class="header d-lg-block d-none">
+        <h5 class="Category">Items</h5>
+    </div>
+    <div class="dropdown d-lg-none d-flex align-items-center justify-content-between">
+        <button class="btn fs-3 dropdown-toggle c-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+        </button>
+        <ul class="dropdown-menu" style="height: 40vh;">
+            @foreach (var category in Model.categories)
+            {
+                <li class="nav-item d-flex align-items-center dropdown-item for-point" data-id="@category.CategoryId"
+                    data-name="@category.Categoryname" data-description="@category.Description">
+                    <i class="fa fa-th m-1" aria-hidden="true"></i>
+                    <a href="#" class="nav-link text-dark">@category.Categoryname</a>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-pencil Edit-Category" aria-hidden="true"></i>
+                        <i class="fa fa-trash-o" data-bs-target="#delete-category-conf" data-bs-toggle="modal"
+                            aria-hidden="true"></i>
+                    </div>
+                </li>
+            }
+        </ul>
+
+    </div>
+    <form class="d-flex justify-content-end">
+        <div class="input-group w-auto m-2">
+            <input type="text" class="form-control w-25" id="search-items" placeholder="Search" />
+            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div class="btn delete-btn m-2" id="Delete-Multiple-Items">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </div>
+        <div class="btn imp m-2" id="Add-item-modal-open">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            New Item
+        </div>
+    </form>
+    <div class="modal fade" id="delete-multipleitems-conf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                    <p>Are you sure you want to delete these Items?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-nonsecondary imp" id="delete-multipleitems-conf-btn">Yes</button>
+                    <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="AddItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header b-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Add New Product Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <select name="CategoryId" id="ItemsCategory" class="form-select"
+                                                placeholder="Select Categories">
+                                                @foreach (var category in Model.categories)
+                                                {
+                                                    <option value="@category.CategoryId">@category.Categoryname</option>
+                                                }
+                                            </select>
+                                            <label for="ItemsCategory">Categories</label>
+                                        </div>
+                                        <p class="validation-msg" id="ItemsCategory-msg"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="Name" id="ItemName"
+                                                placeholder="Item Name">
+                                            <label for="ItemName">Name*</label>
+                                        </div>
+                                        <p class="validation-msg" id="ItemName-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <select name="Itemtype" id="ItemType" class="form-select"
+                                                placeholder="Select Type">
+                                                <option value="mobile">Mobiles</option>
+                                                <option value="Tv">Tv</option>
+                                                
+                                            </select>
+                                            <label for="ItemType">Item Type</label>
+                                        </div>
+                                        <p class="validation-msg" id="ItemType-msg"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Rate" class="form-control" id="Rate"
+                                                placeholder="Category Name" value="0">
+                                            <label for="Rate">Rate*</label>
+                                        </div>
+                                        <p class="validation-msg" id="Rate-msg"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Quantity" class="form-control" id="Quantity"
+                                                placeholder="Category Name" value="0">
+                                            <label for="Quantity">Quantity*</label>
+                                        </div>
+                                        <p class="validation-msg" id="Quantity-msg"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <select name="ItemType" name="UnitId" id="Unit" class="form-select"
+                                                placeholder="Select Unit">
+                                                <option value="1">Supplier-1</option>
+                                                <option value="2">Supplier-2</option>
+                                            </select>
+                                            <label for="Unit">Supplier</label>
+                                        </div>
+                                        <p class="validation-msg" id="Unit-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div
+                                        class="form-check form-switch p-0 d-flex align-items-center justify-content-center col">
+                                        <input class="form-check-input toggle-checkbox common-checkbox-modal m-1"
+                                            type="checkbox" name="Isavailable" id="Isavailable" role="switch" />
+                                        <p class="m-0">Available</p>
+                                    </div>
+                                    <div
+                                        class="form-check form-switch p-0 d-flex align-items-center justify-content-center col">
+                                        <input class="form-check-input toggle-checkbox m-1 common-checkbox-modal"
+                                            type="checkbox" name="Defaulttax" id="DefaultTax" role="switch" />
+                                        <p class="m-0">DefaultTax</p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Taxpercentage" class="form-control"
+                                                id="TaxPercentage" placeholder="Category Name">
+                                            <label for="TaxPercentage">Tax Percentage</label>
+                                        </div>
+                                        <p class="validation-msg" id="TaxPercentage-msg"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Shortcode" class="form-control" id="ShortCode"
+                                                placeholder="Category Name">
+                                            <label for="ShortCode">Short Code</label>
+                                        </div>
+                                        <p class="validation-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <textarea type="text" name="Description"
+                                                asp-for="@Model.newItem.Description" class="form-control"
+                                                id="ItemDescription" placeholder="Item Description"></textarea>
+                                            <label for="ItemDescription">Description</label>
+                                        </div>
+                                        <p class="validation-msg" id="description-msg"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>Upload Image</p>
+                                    <div class="col">
+                                        <div class=" border-dashed rounded-1 text-center mb-3 mb-lg-0">
+                                            <input type="file" name="ItemImage" id="Item-Image" class="d-none">
+
+                                            <img src="~/images/Default_pfp.svg.png" alt="profile-pic"
+                                                id="ItemImageShown" class="rounded-circle profile-info-pic m-2"
+                                                height="90">
+                                            <label for="file" role="button" id="Item-Image-input" class="py-5 w-100">
+                                                Drag and
+                                                Drop or Browse Files</label>
+                                        </div>
+                                        <p class="validation-msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            @* <div class="col-4 modifier-select-section">
+                                <div class="form-floating m-2">
+                                    <select name="ModifierGroup" id="GroupOptionsForItems" class="form-select"
+                                        placeholder="Select Modifier Group(s)">
+                                       
+                                        @foreach (var group in Model.modifiergroups)
+                                        {
+                                            <option value="@group.ModifiergroupId" data-name="@group.Groupname">
+                                                @group.Groupname</option>
+                                        }
+                                    </select>
+                                    <label for="ModifierGroupSelect">Select Modifier Group(s)</label>
+                                </div>
+                                <p id="selectgroup-msg" class="validation-msg"></p>
+                                <div class="selected-modifiers-section m-2">
+                                    
+                                    <div class="modifier-group-selected container overflow-y-scroll" style="height: 60vh;" id="modifier-group-selected">
+
+                                    </div>
+                                </div>
+                            </div> *@
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-nonprimary imp" id="Add-new-item-save">Save</button>
+                    <button type="button" class="btn btn-nonsecondary no-imp" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="items-partial overflow-y-scroll" style="height: 60vh;" id="items-partial">
+        @Html.Partial("_Items", Model.itemmodel)
+    </div>
+    <div class="modal fade " id="EditItemModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header b-0">
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit Menu Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <select name="CategoryId" id="ItemsCategoryEdit" class="form-select"
+                                                placeholder="Select Categories">
+                                                @foreach (var category in Model.categories)
+                                                {
+                                                    <option value="@category.CategoryId">@category.Categoryname</option>
+                                                }
+                                            </select>
+                                            <label for="ItemsCategoryEdit">Categories</label>
+                                        </div>
+                                        <p class="validation-msg" id="ItemsCategory-msg"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="Name" id="ItemNameEdit"
+                                                placeholder="Item Name">
+                                            <label for="ItemNameEdit">Name*</label>
+                                        </div>
+                                        <p class="validation-msg" id="ItemName-msg-Edit"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <select name="Itemtype" id="ItemTypeEdit" class="form-select"
+                                                placeholder="Select Type">
+                                                <option value="mobile">Mobile</option>
+                                                <option value="Tv">Tv</option>
+                                                
+                                            </select>
+                                            <label for="ItemTypeEdit">Item Type</label>
+                                        </div>
+                                        <p class="validation-msg" id="ItemType-msg-Edit"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="RateEdit" class="form-control" id="RateEdit"
+                                                placeholder="Category Name" value="0">
+                                            <label for="RateEdit">Rate*</label>
+                                        </div>
+                                        <p class="validation-msg" id="Rate-msg-Edit"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Quantity" class="form-control" id="QuantityEdit"
+                                                placeholder="Category Name" value="0">
+                                            <label for="QuantityEdit">Quantity*</label>
+                                        </div>
+                                        <p class="validation-msg" id="Quantity-msg-Edit"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <select name="ItemType" name="UnitId" id="UnitEdit" class="form-select"
+                                                placeholder="Select Unit">
+                                                <option value="1">Pcs</option>
+                                                <option value="2">gm</option>
+                                            </select>
+                                            <label for="UnitEdit">Unit</label>
+                                        </div>
+                                        <p class="validation-msg" id="Unit-msg-Edit"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div
+                                        class="form-check form-switch p-0 d-flex align-items-center justify-content-center col">
+                                        <input class="form-check-input toggle-checkbox common-checkbox-modal m-1"
+                                            type="checkbox" name="Isavailable" id="IsavailableEdit" role="switch" />
+                                        <p class="m-0">Available</p>
+                                    </div>
+                                    <div
+                                        class="form-check form-switch p-0 d-flex align-items-center justify-content-center col">
+                                        <input class="form-check-input toggle-checkbox m-1 common-checkbox-modal"
+                                            type="checkbox" name="Defaulttax" id="DefaultTaxEdit" role="switch" />
+                                        <p class="m-0">DefaultTax</p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Taxpercentage" class="form-control"
+                                                id="TaxPercentageEdit" placeholder="Category Name">
+                                            <label for="TaxPercentage">Tax Percentage</label>
+                                        </div>
+                                        <p class="validation-msg" id="TaxPercentage-msg-Edit"></p>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <input type="text" name="Shortcode" class="form-control" id="ShortCodeEdit"
+                                                placeholder="Category Name">
+                                            <input type="hidden" id="itemid">
+                                            <label for="ShortCode">Short Code</label>
+                                        </div>
+                                        <p class="validation-msg-Edit"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <div class="form-floating">
+                                            <textarea type="text" name="Description" class="form-control"
+                                                id="ItemDescriptionEdit" placeholder="Item Description"></textarea>
+                                            <label for="ItemDescription">Description</label>
+                                        </div>
+                                        <p class="validation-msg" id="description-msg-Edit"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>Upload Image</p>
+                                    <div class="col">
+
+                                        <div class=" border-dashed rounded-1 text-center mb-3 mb-lg-0">
+                                            <input type="file" name="ItemImage" id="Item-Image-Edit" class="d-none">
+                                            <input type="hidden" id="Item-Image-Edit-url">
+                                            <img src="~/images/Default_pfp.svg.png" alt="profile-pic"
+                                                id="ItemImageShownEdit" class="rounded-circle profile-info-pic m-2"
+                                                height="90">
+                                            <label for="file" role="button" id="Item-Image-input-Edit"
+                                                class="py-5 w-100">
+                                                Drag and
+                                                Drop or Browse Files</label>
+                                        </div>
+                                        <p class="validation-msg-Edit"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 modifier-select-section">
+                                <div class="form-floating m-2">
+                                    <select name="ModifierGroup" id="ModifierGroupSelectEdit" class="form-select"
+                                        placeholder="Select Modifier Group(s)">
+                                        @foreach (var group in Model.modifiergroups)
+                                        {
+                                            <option value="@group.ModifiergroupId" data-name="@group.Groupname">
+                                                @group.Groupname</option>
+                                        }
+                                    </select>
+                                    <label for="ModifierGroupSelect">Select Modifier Group(s)</label>
+                                </div>
+                                <div class="selected-modifiers-section-edit m-2">
+                                    <div class="modifier-group-selected-inedit container overflow-y-scroll" style="height: 60vh;" id="modifier-group-selected-inedit">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-nonprimary imp" id="Edit-Item-Save">Save</button>
+                    <button type="button" class="btn btn-nonsecondary no-imp" data-bs-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(() => {
+        $("#GroupOptionsForItems").prop("selectedIndex",-1);
+        
+        var category_id = null;
+        window.categoryId = @Model.categories[0].CategoryId;
+        $("#Add-item-modal-open").click(function(e){
+            $("#modifier-group-selected").empty();
+            $("#GroupOptionsForItems").find(":disabled").each(function(){
+                $(this).prop("disabled",false);
+            })
+            $(".validation-msg").each(function(){
+                $(this).text("");
+            })
+            $("#AddItem").modal("show");
+        })
+        $("#Item-Image-input").on("click", () => {
+            $("#Item-Image").click();
+        })
+        $("#Item-Image").change(function (event) {
+            let file = event.target.files[0];
+
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#ItemImageShown").attr("src", e.target.result); // Set preview
+                };
+                reader.readAsDataURL(file);
+
+            }
+        });
+        $(".Categories").mouseenter(function () {
+            $(this).children().last().removeClass("d-none");
+
+        })
+        
+        $(".Categories").mouseleave(function () {
+            $(this).children().last().addClass("d-none");
+        })
+
+        $(".add-Category").click(function(){
+            $(".validation-msg").text("");
+            $("#AddCategory").modal("show")
+        })
+
+        $("#Save-new-category").click(function (e) {
+            e.preventDefault();
+
+            var CategoryName = $("#Categoryname").val();
+            var CategoryDescription = $("#CategoryDescription").val();
+            var isvalid = true;
+            if (CategoryName == "") {
+                $("#Add-category-msg-name").text("Category name can not be Empty.");
+                isvalid = false;
+            }
+             if (CategoryDescription == "") {
+                 $("#Add-category-msg-description").text("Category Description can not be Empty.");
+                 isvalid = false;
+            }
+            if(!isvalid){
+                return;
+            }
+            $.ajax({
+                url: "/MenuModule/AddCategory",
+                type: "POST",
+                data: {
+                    Categoryname: CategoryName,
+                    Description: CategoryDescription
+                },
+                success: (response) => {
+                    if(typeof response == "string"){
+                           alert("You are not authorized to add Category.");
+                         return;
+                    }      
+                        window.location.reload();
+                }
+            })
+        })
+
+        $(".Edit-Category").click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            var categoryid = e.target.closest(".Categories").dataset.categoryid;
+            $.ajax({
+                url: "/MenuModule/EditCategory",
+                data: {
+                    categoryid: categoryid
+                },
+                success: (response) => {
+                    if (response.success) {
+                        $("#CategoryEditDescription").val(response.description);
+                        $("#CategoryEditname").val(response.name);
+                        $(".validation-msg").text("");
+                        $("#EditCategory").modal("show");
+                    }else{
+                            alert("You are not authorized to edit Category.");
+                        }
+                }
+            })
+        })
+        $("#Item-Image-input-Edit").on("click", () => {
+            $("#Item-Image-Edit").click();
+        })
+        $("#Item-Image-Edit").change(function (event) {
+            let file = event.target.files[0];
+
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#ItemImageShownEdit").attr("src", e.target.result); // Set preview
+                };
+                reader.readAsDataURL(file);
+
+            }
+        });
+        $("#Save-Edit-category").click((e) => {
+
+            var name = $("#CategoryEditname").val();
+            var description = $("#CategoryEditDescription").val();
+            var isvalid = true;
+
+            if(name == ""){
+                $("#namecat-edit").text("Name can not be empty.");
+                isvalid = false;
+            }
+            if(description == ""){
+                $("#descriptioncat-edit").text("Description can not be empty.");
+                isvalid = false;
+            }
+
+            if(!isvalid){
+                return
+            }
+
+            $.ajax({
+                url: "/MenuModule/EditCategory",
+                type: "POST",
+                data: {
+                    categoryname: name,
+                    categorydescription: description
+                },
+                success: (response) => {
+                    if (response.success) {
+                        alert(response.message);
+                        window.location.reload();
+                    }
+                }
+            })
+
+        })
+        $(".delete-category-btn").click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            category_id = $(this).closest(".Categories").data("categoryid");
+            console.log(category_id);
+            $("#delete-category-conf").modal("show");
+        })
+        $("#category-delete-btn").click((e) => {
+
+
+            $.ajax({
+                url: "/MenuModule/DeleteCategory",
+                data: {
+                    id: category_id
+                },
+                success: (response) => {
+                    if(typeof response == "string"){
+                         alert("You are not authorized to delete category.");
+                         return;
+                    }   
+                        window.location.reload();
+                }
+            })
+        })
+
+        $(".Categories").click(function () {
+            $("#categories-cont").find(".selected-category-modifier").removeClass("selected-category-modifier")
+            $(this).addClass("selected-category-modifier");
+            var searchval = $("#search-items").val();
+            categoryId = $(this).data("categoryid");
+            loadItems(1, searchval);
+        })
+        $("#search-items").on("input", () => {
+            setTimeout(() => { loadItems(1, $("#search-items").val()) }, 500);
+        });
+        $("#Add-new-item-save").on("click", (e) => {
+            e.preventDefault();
+
+            var ratepattern = /^[0-9]+\.[0-9]{2}$/;
+            var Quantitypattern = /^[0-9]+$/
+            var categoryid = $("#ItemsCategory").val();
+            var name = $("#ItemName").val();
+            var ItemType = $("#ItemType").val();
+            var Rate = parseFloat($("#Rate").val());
+            var Quantity = $("#Quantity").val();
+            var Unit = $("#Unit").val();
+            var Isavailable = $("#Isavailable").is(":checked");
+            var DefaultTax = $("#DefaultTax").is(":checked");
+            var TaxPercentage = $("#TaxPercentage").val();
+            var ShortCode = $("#ShortCode").val();
+            var description = $("#ItemDescription").val();
+            var Itemimage = $("#Item-Image")[0].files[0];
+            var Groupselectval = $("#GroupOptionsForItems").val();
+            var Groupselect = $("#GroupOptionsForItems");
+            var GroupIds = [];
+
+            var isvalid = true;
+
+            if (!categoryid) {
+                $("#ItemsCategory-msg").text("Category can not be Empty.");
+                isvalid = false;
+            }
+            if (!name) {
+                $("#ItemName-msg").text("Name can not be Empty.")
+                isvalid = false;
+            }
+            if (!ItemType) {
+                $("#ItemType-msg").text("Item Type can not be Empty.");
+                isvalid = false;
+            }
+            if (!Rate) {
+                $("#Rate-msg").text("Rate can not be Empty.")
+                isvalid = false;
+            }
+            if (!Quantity) {
+                $("#Quantity-msg").text("Quantity can not be Empty");
+                isvalid = false;
+            }
+            if (!Unit) {
+                $("#Unit-msg").text("Unit can not be Empty");
+                isvalid = false;
+            }
+            if (!TaxPercentage) {
+                $("#TaxPercentage-msg").text("TaxPercentage can not be Empty");
+                isvalid = false;
+            }
+            if (!description) {
+                $("#description-msg").text("Description can not be Empty");
+                isvalid = false;
+            }
+            if(Groupselectval == "0"){
+                $("#selectgroup-msg").text("Description can not be Empty");
+                isvalid = false;
+            }
+    @* if(Rate && !ratepattern.test(Rate)){
+                 $("#Rate-msg").text("Rate must be in the form of xx.yy and can only contain number");
+                isvalid = false;
+                } *@
+
+            if (!Quantitypattern.test(Quantity)) {
+                $("#Quantity-msg").text("Quantity can only contain number.");
+                isvalid = false;
+            }
+
+            if (TaxPercentage && !Quantitypattern.test(TaxPercentage)) {
+                $("#TaxPercentage-msg").text("Taxpercentage can only contain number.");
+                isvalid = false;
+            }
+
+            if (!isvalid) {
+                return;
+            }
+            Groupselect.find(":disabled").each(function ( index , value ) {
+                if(value != "" ){
+                GroupIds.push($(this).val());    
+                }
+            })
+            console.log(GroupIds);
+            var formData = new FormData();
+            formData.append("Name", name);
+            formData.append("CategoryId", categoryid);
+            formData.append("Description", description);
+            formData.append("UnitId", Unit);
+            formData.append("Itemtype", ItemType);
+            formData.append("Rate", Rate);
+            formData.append("Taxpercentage", TaxPercentage);
+            formData.append("Defaulttax", DefaultTax);
+            formData.append("Quantity", Quantity);
+            formData.append("Shortcode", ShortCode);
+            formData.append("Isavailable", Isavailable);
+            
+            $.each(GroupIds , function ( index, value ){
+                formData.append(`Groups[${index}].groupid`,value);
+                formData.append(`Groups[${index}].minVal`, $(`#${value}-min`).val());
+                formData.append(`Groups[${index}].maxVal`, $(`#${value}-max`).val());
+            })
+
+            if (Itemimage) {
+                formData.append("ItemImage", Itemimage);  // Append the file
+            }
+            $.ajax({
+                url: "/MenuModule/AddNewItemAction",
+                type: "POST",
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: (response) => {
+                    if(typeof response == "string"){
+                          alert("You are not authorized to add item.");
+                         return;
+                    }    
+                    window.location.reload();
+                }
+            })
+
+        })
+
+        $("#Edit-Item-Save").on("click", function () {
+            var Quantitypattern = /^[0-9]+$/;
+            var categoryid = $("#ItemsCategoryEdit").val();
+            var name = $("#ItemNameEdit").val();
+            var ItemType = $("#ItemTypeEdit").val();
+            var Quantity = $("#QuantityEdit").val();
+            var Rate = parseFloat($("#RateEdit").val());
+            var Unit = $("#UnitEdit").val();
+            var Isavailable = $("#IsavailableEdit").is(":checked");
+            var DefaultTax = $("#DefaultTaxEdit").is(":checked");
+            var TaxPercentage = $("#TaxPercentageEdit").val();
+            var ShortCode = $("#ShortCodeEdit").val();
+            var description = $("#ItemDescriptionEdit").val();
+            var Itemimage = $("#Item-Image-Edit")[0].files[0];
+            var itemid = $("#itemid").val();
+            var isvalid = true;
+            var Groupselect = $("#ModifierGroupSelectEdit");
+            var GroupIds = [];
+
+            if (!categoryid) {
+                $("#ItemsCategory-msg-Edit").text("Category can not be Empty.");
+                isvalid = false;
+            }
+            if (!name) {
+                $("#ItemName-msg-Edit").text("Name can not be Empty.")
+                isvalid = false;
+            }
+            if (!ItemType) {
+                $("#ItemType-msg-Edit").text("Item Type can not be Empty.");
+                isvalid = false;
+            }
+            if (!Rate) {
+                $("#Rate-msg-Edit").text("Rate can not be Empty.")
+                isvalid = false;
+            }
+            if (!Quantity) {
+                $("#Quantity-msg-Edit").text("Quantity can not be Empty");
+                isvalid = false;
+            }
+            if (!Unit) {
+                $("#Unit-msg-Edit").text("Unit can not be Empty");
+                isvalid = false;
+            }
+            if (!TaxPercentage) {
+                $("#TaxPercentage-msg-Edit").text("TaxPercentage can not be Empty");
+                isvalid = false;
+            }
+            if (!description) {
+                $("#description-msg-Edit").text("Description can not be Empty");
+                isvalid = false;
+            }
+
+            if (Quantity && !Quantitypattern.test(Quantity)) {
+                $("#Quantity-msg-Edit").text("Quantity can only contain number.");
+                isvalid = false;
+            }
+
+            if (TaxPercentage && !Quantitypattern.test(TaxPercentage)) {
+                $("#TaxPercentage-msg-Edit").text("Taxpercentage can only contain number.");
+                isvalid = false;
+            }
+            if (!isvalid) {
+                return;
+            }
+
+            Groupselect.find(":disabled").each(function ( index , value ) {
+                if(value != "" ){
+                GroupIds.push($(this).val());    
+                }
+            })
+
+            var formData = new FormData();
+            formData.append("Name", name);
+            formData.append("CategoryId", categoryid);
+            formData.append("Description", description);
+            formData.append("UnitId", Unit);
+            formData.append("Itemtype", ItemType);
+            formData.append("Rate", Rate);
+            formData.append("Taxpercentage", TaxPercentage);
+            formData.append("Defaulttax", DefaultTax);
+            formData.append("Quantity", Quantity);
+            formData.append("Shortcode", ShortCode);
+            formData.append("Isavailable", Isavailable);
+            formData.append("itemid", itemid);
+
+            $.each(GroupIds , function ( index, value ){
+                formData.append(`Groups[${index}].groupid`,value);
+                formData.append(`Groups[${index}].minVal`, $(`#${value}-min`).val());
+                formData.append(`Groups[${index}].maxVal`, $(`#${value}-max`).val());
+            })
+
+            if (Itemimage) {
+                formData.append("ItemImage", Itemimage);  // Append the file
+            } else {
+                formData.append("Imageurl", $("#Item-Image-Edit-url").val());
+            }
+
+            $.ajax({
+                url: "/MenuModule/EditItem",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: (response) => {
+                    window.location.reload();
+                }
+            })
+        })
+        var itemsMultipleIds = [];
+        $("#Delete-Multiple-Items").click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $("#delete-multipleitems-conf").modal("show");
+            
+        })
+        $("#delete-multipleitems-conf-btn").click(function(){
+            $(".item-checkboxes:checked").each(function () {
+                var itemsid = $(this).closest("tr").data("itemid");
+                itemsMultipleIds.push(parseInt(itemsid));
+            })
+            console.log(itemsMultipleIds);
+           
+            $.ajax({
+                url: "/MenuModule/DeleteMultipleItems",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ ids: itemsMultipleIds }),
+                success: (response) => {
+                    if(typeof response == "string"){
+                         alert("You are not authorized to delete items.");
+                         return;
+                    }                  
+                    window.location.reload();
+                }
+            })
+        })
+        $("#GroupOptionsForItems").change(function (e) {
+            var modifierGroupId = $(this).val();
+            var selectedOption = $(this).find(":selected");
+            selectedOption.prop("disabled",true);
+            var name = selectedOption.data("name");
+        
+            $.ajax({
+                url: "/MenuModule/GetModifierForItemAdd",
+                data: {
+                    groupid: modifierGroupId
+                },
+                success: (response) => {
+
+                    $("#modifier-group-selected").append(`<div class="row" id = "${modifierGroupId}-section">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>${name}</h4>
+                                                <i class="fa fa-trash" aria-hidden="true" id = "${modifierGroupId}-delete"></i>
+                                            </div>
+                                            <div class="col">
+                                                <select
+                                                    class="form-selct rounded-pill w-100 ${modifierGroupId}-minmax" id="${modifierGroupId}-min">
+                                                    
+                                                </select>
+                                                <ul id="${modifierGroupId}-name">
+
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <select 
+                                                    class="form-selct rounded-pill w-100 ${modifierGroupId}-minmax" id = "${modifierGroupId}-max">
+                                                    
+                                                </select>
+                                                <ul class="list-unstyled text-end" id = "${modifierGroupId}-rate">
+                                                </ul>
+                                            </div>
+
+                                        </div>`)
+
+
+                    $.each(response.modifiers,function (index,value){
+                        $(`#${modifierGroupId}-name`).append(`<li>${value.modifiername}</li>`);
+                        $(`#${modifierGroupId}-rate`).append(`<li>${value.rate}</li>`)
+                    })
+                    $(`#${modifierGroupId}-delete`).click(function(e){
+                        $(`#GroupOptionsForItems`).find(":disabled").each(function () {
+                            if( $(this).val() == modifierGroupId ){
+                                $(this).prop("disabled", false);
+                            }
+                        })
+                        $(`#${modifierGroupId}-section`).remove();
+                    })
+                    for(var i = 0 ; i < response.modifiers.length ; i++){
+                        $(`.${modifierGroupId}-minmax`).append(`<option value = "${i}">${i}</option>`)
+                    }
+                    console.log(response);
+                }
+            })
+
+        })
+        $("#ModifierGroupSelectEdit").change(function (e) {
+            var modifierGroupId = $(this).val();
+            var selectedOption = $(this).find(":selected");
+            selectedOption.prop("disabled",true);
+            var name = selectedOption.data("name");
+        
+            $.ajax({
+                url: "/MenuModule/GetModifierForItemAdd",
+                data: {
+                    groupid: modifierGroupId
+                },
+                success: (response) => {
+                    console.log(response);
+                    $("#modifier-group-selected-inedit").append(`<div class="row" id = "${modifierGroupId}-edit-section">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>${name}</h4>
+                                                <i class="fa fa-trash" aria-hidden="true" id = "${modifierGroupId}-edit-delete"></i>
+                                            </div>
+                                            <div class="col">
+                                                <select
+                                                    class="form-selct rounded-pill w-100 ${modifierGroupId}-edit-minmax" id="${modifierGroupId}-edit-min">
+                                                    
+                                                </select>
+                                                <ul id="${modifierGroupId}-edit-name">
+
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <select 
+                                                    class="form-selct rounded-pill w-100 ${modifierGroupId}-edit-minmax" id = "${modifierGroupId}-edit-max">
+                                                    
+                                                </select>
+                                                <ul class="list-unstyled text-end" id = "${modifierGroupId}-edit-rate">
+                                                </ul>
+                                            </div>
+
+                                        </div>`)
+
+
+                    $.each(response.modifiers,function (index,value){
+                        $(`#${modifierGroupId}-edit-name`).append(`<li>${value.modifiername}</li>`);
+                        $(`#${modifierGroupId}-edit-rate`).append(`<li>${value.rate}</li>`)
+                    })
+                    $(`#${modifierGroupId}-edit-delete`).click(function(e){
+                        $(`#ModifierGroupSelectEdit`).find(":disabled").each(function () {
+                            if( $(this).val() == modifierGroupId ){
+                                $(this).prop("disabled", false);
+                            }
+                        })
+                        $(`#${modifierGroupId}-edit-section`).remove();
+                    })
+                    for(var i = 0 ; i < response.modifiers.length ; i++){
+                        $(`.${modifierGroupId}-edit-minmax`).append(`<option value = "${i}">${i}</option>`)
+                    }
+                    console.log(response);
+                }
+            })
+
+        })
+    })
+    function loadItems(pageno, searchval) {
+        var count = $("#itemCount").val();
+        $.ajax({
+            url: "/MenuModule/ItemsForpagination",
+            type: "GET",
+            data: {
+                count: count,
+                pageno: pageno,
+                searchval: searchval,
+                categoryid: categoryId
+            },
+            success: (data) => {
+                $("#items-partial").html(data);
+            }
+        })
+    }
+</script>

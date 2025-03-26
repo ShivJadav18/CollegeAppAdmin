@@ -1,0 +1,280 @@
+@model PizzaShop.Repository.ViewModels.Items
+@* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script> *@
+@{
+    var totalpage = (int)Math.Ceiling(((double)Model.totalitems / (double)Model.count));
+}
+
+
+<table class="table table-borderless table-responsive ">
+    <thead>
+        <th class="">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="selectAll" value="" id="p1" />
+                <label for="p1" class="header-per form-check-label">
+                    <h3 class="header-per">Name</h3>
+                </label>
+            </div>
+        </th>
+        <th class="text-center">ItemType</th>
+        <th class="text-center">Rate</th>
+        <th class="text-center">Quantity</th>
+        <th class="text-center">Available</th>
+        <th class="text-center">Action</th>
+    </thead>
+    @{
+        var j = 0;
+    }
+    @foreach (var item in Model.items)
+    {
+        <tr data-itemid="@item.ItemId" class="Itemstr">
+            <td>
+                <div class="form-check d-flex align-items-center mb-3">
+                    <input type="checkbox" class="form-check-input item-checkboxes" value="" id="p2" />
+                    @{
+                        string url = item.Imageurl == null ? "/images/dining-menu.png" : "/"+item.Imageurl ;
+                    }
+                    <div class="d-flex align-items-center gap-1" >
+                        <img src="@url" class="rounded-circle ms-2" style="height: 50px; width: 50px;">
+                    <label for="p2" class=" form-check-label">@item.Name</label>
+                    </div>
+                                                
+                </div>
+            </td>
+            <td>
+                <div class="table-div1">
+                    @if (item.Itemtype == "nonveg")
+                    {
+                        <img src="~/images/icons/non-veg-icon.svg" class="img-vn" alt="">
+                    }
+                    else
+                    {
+                        <img src="~/images/icons/veg-icon.svg" class="img-vn" alt="">
+                    }
+                </div>
+            </td>
+            <td class="text-center">@item.Rate</td>
+            <td class="text-center">@item.Quantity</td>
+            <td class="form-check form-switch d-flex justify-content-center p-0 mb-3">
+                <input class="form-check-input" type="checkbox" onclick="return false" asp-for="@item.Isavailable">
+            </td>
+
+            <td class="text-center">
+                <i class="fa fa-pencil Edit-Item m-1" id="Edit-Item" aria-hidden="true"></i>
+                <i class="fa fa-trash Delete-Item" id="Delete-Item" aria-hidden="true"></i>
+            </td>
+        </tr>
+        j++;
+    }
+</table>
+<div class="modal fade" id="delete-conf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Delete Confirmation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="~/images/toppng.com-warning-icon-2400x2400.png" alt="warning" class="warning-img">
+                <p>Are you sure you want to delete this item?</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-nonsecondary imp" id="Delete-Item-conf">Yes</button>
+                <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-end">
+    <div class="dropdown d-flex justify-content-center align-items-center w-25">
+        <p class="w-50 text-center m-2">Items per page</p>
+        <select name="itemCount" id="itemCount" asp-for="@Model.count" class="form-control w-25">
+            <option value="5" selected>5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+    </div>
+    <div class="d-flex align-items-center">
+        <p class="m-2">Showing 1..5 of 14</p>
+        <div class="paging d-flex justify-content-around align-items-center">
+            <button class="btn" id="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button class="btn" id="next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(() => {
+
+        if (@totalpage <= @Model.pageno) {
+            $("#next").prop("disabled", true);
+        }
+        if (@Model.pageno == 1) {
+            $("#prev").prop("disabled", true);
+        }
+
+        $("#itemCount").change(() => {
+            loadItems(1, $("#search-items").val().toLowerCase());
+        });
+
+        $("#next").on("click", () => {
+
+            loadItems(@Model.pageno+1, $("#search-items").val().toLowerCase());
+        });
+
+        $("#prev").on("click", () => {
+            loadItems(@Model.pageno-1, $("#search-items").val().toLowerCase());
+        })
+
+        $(".Edit-Item").on("click", function (e) {
+            e.preventDefault();
+            var itemid = e.target.closest(".Itemstr").dataset.itemid;
+            $("#ModifierGroupSelectEdit").children(":disabled").each(function (e) {
+                $(this).prop("disabled", false);
+            })
+            $("#modifier-group-selected-inedit").empty();
+            $.ajax({
+                url: "/MenuModule/EditItem",
+                type: "GET",
+                data: {
+                    itemid: itemid
+                },
+                success: (response) => {
+
+                    if (response.success) {
+                        console.log(response.groups);
+                        $("#ItemsCategoryEdit").val(response.categoryId);
+                        $("#ItemNameEdit").val(response.name);
+                        $("#ItemTypeEdit").val(response.itemtype);
+                        $("#QuantityEdit").val(response.quantity);
+                        $("#UnitEdit").val(response.unitId);
+                        $("#TaxPercentageEdit").val(response.taxpercentage);
+                        $("#ShortCodeEdit").val(response.shortcode);
+                        $("#ItemDescriptionEdit").val(response.description);
+                        var imageurl = response.imageurl != null ? `/${response.imageurl}` : "/images/Default_pfp.svg.png";
+                        $("#itemid").val(itemid);
+                        $("#Item-Image-Edit-url").val(response.imageurl);
+                        $("#ShortCodeEdit").val(response.shortcode)
+                        $("#ItemImageShownEdit").attr("src", imageurl);
+                        if (response.isavailable) {
+                            $("#IsavailableEdit").prop("checked", true);
+                        }
+                        if (response.defaulttax) {
+                            $("#DefaultTaxEdit").prop("checked", true);
+                        }
+                        $("#RateEdit").val(response.rate);
+                        $(".validation-msg").each(function () {
+                            $(this).text("");
+                        })
+                        $("#EditItemModal").modal("show");
+
+                        $.each(response.groups, function (index, value) {
+                            $("#ModifierGroupSelectEdit").find(`option[value = '${value.groupid}']`).prop("disabled", true);
+                            var name = $("#ModifierGroupSelectEdit").find(`option[value = '${value.groupid}']`).text();
+                            $("#modifier-group-selected-inedit").append(`<div class="row" id = "${value.groupid}-edit-section">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h4>${name}</h4>
+                                                <i class="fa fa-trash" aria-hidden="true" id = "${value.groupid}-edit-delete"></i>
+                                            </div>
+                                            <div class="col">
+                                                <select
+                                                    class="form-selct rounded-pill w-100 ${value.groupid}-edit-minmax" id="${value.groupid}-edit-min">
+
+                                                </select>
+                                                <ul id="${value.groupid}-edit-name">
+
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <select 
+                                                    class="form-selct rounded-pill w-100 ${value.groupid}-edit-minmax" id = "${value.groupid}-edit-max">
+
+                                                </select>
+                                                <ul class="list-unstyled text-end" id = "${value.groupid}-edit-rate">
+                                                </ul>
+                                            </div>
+
+                                        </div>`)
+                            $.each(value.modifiers, function (index, val) {
+                                $(`#${value.groupid}-edit-name`).append(`<li>${val.modifiername}</li>`);
+                                $(`#${value.groupid}-edit-rate`).append(`<li>${val.rate}</li>`)
+                            })
+                            $(`#${value.groupid}-edit-delete`).click(function (e) {
+                                $(`#ModifierGroupSelectEdit`).find(":disabled").each(function () {
+                                    if ($(this).val() == value.groupid) {
+                                        $(this).prop("disabled", false);
+                                    }
+                                })
+                                $(`#${value.groupid}-edit-section`).remove();
+                            })
+                            for (var i = 0; i < value.modifiers.length; i++) {
+                                $(`.${value.groupid}-edit-minmax`).append(`<option value = "${i}">${i}</option>`)
+                            }
+                        })
+
+
+                    } else {
+                        alert("You are not authorized to edit item.");
+                    }
+                }
+            })
+        })
+
+        var item_id = null;
+        $(".Delete-Item").click(function (e) {
+            e.preventDefault();
+            item_id = $(this).closest("tr").data("itemid");
+            console.log(item_id);
+
+            $("#delete-conf").modal("show");
+        })
+
+        $("#Delete-Item-conf").click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log(item_id)
+            $.ajax({
+                url: "/MenuModule/DeleteItem",
+                data: {
+                    itemid: item_id
+                },
+                success: (response) => {
+                    if(typeof response == "string"){
+                          alert("You are not authorized to delete item.");
+                         return;
+                    }    
+                        window.location.reload();
+                }
+            })
+        })
+
+        Array.prototype.remove = function () {
+            var what, a = arguments, L = a.length, ax;
+            while (L && this.length) {
+                what = a[--L];
+                while ((ax = this.indexOf(what)) !== -1) {
+                    this.splice(ax, 1);
+                }
+            }
+            return this;
+        };
+
+        $("#selectAll").change(function () {
+            $(".item-checkboxes").prop("checked", $(this).is(":checked"));
+        })
+
+        $(".item-checkboxes").change(function () {
+            if (!$(this).is(":checked")) {
+                $("#selectAll").prop("checked", false);
+            }
+        })
+
+
+
+    })
+
+</script>

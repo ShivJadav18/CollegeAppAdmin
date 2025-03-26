@@ -1,0 +1,142 @@
+﻿@model PizzaShop.Repository.ViewModels.Userlogin
+
+@{
+    ViewData["Title"] = "Index";
+    bool valid = true;
+    Layout = "~/Views/Shared/_LayoutForLogin.cshtml";
+    if (Convert.ToBoolean(TempData["auth"]) == false)
+    {
+        valid = false;
+    }
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+@* asp-route="LOGIN" method="post" *@
+<p class="message" style="color: #ffffff">Welcome!</p>
+<form class="d-flex flex-column" asp-action="Login" asp-controller="Authenticate" method="post" id="login-form">
+    <div class="input-group d-flex flex-column mb-3">
+        <div id="emailError" class="text-danger mt-0"></div>
+        <div class="d-flex">
+            <input type="text" id="user-email" name="Email" asp-for="Email" class="form-control" placeholder="Email"
+                aria-label="Email" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+        </div>
+            <p class="" style="color: #FF9A9A;" id="email-validation-msg">
+                @Html.ValidationMessageFor(m => m.Email)
+            </p>
+    </div>
+    <div class="input-group d-flex flex-column mb-3">
+        <div id="passwordError" class="text-danger"></div>
+        <div class="d-flex">
+            <input type="password" id="user-pass" asp-for="Password" name="Password" class="form-control"
+                placeholder="Password" id="pass" aria-label="Password" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="eye-icon">
+                <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
+            </span>
+        </div>
+        <p class="" style="color: #FF9A9A;" id="password-validation-msg">
+                @Html.ValidationMessageFor(m => m.Password)
+            </p>
+    </div>
+    <div class="remember-forgot d-flex justify-content-between mb-2">
+        <div class="form-check" >
+            <input type="checkbox" asp-for="rememberme" class="form-check-input" id="form-check-input" />
+            <label for="form-check-input" class="form-check-label " style="color: #ffffff ; text-decoration: none;">Remember me</label>
+        </div>
+        <div class="forgot-pass" >
+            <a href="/Authenticate/Forgotpage" style="color: #ffffff;">
+                forgot password?
+            </a>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-nonprimary" style="background-color: #4267AC; color: #FFFFFF;">Submit</button>
+</form>
+
+@* <script>
+$(document).ready(()=>{
+var cookie=document.cookie;
+
+if(cookie){
+window.location='/Dashboard/Dashboardpage';
+}
+
+$("#eye-icon").on("click",(e) => {
+e.preventDefault();
+
+var password_field = $("#user-pass");
+
+})
+
+$("#login-form").submit((e)=>{
+//prevent form submission
+e.preventDefault();
+
+//clear previous errors
+$(".text-danger").text("");
+var isValid=true;
+
+var email=$("#user-email").val().trim();
+var pass=$("#user-pass").val().trim();
+
+var emailPattern = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@@$!%*?&])[A-Za-z\d@@$!%*?&]{8,}$/;
+
+if(email === "") {
+$("#emailError").text("Email is required");
+isValid = false;
+}else if(!emailPattern.test(email)){
+$("#emailError").text("Please enter a valid email address");
+isValid = false;
+}
+
+if(pass === ""){
+$("#passwordError").text("Password is required");
+isValid = false;
+}
+if(isValid){
+console.log($("#form-check-input").is(":checked"))
+$.ajax({
+url: "/Authenticate/Index",
+type:"POST",
+data:{
+Email:email,
+Password: pass,
+remember_me:$("#form-check-input").is(":checked")
+},
+success: (response) => {
+if(response.success){
+alert(response.message);
+window.location='/Dashboard/Dashboardpage';
+}else{
+alert(response.message);
+}
+},
+error: ()=>{
+}
+});
+}
+});
+$("#user-pass, #user-email").on("input", function () {
+$(this).next(".text-danger").text("");
+});
+});
+</script>
+*@
+<script>
+    $(document).ready(() => {
+        $("#eye-icon").click(function(e){
+            if($("#user-pass").attr("type") === "password"){
+                $("#user-pass").attr("type","text")
+                $(this).empty();
+                $(this).append("<i class='fa fa-eye-slash' aria-hidden='true'></i>")
+            }else{
+                $("#user-pass").attr("type","password")
+                $(this).empty();
+                $(this).append("<i class='fa fa-eye' id='eye' aria-hidden='true'></i>")
+            }
+        })
+    })
+</script>

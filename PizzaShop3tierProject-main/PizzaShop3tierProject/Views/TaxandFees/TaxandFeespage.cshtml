@@ -1,0 +1,147 @@
+@model PizzaShop.Repository.ViewModels.TaxandFeesViewModel
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="content w-100 ml-2 p-2 mr-0" id="content">
+    <div class="first-part ms-2 d-flex justify-content-between">
+        <h2>Taxes/Fees</h2>
+        <form class="d-flex align-items-center">
+            <div class="form-group m-1">
+                <input type="text" id="searchin" class="form-control" placeholder="Search" />
+            </div>
+            <div class="btn imp m-2" id="Add-Tax-modal-open">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                New Tax
+            </div>
+        </form>
+    </div>
+    <!-- Add New Tax Modal  -->
+    <div class="modal fade" id="addTaxModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Tax</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-md mb-2">
+                                    <div class="form-floating ">
+                                        <input type="text" class="form-control" id="taxNameAdd" placeholder="Name*"
+                                            name="name">
+                                        <label for="taxNameAdd">Name*</label>
+                                    </div>
+
+                                    <p class="validation-msg" id="taxNameAdd-msg"></p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <select role="button" class="form-select" id="taxTypeAdd"
+                                            aria-label="Floating label select example mb-3">
+                                            <option value="Percentage">Percentage</option>
+                                            <option value="Flat Amount">Flat Amount</option>
+                                        </select>
+                                        <label for="taxTypeAdd">Tax type</label>
+                                    </div>
+                                    <p class="validation-msg" id="taxTypeAdd-msg"></p>
+                                </div>
+                                <div class="col-md mb-3">
+                                    <div class="form-floating">
+                                        <input type="number" min="0" name="rate" id="taxAmountAdd" placeholder="Tax Amount*"
+                                            class="form-control">
+                                        <label for="taxAmountAdd">Tax Amount*</label>
+                                    </div>
+
+                                    <p class="validation-msg" id="taxAmountAdd-msg"></p>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md d-flex gap-1">
+                                    <div class=" form-check form-switch ms-2 fs-5 mt-2 mb-3">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="isEnabledAdd">
+                                        <label class="form-check-label" for="isEnabledAdd">IsEnabled</label>
+                                    </div>
+                                    <div class=" form-check form-switch ms-2 fs-5 mt-2 mb-3">
+                                        <input class="form-check-input " type="checkbox" role="switch"
+                                            id="isDefaultAdd">
+                                        <label class="form-check-label" for="isDefaultAdd">Default</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-primary bg-header rounded-0" id="AddNewTax">Save</button>
+                    <button type="button" class="btn rounded-0 border-dark me-3" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tbl m-2 p-2 d-flex flex-column table-responsive shadow rounded" id="TaxTable">
+        @await Html.PartialAsync("_TaxesTable", Model.taxes)
+    </div>
+    <script>
+        $(document).ready(() => {
+            $("#Add-Tax-modal-open").click(function () {
+                $(".validation-msg").text("");
+                $("#addTaxModal").modal("show");
+            })
+
+            $("#AddNewTax").click(function (e) {
+                var name = $("#taxNameAdd").val()
+                var type = $("#taxTypeAdd").val()
+                var amount = $("#taxAmountAdd").val()
+                var IsEnabled = $("#isEnabledAdd").is(":checked")
+                var isDefaultAdd = $("#isDefaultAdd").is(":checked")
+                var isvalid = true;
+
+                if (name == "") {
+                    $("#taxNameAdd-msg").text("Tax Name can not be Empty.");
+                    isvalid = false;
+                }
+
+                if (amount == "") {
+                    $("#taxAmountAdd-msg").text("Amount can not be Empty.");
+                    isvalid = false;
+                }
+
+                if (type == "") {
+                    $("#taxTypeAdd-msg").text("Type can not be Empty.");
+                    isvalid = false;
+                }
+                if(amount < 0){
+                    $("#taxAmountAdd-msg").text("Amount can not be less than zero.");
+                    isvalid = false;
+                }
+                if (!isvalid) {
+                    return;
+                }
+
+                $.ajax({
+                    url: "/TaxandFees/AddTax",
+                    type: "POST",
+                    data: {
+                        Name: name,
+                        Taxtype: type,
+                        Amount: amount,
+                        Isenabled: IsEnabled,
+                        Isdefault: isDefaultAdd
+                    },
+                    success : (response) => {
+                        if(typeof response == "string"){
+                          alert("You are not authorized to add Tax.");
+                         return;
+                    }    
+                        window.location.reload();
+                    }
+                })
+            })
+        })
+    </script>
