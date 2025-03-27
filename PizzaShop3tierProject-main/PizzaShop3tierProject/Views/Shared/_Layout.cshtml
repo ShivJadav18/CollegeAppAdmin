@@ -67,10 +67,10 @@
                         <i class="fa fa-table" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="nav navbar-nav profile dropdown">
+                <div class="nav navbar-nav profile dropdown" style="height: 35px;width : 40px;">
                     <a
                         data-mdb-dropdown-init
-                        class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                        class="dropdown-toggle d-flex align-items-center hidden-arrow h-100 w-100"
                         href="#"
                         id="navbarDropdownMenuAvatar"
                         role="button"
@@ -78,7 +78,7 @@
                         aria-expanded="false"
                         aria-expanded="false"
         >
-                    <img src="~/images/Default_pfp.svg.png" class="h-100 w-100 rounded-circle"  height="25" alt="profile">
+                    <img src="~/images/Default_pfp.svg.png" class="h-100 w-100 rounded-circle"   alt="profile" id="user-img-nav">
                     </a>
                     <ul
                         class="dropdown-menu dropdown-menu-end"
@@ -86,8 +86,8 @@
                         >
                         <li>
                             <div class="dropdown-item d-flex align-items-center justify-content-center dropdown-profile-part">
-                                <img src="~/images/Default_pfp.svg.png" class=" rounded-circle"  height="40" alt="profile">
-                                <p class="m-0">@username</p>
+                                <img src="~/images/Default_pfp.svg.png" class=" rounded-circle"  height="35" alt="profile" id="user-img-profile">
+                                <p class="m-0" id="profile-username">@username</p>
                             </div>
                         </li>
                         <li>
@@ -125,6 +125,13 @@
     @await RenderSectionAsync("Scripts", required: false)
     <script>
         $(document).ready(() => {
+            $.ajax({
+                url: "/User/GetProfileImage",
+                success: (response) => {
+                    $("#user-img-nav,#user-img-profile").attr("src", "/" + response.imageUrl);
+                    $("#profile-username").text(response.name)
+                }
+            })
             $("#logout-btn").on("click", (e) => {
 
                 $.ajax({

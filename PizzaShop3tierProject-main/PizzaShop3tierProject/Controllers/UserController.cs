@@ -136,8 +136,14 @@ public class UserController:Controller{
         return View(user);
     }
 
-    [HttpPost]
+     public IActionResult GetProfileImage(){
+        var token = Request.Cookies["jwtCookie"];
+        var email = GetClaimValueHelper(token,ClaimTypes.Email);
+        ProfileViewModel user = _userservice.GetProfileService(email);
+        return Json(new { success = true , imageUrl = user.Imageurl , name = user.Username});
+    }
 
+    [HttpPost]
     public IActionResult MyProfile(ProfileViewModel user){
          string token = Request.Cookies["jwtCookie"];
          var role = GetClaimValueHelper(token,ClaimTypes.Role);
