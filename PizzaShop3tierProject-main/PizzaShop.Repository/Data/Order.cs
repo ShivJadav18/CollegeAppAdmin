@@ -33,6 +33,8 @@ public partial class Order
 
     public virtual ICollection<Ordertotable> Ordertotables { get; } = new List<Ordertotable>();
 
+    public virtual ICollection<Ordertotax> Ordertotaxes { get; } = new List<Ordertotax>();
+
     public virtual ICollection<Payment> Payments { get; } = new List<Payment>();
 
     public virtual ICollection<Rating> Ratings { get; } = new List<Rating>();

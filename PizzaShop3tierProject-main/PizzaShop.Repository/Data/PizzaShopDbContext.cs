@@ -35,6 +35,8 @@ public partial class PizzaShopDbContext : DbContext
 
     public virtual DbSet<Ordertotable> Ordertotables { get; set; }
 
+    public virtual DbSet<Ordertotax> Ordertotaxes { get; set; }
+
     public virtual DbSet<Payment> Payments { get; set; }
 
     public virtual DbSet<Permission> Permissions { get; set; }
@@ -408,6 +410,7 @@ public partial class PizzaShopDbContext : DbContext
             entity.Property(e => e.OrderitemmodifierId).HasColumnName("orderitemmodifier_id");
             entity.Property(e => e.ModifierId).HasColumnName("modifier_id");
             entity.Property(e => e.OrdertoitemId).HasColumnName("ordertoitem_id");
+            entity.Property(e => e.Quantity).HasColumnName("quantity");
 
             entity.HasOne(d => d.Modifier).WithMany(p => p.Orderitemmodifiers)
                 .HasForeignKey(d => d.ModifierId)
@@ -467,6 +470,25 @@ public partial class PizzaShopDbContext : DbContext
             entity.HasOne(d => d.Table).WithMany(p => p.Ordertotables)
                 .HasForeignKey(d => d.TableId)
                 .HasConstraintName("ordertotable_table_id_fkey");
+        });
+
+        modelBuilder.Entity<Ordertotax>(entity =>
+        {
+            entity.HasKey(e => e.Ordertotaxid).HasName("ordertotax_pkey");
+
+            entity.ToTable("ordertotax");
+
+            entity.Property(e => e.Ordertotaxid).HasColumnName("ordertotaxid");
+            entity.Property(e => e.Orderid).HasColumnName("orderid");
+            entity.Property(e => e.Taxid).HasColumnName("taxid");
+
+            entity.HasOne(d => d.Order).WithMany(p => p.Ordertotaxes)
+                .HasForeignKey(d => d.Orderid)
+                .HasConstraintName("ordertotax_orderid_fkey");
+
+            entity.HasOne(d => d.Tax).WithMany(p => p.Ordertotaxes)
+                .HasForeignKey(d => d.Taxid)
+                .HasConstraintName("ordertotax_taxid_fkey");
         });
 
         modelBuilder.Entity<Payment>(entity =>

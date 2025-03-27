@@ -1,3 +1,6 @@
+@model PizzaShop.Repository.ViewModels.OrderDetailsView
+
+
 @{
     Layout = "";
 }
@@ -17,6 +20,7 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
     <style>
+   
         .custom-body-text-color {
             color: #0066a7;
         }
@@ -49,21 +53,18 @@
 <body>
 <div class="container-fluid custom-active-page-not-found-bg-color p-2 h-100">
     <div class="d-flex justify-content-center align-items-center mb-5  w-100">
-        <img src="~/images/logos/pizzashop_logo.png" id="logo" alt="header-logo">
-        <h1 class="mb-0 custom-body-text-color ms-2">PIZZASHOP</h1>
+        <img src="@Url.Content("~/images/WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png")" id="logo" class="w-25" alt="header-logo">
     </div>
     <div class="d-flex justify-content-around mb-3">
         <div>
             <h5 class="custom-body-text-color">Customer Details</h5>
-            <p>Name: Shiv jadav</p>
-            <p>Mob: 1568948975</p>
+            <p>Name: @Model.customerName</p>
+            <p>Mob: @Model.contactNumber</p>
         </div>
        <div>
             <h5 class="custom-body-text-color">Order Details</h5>
-            <p>Invoice Number: #D12F4589</p>
-            <p>Date: 20-03-2025</p>
-            <p>Section: Ground Floor</p>
-            <p>Table: T3</p>
+            <p>Invoice Number: #@Model.orderid</p>
+            <p>Date: @Model.orderDate.ToShortDateString()</p>
         </div>
     </div>
     <div class="d-flex flex-column align-items-center w-100">
@@ -76,7 +77,36 @@
                 <th>Total</th>
             </thead>
             <tbody>
-                <tr class="rows">
+                @{ int i = 1 ;}
+                @foreach(var item in Model.itemsInOrder){
+                    <tr class="rows">
+                        <td>
+                            @i
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column">
+                                <p> @item.itemName </p>                           
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column">
+                                <p>@item.itemQuantity</p>                          
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column">
+                                <p>@item.unitAmount</p>                            
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column total">
+                                <p>@item.itemAmount</p>                                
+                            </div>
+                        </td>
+                    </tr>
+                    i++;
+                }
+                @* <tr class="rows">
                     <td>
                         1
                     </td>
@@ -104,52 +134,29 @@
                             <p>5.00</p>
                         </div>
                     </td>
-                </tr>
-                <tr class="rows">
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        <div class="d-flex flex-column">
-                            <p>Grilled Burger</p>
-                            <p>Tomato</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="d-flex flex-column">
-                            <p>1</p>
-                            <p>5.00</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="d-flex flex-column">
-                            <p>70.00</p>
-                            <p>5.00</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="d-flex flex-column total">
-                            <p>70.00</p>
-                            <p>5.00</p>
-                        </div>
-                    </td>
-                </tr>
+                </tr> *@
             </tbody>
         </table>
         <div class="d-flex justify-content-between w-75 border-none border-bottom">
             <div class="d-flex flex-column">
                 <p>Sub Total:</p>
-                <p>CGST:</p>
+                @foreach(var tax in Model.taxesForOrder){
+                    <p>@tax.taxName</p>
+                }
+                @* <p>CGST:</p>
                 <p>SGST:</p>
                 <p>GST:</p>
-                <p>Other:</p>
+                <p>Other:</p> *@
             </div>
              <div class="d-flex flex-column total p-1">
-                <p>399.00</p>
-                <p>48.00</p>
+                <p>@Model.subTotal</p>
+                @foreach(var tax in Model.taxesForOrder){
+                    <p>@tax.taxValue.ToString("0.00")</p>
+                }
+                @* <p>48.00</p>
                 <p>4.0</p>
                 <p>18.00</p>
-                <p>19.75</p>
+                <p>19.75</p> *@
             </div>
         </div>
         <div class="d-flex justify-content-between w-75 custom-body-text-color mb-3 mt-2">
@@ -157,12 +164,12 @@
                 <h5>Total Amount Due:</h5>
             </div>
             <div>
-                <h5>625.81</h5>
+                <h5>@Model.Total.ToString("0.00")</h5>
             </div>
         </div>
         <div class="w-75">
             <h5 class="custom-body-text-color">Payment Information</h5>
-            <h5>Payment Method: Pending</h5>
+            <h5>Payment Method: @Model.paymentMethod</h5>
         </div>
     </div>
     <div class="d-flex justify-content-center custom-body-text-color">

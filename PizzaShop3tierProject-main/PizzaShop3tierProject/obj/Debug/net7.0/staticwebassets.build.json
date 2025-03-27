@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cPBvHhkf1+jQ26tpoYkJGtW8N2sMnC9Zn1IB9tINlfg=",
+  "Hash": "95v3A7Ci9JaiahGYMpk8kJ2zc4+KSpM15dm+UXoSAMc=",
   "Source": "PizzaShop3tierProject",
   "BasePath": "_content/PizzaShop3tierProject",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PizzaShop3tierProject\\wwwroot",
       "Source": "PizzaShop3tierProject",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PizzaShop3tierProject.styles.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PizzaShop3tierProject.styles.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "PizzaShop3tierProject.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PizzaShop3tierProject.styles.css"
+      "OriginalItemSpec": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PizzaShop3tierProject.styles.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PizzaShop3tierProject.bundle.scp.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PizzaShop3tierProject.bundle.scp.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "PizzaShop3tierProject.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PizzaShop3tierProject.bundle.scp.css"
+      "OriginalItemSpec": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PizzaShop3tierProject.bundle.scp.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\css\\site.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\css\\site.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\favicon.ico",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\favicon.ico",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\AdobeStock_1025552026_Preview.jpeg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\AdobeStock_1025552026_Preview.jpeg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/AdobeStock_1025552026_Preview.jpeg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\AdobeStock_1025552026_Preview.jpeg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\Default_pfp.svg.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\Default_pfp.svg.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/Default_pfp.svg.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Default_pfp.svg.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\dining-menu.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\dining-menu.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/dining-menu.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dining-menu.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\dominos_background.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\dominos_background.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/dominos_background.jpg",
       "AssetKind": "All",
@@ -153,10 +153,27 @@
       "OriginalItemSpec": "wwwroot\\images\\dominos_background.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\eye-solid.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\export-white.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "BasePath": "_content/PizzaShop3tierProject",
+      "RelativePath": "images/export-white.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\export-white.svg"
+    },
+    {
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\eye-solid.svg",
+      "SourceId": "PizzaShop3tierProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/eye-solid.svg",
       "AssetKind": "All",
@@ -170,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\eye-solid.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\header-logo.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\header-logo.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/header-logo.svg",
       "AssetKind": "All",
@@ -187,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\header-logo.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\customer.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\customer.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/customer.svg",
       "AssetKind": "All",
@@ -204,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\customer.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\dinner-table.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\dinner-table.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/dinner-table.svg",
       "AssetKind": "All",
@@ -221,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\dinner-table.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\non-veg-icon.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\non-veg-icon.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/non-veg-icon.svg",
       "AssetKind": "All",
@@ -238,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\non-veg-icon.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\order-value.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\order-value.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/order-value.svg",
       "AssetKind": "All",
@@ -255,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\order-value.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\total-orders.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\total-orders.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/total-orders.svg",
       "AssetKind": "All",
@@ -272,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\total-orders.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\total-sales.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\total-sales.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/total-sales.svg",
       "AssetKind": "All",
@@ -289,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\total-sales.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\veg-icon.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\veg-icon.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/veg-icon.svg",
       "AssetKind": "All",
@@ -306,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\veg-icon.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\vegan-icon.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\vegan-icon.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/vegan-icon.svg",
       "AssetKind": "All",
@@ -323,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\vegan-icon.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\waiting-list.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\waiting-list.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/waiting-list.svg",
       "AssetKind": "All",
@@ -340,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\waiting-list.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\waiting-time.svg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\icons\\waiting-time.svg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/icons/waiting-time.svg",
       "AssetKind": "All",
@@ -357,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\waiting-time.svg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\icons8-facebook-48.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\icons8-facebook-48.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/logos/icons8-facebook-48.png",
       "AssetKind": "All",
@@ -374,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\icons8-facebook-48.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\icons8-github-48.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\icons8-github-48.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/logos/icons8-github-48.png",
       "AssetKind": "All",
@@ -391,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\icons8-github-48.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\icons8-google-48.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\icons8-google-48.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/logos/icons8-google-48.png",
       "AssetKind": "All",
@@ -408,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\icons8-google-48.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\pizzashop_logo.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\logos\\pizzashop_logo.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/logos/pizzashop_logo.png",
       "AssetKind": "All",
@@ -425,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logos\\pizzashop_logo.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\profile_div_bg.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\profile_div_bg.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/profile_div_bg.jpg",
       "AssetKind": "All",
@@ -442,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile_div_bg.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\qr-code.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\qr-code.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/qr-code.png",
       "AssetKind": "All",
@@ -459,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\qr-code.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\QR.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\QR.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/QR.png",
       "AssetKind": "All",
@@ -476,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\QR.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\toppng.com-warning-icon-2400x2400.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\toppng.com-warning-icon-2400x2400.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/toppng.com-warning-icon-2400x2400.png",
       "AssetKind": "All",
@@ -493,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\toppng.com-warning-icon-2400x2400.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\transperent-pizza.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\transperent-pizza.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/transperent-pizza.png",
       "AssetKind": "All",
@@ -510,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\transperent-pizza.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\images\\WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "images/WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png",
       "AssetKind": "All",
@@ -527,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\WhatsApp_Image_2025-02-04_at_10.12.09_PM-removebg-preview.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\js\\site.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\js\\site.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -544,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -561,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -578,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -595,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -612,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -629,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -646,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -663,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -680,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -697,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -714,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -731,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -748,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -765,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -782,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -799,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -816,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -833,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -850,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -867,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -884,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -901,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -918,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -935,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -952,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -969,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -986,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1003,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1020,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1037,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1054,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1071,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1105,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1428,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1445,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1462,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1479,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1496,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1513,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\NewUser.html",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\NewUser.html",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "templates/NewUser.html",
       "AssetKind": "All",
@@ -1530,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\NewUser.html"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\OrderTemplate.xlsx",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\OrderTemplate.xlsx",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "templates/OrderTemplate.xlsx",
       "AssetKind": "All",
@@ -1547,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\templates\\OrderTemplate.xlsx"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4642_57a4dbb6-6078-458d-acee-7b81af489ab2.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4642_57a4dbb6-6078-458d-acee-7b81af489ab2.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4642_57a4dbb6-6078-458d-acee-7b81af489ab2.JPG",
       "AssetKind": "All",
@@ -1564,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4642_57a4dbb6-6078-458d-acee-7b81af489ab2.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4643_afcbe97d-77d0-4317-9649-437199ee3449.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4643_afcbe97d-77d0-4317-9649-437199ee3449.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4643_afcbe97d-77d0-4317-9649-437199ee3449.JPG",
       "AssetKind": "All",
@@ -1581,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4643_afcbe97d-77d0-4317-9649-437199ee3449.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4645_391ef6ac-bd35-4147-90ca-b933449e8b77.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4645_391ef6ac-bd35-4147-90ca-b933449e8b77.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4645_391ef6ac-bd35-4147-90ca-b933449e8b77.JPG",
       "AssetKind": "All",
@@ -1598,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4645_391ef6ac-bd35-4147-90ca-b933449e8b77.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4646_2f029c65-6f52-4a1a-b193-4f388c45955c.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4646_2f029c65-6f52-4a1a-b193-4f388c45955c.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4646_2f029c65-6f52-4a1a-b193-4f388c45955c.JPG",
       "AssetKind": "All",
@@ -1615,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4646_2f029c65-6f52-4a1a-b193-4f388c45955c.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4648_4b0f6f46-d52f-4c8a-9896-402b46964187.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4648_4b0f6f46-d52f-4c8a-9896-402b46964187.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4648_4b0f6f46-d52f-4c8a-9896-402b46964187.JPG",
       "AssetKind": "All",
@@ -1632,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4648_4b0f6f46-d52f-4c8a-9896-402b46964187.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4648_d727b73c-26ab-4207-93b5-5eff3674d52c.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4648_d727b73c-26ab-4207-93b5-5eff3674d52c.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4648_d727b73c-26ab-4207-93b5-5eff3674d52c.JPG",
       "AssetKind": "All",
@@ -1649,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4648_d727b73c-26ab-4207-93b5-5eff3674d52c.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4650_6c509a9d-ce6a-40d5-9d8a-45df16e1a510.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4650_6c509a9d-ce6a-40d5-9d8a-45df16e1a510.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4650_6c509a9d-ce6a-40d5-9d8a-45df16e1a510.JPG",
       "AssetKind": "All",
@@ -1666,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4650_6c509a9d-ce6a-40d5-9d8a-45df16e1a510.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4650_be25c717-2934-4819-9f7f-36f0adcd9fd5.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4650_be25c717-2934-4819-9f7f-36f0adcd9fd5.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4650_be25c717-2934-4819-9f7f-36f0adcd9fd5.JPG",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4650_be25c717-2934-4819-9f7f-36f0adcd9fd5.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4650_bfe68e3d-a511-4eee-be61-890152622fca.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4650_bfe68e3d-a511-4eee-be61-890152622fca.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4650_bfe68e3d-a511-4eee-be61-890152622fca.JPG",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4650_bfe68e3d-a511-4eee-be61-890152622fca.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4659_03908a12-8459-4a93-a042-38c73b9856f4.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4659_03908a12-8459-4a93-a042-38c73b9856f4.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4659_03908a12-8459-4a93-a042-38c73b9856f4.JPG",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4659_03908a12-8459-4a93-a042-38c73b9856f4.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4663_5bb56ecc-1bc3-4b3c-b425-6cbf15742fd4.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4663_5bb56ecc-1bc3-4b3c-b425-6cbf15742fd4.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4663_5bb56ecc-1bc3-4b3c-b425-6cbf15742fd4.JPG",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4663_5bb56ecc-1bc3-4b3c-b425-6cbf15742fd4.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4676_7aa966f6-3a96-4bcd-bf26-35ab6f6d403b.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4676_7aa966f6-3a96-4bcd-bf26-35ab6f6d403b.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4676_7aa966f6-3a96-4bcd-bf26-35ab6f6d403b.JPG",
       "AssetKind": "All",
@@ -1751,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4676_7aa966f6-3a96-4bcd-bf26-35ab6f6d403b.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4806_e098dec3-4dfb-42a5-9aaf-74c395b15b74.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A4806_e098dec3-4dfb-42a5-9aaf-74c395b15b74.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A4806_e098dec3-4dfb-42a5-9aaf-74c395b15b74.JPG",
       "AssetKind": "All",
@@ -1768,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A4806_e098dec3-4dfb-42a5-9aaf-74c395b15b74.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7488_f8489658-8303-4378-8418-b9dcf2a86eac.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7488_f8489658-8303-4378-8418-b9dcf2a86eac.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7488_f8489658-8303-4378-8418-b9dcf2a86eac.JPG",
       "AssetKind": "All",
@@ -1785,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7488_f8489658-8303-4378-8418-b9dcf2a86eac.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7490_d24129ba-2be7-4afc-870b-2e12762818f5.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7490_d24129ba-2be7-4afc-870b-2e12762818f5.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7490_d24129ba-2be7-4afc-870b-2e12762818f5.JPG",
       "AssetKind": "All",
@@ -1802,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7490_d24129ba-2be7-4afc-870b-2e12762818f5.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7491_8ca1aa38-4d0f-4a90-a4f9-a85921cde7af.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7491_8ca1aa38-4d0f-4a90-a4f9-a85921cde7af.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7491_8ca1aa38-4d0f-4a90-a4f9-a85921cde7af.JPG",
       "AssetKind": "All",
@@ -1819,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7491_8ca1aa38-4d0f-4a90-a4f9-a85921cde7af.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7492_7975f75a-bb0d-4aff-8307-59c5931048df.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7492_7975f75a-bb0d-4aff-8307-59c5931048df.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7492_7975f75a-bb0d-4aff-8307-59c5931048df.JPG",
       "AssetKind": "All",
@@ -1836,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7492_7975f75a-bb0d-4aff-8307-59c5931048df.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7513_a53b72e8-71f4-412f-a3cf-6d75816a972a.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7513_a53b72e8-71f4-412f-a3cf-6d75816a972a.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7513_a53b72e8-71f4-412f-a3cf-6d75816a972a.JPG",
       "AssetKind": "All",
@@ -1853,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7513_a53b72e8-71f4-412f-a3cf-6d75816a972a.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7514_8c0af589-3abe-4c46-9e7c-43369958f716.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7514_8c0af589-3abe-4c46-9e7c-43369958f716.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7514_8c0af589-3abe-4c46-9e7c-43369958f716.JPG",
       "AssetKind": "All",
@@ -1870,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7514_8c0af589-3abe-4c46-9e7c-43369958f716.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7519_5b2f9a3c-4931-4e49-8c0b-3c9ad194cd99.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7519_5b2f9a3c-4931-4e49-8c0b-3c9ad194cd99.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7519_5b2f9a3c-4931-4e49-8c0b-3c9ad194cd99.JPG",
       "AssetKind": "All",
@@ -1887,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7519_5b2f9a3c-4931-4e49-8c0b-3c9ad194cd99.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7521_9536fdf5-0e18-46b1-b44e-c0fef68c9803.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7521_9536fdf5-0e18-46b1-b44e-c0fef68c9803.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7521_9536fdf5-0e18-46b1-b44e-c0fef68c9803.JPG",
       "AssetKind": "All",
@@ -1904,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7521_9536fdf5-0e18-46b1-b44e-c0fef68c9803.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7523_574c0294-ac40-4ca1-803c-ea39f51ddd21.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7523_574c0294-ac40-4ca1-803c-ea39f51ddd21.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7523_574c0294-ac40-4ca1-803c-ea39f51ddd21.JPG",
       "AssetKind": "All",
@@ -1921,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7523_574c0294-ac40-4ca1-803c-ea39f51ddd21.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7523_6109384b-c362-4c80-a2b2-50c6563a3a26.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7523_6109384b-c362-4c80-a2b2-50c6563a3a26.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7523_6109384b-c362-4c80-a2b2-50c6563a3a26.JPG",
       "AssetKind": "All",
@@ -1938,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7523_6109384b-c362-4c80-a2b2-50c6563a3a26.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7533_58288aaa-a414-4dbf-99aa-6988120b0181.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7533_58288aaa-a414-4dbf-99aa-6988120b0181.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7533_58288aaa-a414-4dbf-99aa-6988120b0181.JPG",
       "AssetKind": "All",
@@ -1955,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7533_58288aaa-a414-4dbf-99aa-6988120b0181.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7533_ef180771-029c-4396-894c-8c92efaa750d.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7533_ef180771-029c-4396-894c-8c92efaa750d.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7533_ef180771-029c-4396-894c-8c92efaa750d.JPG",
       "AssetKind": "All",
@@ -1972,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7533_ef180771-029c-4396-894c-8c92efaa750d.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7556_a926488c-f5bd-498f-8a4e-6dfa7a637f5d.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7556_a926488c-f5bd-498f-8a4e-6dfa7a637f5d.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7556_a926488c-f5bd-498f-8a4e-6dfa7a637f5d.JPG",
       "AssetKind": "All",
@@ -1989,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7556_a926488c-f5bd-498f-8a4e-6dfa7a637f5d.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7565_a1d5156f-c841-4e8d-9b2f-2a367140fff0.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7565_a1d5156f-c841-4e8d-9b2f-2a367140fff0.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7565_a1d5156f-c841-4e8d-9b2f-2a367140fff0.JPG",
       "AssetKind": "All",
@@ -2006,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7565_a1d5156f-c841-4e8d-9b2f-2a367140fff0.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7610_50c539ba-f57c-4b66-b571-c8e984a340c6.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7610_50c539ba-f57c-4b66-b571-c8e984a340c6.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7610_50c539ba-f57c-4b66-b571-c8e984a340c6.JPG",
       "AssetKind": "All",
@@ -2023,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7610_50c539ba-f57c-4b66-b571-c8e984a340c6.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7611_fe4da08b-aed2-423b-82be-a6374dbf6746.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7611_fe4da08b-aed2-423b-82be-a6374dbf6746.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7611_fe4da08b-aed2-423b-82be-a6374dbf6746.JPG",
       "AssetKind": "All",
@@ -2040,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7611_fe4da08b-aed2-423b-82be-a6374dbf6746.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7715_92be9f2c-81ec-4493-ae2a-e439d5055d50.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7715_92be9f2c-81ec-4493-ae2a-e439d5055d50.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7715_92be9f2c-81ec-4493-ae2a-e439d5055d50.JPG",
       "AssetKind": "All",
@@ -2057,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7715_92be9f2c-81ec-4493-ae2a-e439d5055d50.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7745_7b8be80e-7dd9-428b-bce5-8f7c2fb009a7.JPG",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\084A7745_7b8be80e-7dd9-428b-bce5-8f7c2fb009a7.JPG",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/084A7745_7b8be80e-7dd9-428b-bce5-8f7c2fb009a7.JPG",
       "AssetKind": "All",
@@ -2074,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\084A7745_7b8be80e-7dd9-428b-bce5-8f7c2fb009a7.JPG"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_3d786a89-daa9-473b-b7fc-26072204e066.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_3d786a89-daa9-473b-b7fc-26072204e066.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/298647846_23851069803890414_2365738910172148103_n_3d786a89-daa9-473b-b7fc-26072204e066.jpg",
       "AssetKind": "All",
@@ -2091,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_3d786a89-daa9-473b-b7fc-26072204e066.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_4e635af4-af83-4d5a-a4d8-26d18bcfc896.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_4e635af4-af83-4d5a-a4d8-26d18bcfc896.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/298647846_23851069803890414_2365738910172148103_n_4e635af4-af83-4d5a-a4d8-26d18bcfc896.jpg",
       "AssetKind": "All",
@@ -2108,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_4e635af4-af83-4d5a-a4d8-26d18bcfc896.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_c2aa7eb6-a9df-4f9f-9e37-7201576e58f7.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_c2aa7eb6-a9df-4f9f-9e37-7201576e58f7.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/298647846_23851069803890414_2365738910172148103_n_c2aa7eb6-a9df-4f9f-9e37-7201576e58f7.jpg",
       "AssetKind": "All",
@@ -2125,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\298647846_23851069803890414_2365738910172148103_n_c2aa7eb6-a9df-4f9f-9e37-7201576e58f7.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_1e62f1e3-1ad0-4a08-a073-f24bf87448de.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_1e62f1e3-1ad0-4a08-a073-f24bf87448de.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/burst-kUqqaRjJuw0-unsplash_1e62f1e3-1ad0-4a08-a073-f24bf87448de.jpg",
       "AssetKind": "All",
@@ -2142,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_1e62f1e3-1ad0-4a08-a073-f24bf87448de.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_da464566-83c9-4ffe-8770-ad0e36a52d81.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_da464566-83c9-4ffe-8770-ad0e36a52d81.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/burst-kUqqaRjJuw0-unsplash_da464566-83c9-4ffe-8770-ad0e36a52d81.jpg",
       "AssetKind": "All",
@@ -2159,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_da464566-83c9-4ffe-8770-ad0e36a52d81.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_e2d7b52a-3a84-4046-a623-612e061fd0ef.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_e2d7b52a-3a84-4046-a623-612e061fd0ef.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/burst-kUqqaRjJuw0-unsplash_e2d7b52a-3a84-4046-a623-612e061fd0ef.jpg",
       "AssetKind": "All",
@@ -2176,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\burst-kUqqaRjJuw0-unsplash_e2d7b52a-3a84-4046-a623-612e061fd0ef.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_0c4be5ed-67c7-48e5-8285-623f31fe6d23.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_0c4be5ed-67c7-48e5-8285-623f31fe6d23.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_0c4be5ed-67c7-48e5-8285-623f31fe6d23.jpg",
       "AssetKind": "All",
@@ -2193,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_0c4be5ed-67c7-48e5-8285-623f31fe6d23.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_244da0db-b17a-4fb4-b543-469b8eb83244.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_244da0db-b17a-4fb4-b543-469b8eb83244.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_244da0db-b17a-4fb4-b543-469b8eb83244.jpg",
       "AssetKind": "All",
@@ -2210,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_244da0db-b17a-4fb4-b543-469b8eb83244.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_4dd036c8-876b-4c73-936e-43729b06e99c.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_4dd036c8-876b-4c73-936e-43729b06e99c.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_4dd036c8-876b-4c73-936e-43729b06e99c.jpg",
       "AssetKind": "All",
@@ -2227,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_4dd036c8-876b-4c73-936e-43729b06e99c.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_72c593fe-24bb-41ea-9752-8ec98f599ef7.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_72c593fe-24bb-41ea-9752-8ec98f599ef7.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_72c593fe-24bb-41ea-9752-8ec98f599ef7.jpg",
       "AssetKind": "All",
@@ -2244,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_72c593fe-24bb-41ea-9752-8ec98f599ef7.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_7493af7d-5947-4fec-999f-f6dcd104563e.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_7493af7d-5947-4fec-999f-f6dcd104563e.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_7493af7d-5947-4fec-999f-f6dcd104563e.jpg",
       "AssetKind": "All",
@@ -2261,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_7493af7d-5947-4fec-999f-f6dcd104563e.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_9708dc12-e07f-4c32-b091-f93ffd5816e1.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_9708dc12-e07f-4c32-b091-f93ffd5816e1.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_9708dc12-e07f-4c32-b091-f93ffd5816e1.jpg",
       "AssetKind": "All",
@@ -2278,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_9708dc12-e07f-4c32-b091-f93ffd5816e1.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_b576a528-5695-4bcb-956e-5831df8269a2.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_b576a528-5695-4bcb-956e-5831df8269a2.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_b576a528-5695-4bcb-956e-5831df8269a2.jpg",
       "AssetKind": "All",
@@ -2295,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_b576a528-5695-4bcb-956e-5831df8269a2.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_c5c3215f-d745-4e1b-83de-054a8c5d2833.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_c5c3215f-d745-4e1b-83de-054a8c5d2833.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_c5c3215f-d745-4e1b-83de-054a8c5d2833.jpg",
       "AssetKind": "All",
@@ -2312,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_c5c3215f-d745-4e1b-83de-054a8c5d2833.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_f447a758-aad1-471c-a2b3-c72f60c9dbb7.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\dominos_background_f447a758-aad1-471c-a2b3-c72f60c9dbb7.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/dominos_background_f447a758-aad1-471c-a2b3-c72f60c9dbb7.jpg",
       "AssetKind": "All",
@@ -2329,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\dominos_background_f447a758-aad1-471c-a2b3-c72f60c9dbb7.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\istockphoto-959119854-1024x1024_5e4bad55-2055-4207-a9ab-11f21fc7e785.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\istockphoto-959119854-1024x1024_5e4bad55-2055-4207-a9ab-11f21fc7e785.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/istockphoto-959119854-1024x1024_5e4bad55-2055-4207-a9ab-11f21fc7e785.jpg",
       "AssetKind": "All",
@@ -2346,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\istockphoto-959119854-1024x1024_5e4bad55-2055-4207-a9ab-11f21fc7e785.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\istockphoto-959119854-1024x1024_baaf8c0e-6f33-4e9e-b74b-ba97a4015c7f.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\istockphoto-959119854-1024x1024_baaf8c0e-6f33-4e9e-b74b-ba97a4015c7f.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/istockphoto-959119854-1024x1024_baaf8c0e-6f33-4e9e-b74b-ba97a4015c7f.jpg",
       "AssetKind": "All",
@@ -2363,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\istockphoto-959119854-1024x1024_baaf8c0e-6f33-4e9e-b74b-ba97a4015c7f.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\kenny-leys-Imc_FwGf92U-unsplash_94753ab2-9251-4a6f-8d14-ef7477fcd544.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\kenny-leys-Imc_FwGf92U-unsplash_94753ab2-9251-4a6f-8d14-ef7477fcd544.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/kenny-leys-Imc_FwGf92U-unsplash_94753ab2-9251-4a6f-8d14-ef7477fcd544.jpg",
       "AssetKind": "All",
@@ -2380,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\kenny-leys-Imc_FwGf92U-unsplash_94753ab2-9251-4a6f-8d14-ef7477fcd544.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_028a5f2e-f456-4f78-8ef7-a3e30fa04aad.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_028a5f2e-f456-4f78-8ef7-a3e30fa04aad.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_028a5f2e-f456-4f78-8ef7-a3e30fa04aad.jpg",
       "AssetKind": "All",
@@ -2397,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_028a5f2e-f456-4f78-8ef7-a3e30fa04aad.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_065eb836-c239-4007-b11e-d752841d4037.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_065eb836-c239-4007-b11e-d752841d4037.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_065eb836-c239-4007-b11e-d752841d4037.jpg",
       "AssetKind": "All",
@@ -2414,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_065eb836-c239-4007-b11e-d752841d4037.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_0d446ba3-4e54-4c0e-8e45-0da28e6f2361.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_0d446ba3-4e54-4c0e-8e45-0da28e6f2361.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_0d446ba3-4e54-4c0e-8e45-0da28e6f2361.jpg",
       "AssetKind": "All",
@@ -2431,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_0d446ba3-4e54-4c0e-8e45-0da28e6f2361.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_0d7f626a-7c55-43be-a962-d65c99c93aa7.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_0d7f626a-7c55-43be-a962-d65c99c93aa7.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_0d7f626a-7c55-43be-a962-d65c99c93aa7.jpg",
       "AssetKind": "All",
@@ -2448,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_0d7f626a-7c55-43be-a962-d65c99c93aa7.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_134f4c7a-2bef-4ce2-ac3d-55b7f1658d3b.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_134f4c7a-2bef-4ce2-ac3d-55b7f1658d3b.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_134f4c7a-2bef-4ce2-ac3d-55b7f1658d3b.jpg",
       "AssetKind": "All",
@@ -2465,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_134f4c7a-2bef-4ce2-ac3d-55b7f1658d3b.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_13bd3cd9-1232-4471-aa63-6a74b0674995.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_13bd3cd9-1232-4471-aa63-6a74b0674995.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_13bd3cd9-1232-4471-aa63-6a74b0674995.jpg",
       "AssetKind": "All",
@@ -2482,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_13bd3cd9-1232-4471-aa63-6a74b0674995.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_227b4c0c-172d-4c2b-974a-97ceec7e30d1.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_227b4c0c-172d-4c2b-974a-97ceec7e30d1.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_227b4c0c-172d-4c2b-974a-97ceec7e30d1.jpg",
       "AssetKind": "All",
@@ -2499,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_227b4c0c-172d-4c2b-974a-97ceec7e30d1.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_3de3e728-5caa-4c2a-a771-d5f8f6bc8ce5.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_3de3e728-5caa-4c2a-a771-d5f8f6bc8ce5.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_3de3e728-5caa-4c2a-a771-d5f8f6bc8ce5.jpg",
       "AssetKind": "All",
@@ -2516,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_3de3e728-5caa-4c2a-a771-d5f8f6bc8ce5.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_5a6f181c-5cc3-456a-88a8-ad07c40f97f7.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_5a6f181c-5cc3-456a-88a8-ad07c40f97f7.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_5a6f181c-5cc3-456a-88a8-ad07c40f97f7.jpg",
       "AssetKind": "All",
@@ -2533,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_5a6f181c-5cc3-456a-88a8-ad07c40f97f7.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_6c645e5c-0f05-455e-8d2d-e1f552956673.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_6c645e5c-0f05-455e-8d2d-e1f552956673.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_6c645e5c-0f05-455e-8d2d-e1f552956673.jpg",
       "AssetKind": "All",
@@ -2550,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_6c645e5c-0f05-455e-8d2d-e1f552956673.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_6dbef22e-d3be-41b8-946a-4c6801cf4a69.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_6dbef22e-d3be-41b8-946a-4c6801cf4a69.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_6dbef22e-d3be-41b8-946a-4c6801cf4a69.jpg",
       "AssetKind": "All",
@@ -2567,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_6dbef22e-d3be-41b8-946a-4c6801cf4a69.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_7ede87d4-ad39-4f4d-adba-a5db4b21d0b9.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_7ede87d4-ad39-4f4d-adba-a5db4b21d0b9.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_7ede87d4-ad39-4f4d-adba-a5db4b21d0b9.jpg",
       "AssetKind": "All",
@@ -2584,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_7ede87d4-ad39-4f4d-adba-a5db4b21d0b9.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_a2ae4d84-6330-4a22-9d17-62fa22d87e55.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_a2ae4d84-6330-4a22-9d17-62fa22d87e55.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_a2ae4d84-6330-4a22-9d17-62fa22d87e55.jpg",
       "AssetKind": "All",
@@ -2601,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_a2ae4d84-6330-4a22-9d17-62fa22d87e55.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_aab495ad-9feb-426d-9250-51e00348a7d5.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_aab495ad-9feb-426d-9250-51e00348a7d5.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_aab495ad-9feb-426d-9250-51e00348a7d5.jpg",
       "AssetKind": "All",
@@ -2618,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_aab495ad-9feb-426d-9250-51e00348a7d5.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_af886290-b0d0-454e-b722-746c380acb6a.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_af886290-b0d0-454e-b722-746c380acb6a.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_af886290-b0d0-454e-b722-746c380acb6a.jpg",
       "AssetKind": "All",
@@ -2635,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_af886290-b0d0-454e-b722-746c380acb6a.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_b0baeb3d-5451-47ea-8941-7fb01f4f1535.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_b0baeb3d-5451-47ea-8941-7fb01f4f1535.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_b0baeb3d-5451-47ea-8941-7fb01f4f1535.jpg",
       "AssetKind": "All",
@@ -2652,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_b0baeb3d-5451-47ea-8941-7fb01f4f1535.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_b308b4fd-ed70-45c7-8e7f-3aaf4867b7bd.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_b308b4fd-ed70-45c7-8e7f-3aaf4867b7bd.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_b308b4fd-ed70-45c7-8e7f-3aaf4867b7bd.jpg",
       "AssetKind": "All",
@@ -2669,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_b308b4fd-ed70-45c7-8e7f-3aaf4867b7bd.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_c2e7c82f-109a-48e3-83cd-ef24b3785fb8.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_c2e7c82f-109a-48e3-83cd-ef24b3785fb8.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_c2e7c82f-109a-48e3-83cd-ef24b3785fb8.jpg",
       "AssetKind": "All",
@@ -2686,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_c2e7c82f-109a-48e3-83cd-ef24b3785fb8.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_c32ae8e5-6f99-4256-99c9-164f90c0bc58.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_c32ae8e5-6f99-4256-99c9-164f90c0bc58.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_c32ae8e5-6f99-4256-99c9-164f90c0bc58.jpg",
       "AssetKind": "All",
@@ -2703,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_c32ae8e5-6f99-4256-99c9-164f90c0bc58.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_c86e2377-ee7d-4c4c-9c88-70e373f70f47.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_c86e2377-ee7d-4c4c-9c88-70e373f70f47.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_c86e2377-ee7d-4c4c-9c88-70e373f70f47.jpg",
       "AssetKind": "All",
@@ -2720,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_c86e2377-ee7d-4c4c-9c88-70e373f70f47.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_d8178806-292e-460a-87f8-9728a50606aa.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_d8178806-292e-460a-87f8-9728a50606aa.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_d8178806-292e-460a-87f8-9728a50606aa.jpg",
       "AssetKind": "All",
@@ -2737,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_d8178806-292e-460a-87f8-9728a50606aa.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_e4d11365-dc40-4ea8-8104-352422279dfb.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_e4d11365-dc40-4ea8-8104-352422279dfb.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_e4d11365-dc40-4ea8-8104-352422279dfb.jpg",
       "AssetKind": "All",
@@ -2754,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_e4d11365-dc40-4ea8-8104-352422279dfb.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_eb83587c-c0da-4fcf-b70d-7b3e1283e121.jpg",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\profile_div_bg_eb83587c-c0da-4fcf-b70d-7b3e1283e121.jpg",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/profile_div_bg_eb83587c-c0da-4fcf-b70d-7b3e1283e121.jpg",
       "AssetKind": "All",
@@ -2771,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\profile_div_bg_eb83587c-c0da-4fcf-b70d-7b3e1283e121.jpg"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\QR_80fb37b3-13e3-43d9-aca6-144974139dbe.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\QR_80fb37b3-13e3-43d9-aca6-144974139dbe.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/QR_80fb37b3-13e3-43d9-aca6-144974139dbe.png",
       "AssetKind": "All",
@@ -2788,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\QR_80fb37b3-13e3-43d9-aca6-144974139dbe.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_08a12d75-4c7f-45ac-8194-531f0b772106.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_08a12d75-4c7f-45ac-8194-531f0b772106.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_08a12d75-4c7f-45ac-8194-531f0b772106.png",
       "AssetKind": "All",
@@ -2805,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_08a12d75-4c7f-45ac-8194-531f0b772106.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_0e6a784f-ed04-46ce-9138-49c3362980a2.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_0e6a784f-ed04-46ce-9138-49c3362980a2.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_0e6a784f-ed04-46ce-9138-49c3362980a2.png",
       "AssetKind": "All",
@@ -2822,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_0e6a784f-ed04-46ce-9138-49c3362980a2.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_1447c1b3-6a09-42e9-97b6-4c9cf1bf76f3.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_1447c1b3-6a09-42e9-97b6-4c9cf1bf76f3.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_1447c1b3-6a09-42e9-97b6-4c9cf1bf76f3.png",
       "AssetKind": "All",
@@ -2839,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_1447c1b3-6a09-42e9-97b6-4c9cf1bf76f3.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_1b2b184b-0f89-4dd1-a566-602717b11392.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_1b2b184b-0f89-4dd1-a566-602717b11392.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_1b2b184b-0f89-4dd1-a566-602717b11392.png",
       "AssetKind": "All",
@@ -2856,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_1b2b184b-0f89-4dd1-a566-602717b11392.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_22739107-1e1c-4c5d-8f16-4f1cd70da6ff.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_22739107-1e1c-4c5d-8f16-4f1cd70da6ff.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_22739107-1e1c-4c5d-8f16-4f1cd70da6ff.png",
       "AssetKind": "All",
@@ -2873,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_22739107-1e1c-4c5d-8f16-4f1cd70da6ff.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_270e7f9b-3e38-4df6-b855-044d551117a3.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_270e7f9b-3e38-4df6-b855-044d551117a3.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_270e7f9b-3e38-4df6-b855-044d551117a3.png",
       "AssetKind": "All",
@@ -2890,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_270e7f9b-3e38-4df6-b855-044d551117a3.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_27a57bbb-5c30-4d7a-ab96-6689d149adc0.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_27a57bbb-5c30-4d7a-ab96-6689d149adc0.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_27a57bbb-5c30-4d7a-ab96-6689d149adc0.png",
       "AssetKind": "All",
@@ -2907,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_27a57bbb-5c30-4d7a-ab96-6689d149adc0.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_3c07ab49-df02-43a1-bd4e-bab89f879804.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_3c07ab49-df02-43a1-bd4e-bab89f879804.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_3c07ab49-df02-43a1-bd4e-bab89f879804.png",
       "AssetKind": "All",
@@ -2924,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_3c07ab49-df02-43a1-bd4e-bab89f879804.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_3e938d44-2762-437c-8028-2c469cff6082.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_3e938d44-2762-437c-8028-2c469cff6082.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_3e938d44-2762-437c-8028-2c469cff6082.png",
       "AssetKind": "All",
@@ -2941,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_3e938d44-2762-437c-8028-2c469cff6082.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_439f323e-ce55-46c5-8c63-a820fdeabd3d.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_439f323e-ce55-46c5-8c63-a820fdeabd3d.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_439f323e-ce55-46c5-8c63-a820fdeabd3d.png",
       "AssetKind": "All",
@@ -2958,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_439f323e-ce55-46c5-8c63-a820fdeabd3d.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_56de080c-b4c9-4fa1-9537-3af438b99be0.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_56de080c-b4c9-4fa1-9537-3af438b99be0.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_56de080c-b4c9-4fa1-9537-3af438b99be0.png",
       "AssetKind": "All",
@@ -2975,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_56de080c-b4c9-4fa1-9537-3af438b99be0.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_57759abb-af8f-4644-a511-8b91793beb51.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_57759abb-af8f-4644-a511-8b91793beb51.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_57759abb-af8f-4644-a511-8b91793beb51.png",
       "AssetKind": "All",
@@ -2992,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_57759abb-af8f-4644-a511-8b91793beb51.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_5c319c87-f0c5-4f5f-9aea-2ef87031c18f.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_5c319c87-f0c5-4f5f-9aea-2ef87031c18f.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_5c319c87-f0c5-4f5f-9aea-2ef87031c18f.png",
       "AssetKind": "All",
@@ -3009,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_5c319c87-f0c5-4f5f-9aea-2ef87031c18f.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_61949147-1729-44b7-ba7a-3da68e0200c9.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_61949147-1729-44b7-ba7a-3da68e0200c9.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_61949147-1729-44b7-ba7a-3da68e0200c9.png",
       "AssetKind": "All",
@@ -3026,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_61949147-1729-44b7-ba7a-3da68e0200c9.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_7fdddc45-8742-43fe-a9f6-893b10cf3bd6.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_7fdddc45-8742-43fe-a9f6-893b10cf3bd6.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_7fdddc45-8742-43fe-a9f6-893b10cf3bd6.png",
       "AssetKind": "All",
@@ -3043,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_7fdddc45-8742-43fe-a9f6-893b10cf3bd6.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_82e18847-4986-4500-af18-c4b49dd42a79.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_82e18847-4986-4500-af18-c4b49dd42a79.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_82e18847-4986-4500-af18-c4b49dd42a79.png",
       "AssetKind": "All",
@@ -3060,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_82e18847-4986-4500-af18-c4b49dd42a79.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_837da3bc-9cd0-4552-a557-25440efd0ad5.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_837da3bc-9cd0-4552-a557-25440efd0ad5.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_837da3bc-9cd0-4552-a557-25440efd0ad5.png",
       "AssetKind": "All",
@@ -3077,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_837da3bc-9cd0-4552-a557-25440efd0ad5.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_8b6bd690-4832-4ffc-bea6-e296dff7df53.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_8b6bd690-4832-4ffc-bea6-e296dff7df53.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_8b6bd690-4832-4ffc-bea6-e296dff7df53.png",
       "AssetKind": "All",
@@ -3094,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_8b6bd690-4832-4ffc-bea6-e296dff7df53.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_a386b988-4cdf-4b10-afe6-940b06558c01.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_a386b988-4cdf-4b10-afe6-940b06558c01.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_a386b988-4cdf-4b10-afe6-940b06558c01.png",
       "AssetKind": "All",
@@ -3111,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_a386b988-4cdf-4b10-afe6-940b06558c01.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_a4ceb974-7c9c-44d3-bb4a-6a0d8753a5b9.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_a4ceb974-7c9c-44d3-bb4a-6a0d8753a5b9.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_a4ceb974-7c9c-44d3-bb4a-6a0d8753a5b9.png",
       "AssetKind": "All",
@@ -3128,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_a4ceb974-7c9c-44d3-bb4a-6a0d8753a5b9.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_a80dd338-5480-40d1-88df-c708fbcbe072.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_a80dd338-5480-40d1-88df-c708fbcbe072.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_a80dd338-5480-40d1-88df-c708fbcbe072.png",
       "AssetKind": "All",
@@ -3145,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_a80dd338-5480-40d1-88df-c708fbcbe072.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_b036d5dc-6e74-462b-8b8b-eadc7bf201b1.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_b036d5dc-6e74-462b-8b8b-eadc7bf201b1.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_b036d5dc-6e74-462b-8b8b-eadc7bf201b1.png",
       "AssetKind": "All",
@@ -3162,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_b036d5dc-6e74-462b-8b8b-eadc7bf201b1.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_b520a247-414f-44b2-a014-082817e672ef.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_b520a247-414f-44b2-a014-082817e672ef.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_b520a247-414f-44b2-a014-082817e672ef.png",
       "AssetKind": "All",
@@ -3179,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_b520a247-414f-44b2-a014-082817e672ef.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_e7ab2bd5-4afc-49db-91ce-4f1c26233866.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_e7ab2bd5-4afc-49db-91ce-4f1c26233866.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_e7ab2bd5-4afc-49db-91ce-4f1c26233866.png",
       "AssetKind": "All",
@@ -3196,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\UploadedImages\\transperent-pizza_e7ab2bd5-4afc-49db-91ce-4f1c26233866.png"
     },
     {
-      "Identity": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_f051d624-dd4b-4019-bea8-6f9598d95549.png",
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\transperent-pizza_f051d624-dd4b-4019-bea8-6f9598d95549.png",
       "SourceId": "PizzaShop3tierProject",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\ElectronicsApp\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
       "BasePath": "_content/PizzaShop3tierProject",
       "RelativePath": "UploadedImages/transperent-pizza_f051d624-dd4b-4019-bea8-6f9598d95549.png",
       "AssetKind": "All",

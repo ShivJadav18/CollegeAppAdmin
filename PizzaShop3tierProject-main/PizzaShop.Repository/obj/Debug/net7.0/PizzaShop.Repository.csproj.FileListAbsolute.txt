@@ -26,3 +26,17 @@ D:\ElectronicsApp\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7
 D:\ElectronicsApp\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.pdb
 D:\ElectronicsApp\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.genruntimeconfig.cache
 D:\ElectronicsApp\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\ref\PizzaShop.Repository.dll
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.csproj.AssemblyReference.cache
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.AssemblyInfoInputs.cache
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.AssemblyInfo.cs
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.csproj.CoreCompileInputs.cache
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.dll
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\refint\PizzaShop.Repository.dll
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.pdb
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\bin\Debug\net7.0\PizzaShop.Repository.deps.json
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\bin\Debug\net7.0\PizzaShop.Repository.runtimeconfig.json
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\bin\Debug\net7.0\PizzaShop.Repository.dll
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\bin\Debug\net7.0\PizzaShop.Repository.pdb
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\PizzaShop.Repository.genruntimeconfig.cache
+D:\CollegeAdminSide\CollegeAppAdmin\PizzaShop3tierProject-main\PizzaShop.Repository\obj\Debug\net7.0\ref\PizzaShop.Repository.dll

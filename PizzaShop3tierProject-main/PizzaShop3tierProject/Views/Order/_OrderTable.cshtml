@@ -16,7 +16,7 @@
     <tbody>
 
         @foreach(var order in Model.ordersElementViews){
-            <tr>
+            <tr data-orderid="@order.order_id">
                 <td>#@order.order_id</td>
                 <td>@order.date.ToShortDateString()</td>
                 <td>@order.customer</td>
@@ -34,7 +34,7 @@
                 <td>@order.total_amount</td>
                 <td>
                     <i class="fa fa-file-pdf-o me-2 for-point file-down" aria-hidden="true"></i>
-                    <i class="fa fa-eye for-point" aria-hidden="true"></i>
+                    <i class="fa fa-eye for-point view-order" aria-hidden="true"></i>
                 </td>
             </tr>
         }
@@ -80,10 +80,16 @@
             loadOrders(1,$(this).closest("th").data("sorttype"),$(this).data("sortmeth"));
         })
         $(".file-down").click(function(){
-            let url = `/Order/ForPdfDownload`;
+            let orderid = $(this).closest("tr").data("orderid");
+            let url = `/Order/ForPdfDownload?orderid=${encodeURIComponent(orderid)}`;
 
             window.location.href = url;
+        })
+        $(".view-order").click(function(){
+            let orderid = $(this).closest("tr").data("orderid");
+            let url = `/Order/OrderDetailView?orderid=${encodeURIComponent(orderid)}`;
 
+            window.location.href = url;
         })
     })
 </script>

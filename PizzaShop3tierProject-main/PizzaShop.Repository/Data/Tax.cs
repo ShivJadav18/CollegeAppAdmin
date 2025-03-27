@@ -11,7 +11,7 @@ public partial class Tax
 
     public bool Isenabled { get; set; }
 
-    public bool Isdefault { get; set; }
+    public bool? Isdefault { get; set; }
 
     public string? Taxtype { get; set; }
 
@@ -28,6 +28,8 @@ public partial class Tax
     public bool? Isdeleted { get; set; }
 
     public virtual User? CreatedbyNavigation { get; set; }
+
+    public virtual ICollection<Ordertotax> Ordertotaxes { get; } = new List<Ordertotax>();
 
     public virtual User? UpdatedbyNavigation { get; set; }
 }

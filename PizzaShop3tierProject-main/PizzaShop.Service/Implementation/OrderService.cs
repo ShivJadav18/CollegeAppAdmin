@@ -221,5 +221,94 @@ public class OrderService : IOrderService
             return new MemoryStream { };
         }
     }
+    public OrderDetailsView GetOrderDetailsViewService(int orderid){
+        try{
+            OrderDetailsView orderDetailsView = new OrderDetailsView{};
+            Payment payment = _order.GetPaymentByOrderId(orderid);
+            orderDetailsView.paymentMethod = payment.Paymentmethod;
+            orderDetailsView.paymentStatus = payment.Paymentstatus;
+
+            Order order = _order.GetOrder(orderid);
+            orderDetailsView.orderid = order.OrderId;
+            orderDetailsView.orderDate = (DateTime) order.Orderdate;
+            orderDetailsView.modifiedDate = (DateTime) order.Updatedat;
+            orderDetailsView.Noofperson = (int) order.Noofperson;
+
+            Customer customer = _order.GetCustomerByCustomerId((int) order.CustomerId);
+            orderDetailsView.customerName = customer.Firstname + " " + customer.Lastname;
+            orderDetailsView.contactNumber = customer.Contactnumber;
+            orderDetailsView.customerEmail = customer.Email;
+
+            Ordertotable ordertotable = _order.GetOrdertotablesForOrder(orderid);
+            orderDetailsView.table = ordertotable.Table.Name;
+           
+            // Table table = _order.GetTableForOrder((int) ordertotable.TableId);
+
+            Section section = _order.GetSectionForOrder(ordertotable.Table.SectionId);
+            orderDetailsView.section = section.Name;
+
+            List<Ordertoitem> ordertoitems = _order.GetOrdertoitems(orderid);
+            List<ItemDetailForOrder> Items = new List<ItemDetailForOrder>{};
+
+            foreach(Ordertoitem ordertoitem in ordertoitems){
+                ItemDetailForOrder itemDetailForOrder = new ItemDetailForOrder{};
+                itemDetailForOrder.ordertoitemid = ordertoitem.OrdertoitemId;
+                itemDetailForOrder.itemName = ordertoitem.Item.Name;
+                itemDetailForOrder.itemQuantity = (int) ordertoitem.Quantity;
+                itemDetailForOrder.unitAmount = (decimal) ordertoitem.Item.Rate;
+                itemDetailForOrder.itemAmount = (int) ordertoitem.Quantity * (decimal) ordertoitem.Item.Rate;
+                itemDetailForOrder.totalAmountForThisOne = itemDetailForOrder.itemAmount;
+                Items.Add(itemDetailForOrder);
+            }
+
+            // foreach(ItemDetailForOrder Item in Items){
+            //     List<ModifierDetailForOrder> modifierDetailForOrders = new List<ModifierDetailForOrder>{};
+                
+            //     List<Orderitemmodifier> orderitemmodifiers = _order.GetOrderitemmodifiers(Item.ordertoitemid);
+                
+            //     foreach(Orderitemmodifier orderitemmodifier in orderitemmodifiers){
+            //         ModifierDetailForOrder modifierDetailForOrder = new ModifierDetailForOrder{};
+            //         modifierDetailForOrder.modifierName = orderitemmodifier.Modifier.Modifiername;
+            //         modifierDetailForOrder.modifierQuantity =(int) orderitemmodifier.Quantity;
+            //         modifierDetailForOrder.unitAmount = orderitemmodifier.Modifier.Rate;
+            //         modifierDetailForOrder.modifierAmount = (int) orderitemmodifier.Quantity * orderitemmodifier.Modifier.Rate;
+            //         Item.totalAmountForThisOne += modifierDetailForOrder.modifierAmount;
+            //         modifierDetailForOrders.Add(modifierDetailForOrder);
+            //     }
+            //     Item.itemModifiers = modifierDetailForOrders;
+            // }
+            orderDetailsView.itemsInOrder = Items;
+            orderDetailsView.subTotal = 0;
+            foreach(ItemDetailForOrder item in Items){
+                orderDetailsView.subTotal += item.totalAmountForThisOne;
+            }
+
+
+            List<Tax> taxes = _order.GetEnableTax();
+            List<TaxForOrder> taxForOrders = new List<TaxForOrder>{};
+            foreach(Tax tax in taxes){
+                TaxForOrder taxForOrder = new TaxForOrder{};
+                taxForOrder.taxName = tax.Name;
+                if(tax.Taxtype == "Percentage"){
+                    taxForOrder.taxValue = (decimal) (tax.Amount * orderDetailsView.subTotal)/100;
+                }else{
+                    taxForOrder.taxValue = (decimal)tax.Amount;
+                }
+                taxForOrders.Add(taxForOrder);
+            }
+
+            orderDetailsView.taxesForOrder = taxForOrders;
+
+            orderDetailsView.Total = orderDetailsView.subTotal;
+           
+            foreach(TaxForOrder tax in taxForOrders){
+                orderDetailsView.Total += tax.taxValue;
+            }
+            return orderDetailsView;
+        }catch(Exception e){
+            return new OrderDetailsView{};
+        }
+    }
+
 
 }

@@ -70,9 +70,11 @@ public class OrderController : Controller {
         return View();
     }
 
-    public async Task<IActionResult> ForPdfDownload(){
+    public async Task<IActionResult> ForPdfDownload(int orderid){
+    
+         OrderDetailsView orderDetailsView = _orderService.GetOrderDetailsViewService(orderid);
 
-       var viewHtml = await RenderViewToString("OrderPdfView");
+       var viewHtml = await RenderViewToString("OrderPdfView",orderDetailsView);
 
         // Convert HTML to PDF
         HtmlToPdf converter = new HtmlToPdf();
@@ -87,7 +89,7 @@ public class OrderController : Controller {
 
         
         // Create PDF document
-        PdfDocument doc = converter.ConvertHtmlString(viewHtml);
+        PdfDocument doc = converter.ConvertHtmlString(viewHtml, $"{Request.Scheme}://{Request.Host}");
 
         // Save PDF to a memory stream
         MemoryStream ms = new MemoryStream();
@@ -99,7 +101,7 @@ public class OrderController : Controller {
          
     }
 
-     private async Task<string> RenderViewToString(string viewName)
+     private async Task<string> RenderViewToString(string viewName,OrderDetailsView model)
     {
         using (var sw = new StringWriter())
         {
@@ -115,7 +117,10 @@ public class OrderController : Controller {
             var viewContext = new ViewContext(
                 ControllerContext,
                 viewResult.View,
-                ViewData,
+                new ViewDataDictionary<object>(new EmptyModelMetadataProvider(), new ModelStateDictionary())
+                {
+                    Model = model
+                },
                 TempData,
                 sw,
                 new HtmlHelperOptions()
@@ -125,6 +130,11 @@ public class OrderController : Controller {
             return sw.ToString();
            
         }
+    }
+    public IActionResult OrderDetailView(int orderid){
+        OrderDetailsView orderDetailsView = _orderService.GetOrderDetailsViewService(orderid);
+
+        return View(orderDetailsView);
     }
      
 }

@@ -1,0 +1,133 @@
+@model PizzaShop.Repository.ViewModels.OrderDetailsView
+@{
+    ViewData["Title"] = "Order-Details";
+}
+
+<div class="content ms-2 p-2 d-flex justify-content-center " id="content">
+    <div class="w-50">
+        <div class="d-sm-flex justify-content-between mb-2 first-part">
+            <h1 class="text-header mb-3">Order-Details</h1>
+            <div class="d-flex gap-2 m-2 justify-content-end align-items-center ">
+                <a asp-action="OrdersView" class="btn py-2 px-3 border-primary text-header">Back</a>
+            </div>
+        </div>
+
+        <div class="row rounded shadow mb-3">
+            <div id="order-summary" class="bg-white p-3 rounded-1 mb-3">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2">
+                        <h3>Order Summary </h3> 
+                        <div class="align-content-center">
+                            <span class="bg-info bg-opacity-25 align-content-center px-2 py-md-2 fw-bold text-info-emphasis">InProgress</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" py-md-2 px-3 text-decoration-none rounded-1 bg-header text-white m-2 text-nowrap fw-bold float-end btn-nonprimary export-pdf" id="export-pdf" data-orderid = "@Model.orderid">
+                        <img src="~/images/export-white.svg" width="24px" class="me-2">
+                        <span> Export</span>
+                    </button>
+                </div>      
+                <p><span class="fw-bold">Invoice No. :</span> &nbsp; <span id="invoice-no">@Model.orderid</span></p>
+                <div class="mb-2">
+                    <span class="fw-bold">Placed On :</span> <span id="placed-on">@Model.orderDate.ToShortDateString()</span> &nbsp; 
+                    <span class="fw-bold">Modified On :</span> <span id="modified-on">@Model.modifiedDate.ToShortDateString()</span> &nbsp;
+                    @* <span class="fw-bold">Order Duration :</span> <span id="order-duration"></span> *@
+                </div>
+            </div>
+        </div>
+
+        <div class="row gap-2 mb-3">
+            <div id="customer-details" class="col-md bg-white rounded shadow">
+                <div class="p-3">
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <img src="~/images/icons/customer.svg" alt="" width="30px">
+                        <h4>Customer Details</h4>
+                    </div>
+                    <div class="customer-info">
+                        <p>Name : <span id="customer-name">@Model.customerName</span></p>
+                        <p>Phone : <span id="customer-phone">@Model.contactNumber</span></p>
+                        @* <p>No. of Persons : <span id="customer-persons">@Model.Noofperson</span></p> *@
+                        <p>Email : <a href="mailto:@Model.customerEmail" id="customer-email">@Model.customerEmail</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="table-details" class="col-md bg-white rounded shadow">
+                <div class="p-3">
+                    <div class="d-flex gap-2 align-items-center mb-3">
+                        <img src="~/images/icons/dinner-table.svg" alt="" width="30px">
+                        <h4>Payment Details</h4>
+                    </div>
+                    <div class="customer-info">
+                        <p>Payment Method : @Model.paymentMethod</p>
+                        <p>Payment Status : @Model.paymentStatus</p>
+                        @* <p>Table : <span id="table-name">@Model.table</span></p>
+                        <p>Section : <span id="section-name">@Model.section</span></p> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row rounded shadow">
+            <div id="order-items" class="bg-white">
+                <h4>Order Items</h4>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Sr. No.</th>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total Amount</th>
+                        </thead>
+                        <tbody>
+                            @{
+                                int counter = 1;
+                                foreach (var item in Model.itemsInOrder)
+                                {
+                                    <tr>
+                                        <td>@counter</td>
+                                        <td>
+                                            @item.itemName
+                                        </td>
+                                        <td>
+                                            @item.itemQuantity
+                                        </td>
+                                        <td>
+                                            ₹@item.unitAmount.ToString("0.00")
+                                        </td>
+                                        <td>
+                                            ₹@item.itemAmount.ToString("0.00")
+                                        </td>
+                                    </tr>
+                                    counter++;
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <div class="fw-bold mb-3 col-md-3 col-6 col-sm-4">
+                        <div class="d-flex justify-content-between">Subtotal :<span>₹@Model.subTotal.ToString("0.00")</span></div>
+                        @foreach (var tax in Model.taxesForOrder)
+                        {
+                            <div class="d-flex justify-content-between">@tax.taxName :<span>₹@tax.taxValue.ToString("0.00")</span></div>
+                        }
+                        <div class="d-flex justify-content-between">Total : <span>₹@Model.Total.ToString("0.00")</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(() => {
+        $("#export-pdf").click(function() {
+            let orderid = $(this).data("orderid");
+
+            let url = `/Order/ForPdfDownload?orderid=${encodeURIComponent(orderid)}`;
+
+            window.location.href = url;
+        })
+    })
+</script>
