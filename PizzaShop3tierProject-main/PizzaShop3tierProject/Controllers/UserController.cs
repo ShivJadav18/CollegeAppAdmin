@@ -206,7 +206,7 @@ public class UserController:Controller{
         return Json(new{success = false});
     }
 
-    [Authorize]
+    [CustomAuthorize]
     public IActionResult Logout(){
 
          if(Request.Cookies["jwtCookie"] != null){

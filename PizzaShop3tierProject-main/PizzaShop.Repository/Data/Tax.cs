@@ -11,7 +11,7 @@ public partial class Tax
 
     public bool Isenabled { get; set; }
 
-    public bool? Isdefault { get; set; }
+    public bool Isdefault { get; set; }
 
     public string? Taxtype { get; set; }
 

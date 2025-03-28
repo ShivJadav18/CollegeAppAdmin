@@ -138,8 +138,8 @@ public class Authenticate : IAuthenticate
     private async void EmailSendingtoNewUser(string email,string username,string baseUrl,string password){
          // making of mail
         var message = new MimeKit.MimeMessage();
-        message.From.Add(new MailboxAddress("Pizza Shop", "test.dotnet@etatvasoft.com"));
-        message.To.Add(new MailboxAddress("PizzaShop User", email));
+        message.From.Add(new MailboxAddress("ElectroSphere", "test.dotnet@etatvasoft.com"));
+        message.To.Add(new MailboxAddress("ElectroSphere User", email));
         message.Subject = "Reset your password ";
 
         // making of url link
@@ -172,8 +172,8 @@ public class Authenticate : IAuthenticate
     {
         // making of mail
         var message = new MimeKit.MimeMessage();
-        message.From.Add(new MailboxAddress("Pizza Shop", "test.dotnet@etatvasoft.com"));
-        message.To.Add(new MailboxAddress("PizzaShop User", email));
+        message.From.Add(new MailboxAddress("ElectroSphere", "test.dotnet@etatvasoft.com"));
+        message.To.Add(new MailboxAddress("ElectroSphere User", email));
         message.Subject = "Reset your password ";
 
         var bodyBuilder = new BodyBuilder();
@@ -199,7 +199,7 @@ public class Authenticate : IAuthenticate
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
         var token = new JwtSecurityToken(
-            issuer: "Pizzashop App",
+            issuer: "ElectroSphere App",
             audience: "dotnetclient",
             expires: DateTime.Now.AddDays(1),
             signingCredentials: credentials,
