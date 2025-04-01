@@ -197,6 +197,10 @@
       "PackagePath": "staticwebassets\\UploadedImages\\img1_3a80ad0f-5411-4182-af41-4a5cbd55f6af.jpg"
     },
     {
+      "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\img1_c3ff4309-31fb-4177-949d-2304a36a93e3.jpg",
+      "PackagePath": "staticwebassets\\UploadedImages\\img1_c3ff4309-31fb-4177-949d-2304a36a93e3.jpg"
+    },
+    {
       "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\img1_ed1c4665-79b9-4a89-8099-da0e07b411ea.jpg",
       "PackagePath": "staticwebassets\\UploadedImages\\img1_ed1c4665-79b9-4a89-8099-da0e07b411ea.jpg"
     },
@@ -763,6 +767,14 @@
     {
       "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\.~lock.CustomerTemplate.xlsx#",
+      "PackagePath": "staticwebassets\\templates\\.~lock.CustomerTemplate.xlsx#"
+    },
+    {
+      "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\CustomerTemplate.xlsx",
+      "PackagePath": "staticwebassets\\templates\\CustomerTemplate.xlsx"
     },
     {
       "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\NewUser.html",
