@@ -55,6 +55,8 @@ builder.Services.AddScoped<ITaxFees,TaxFees>();
 builder.Services.AddScoped<ITaxServices,TaxServices>();
 builder.Services.AddScoped<IOrder,Orderr>();
 builder.Services.AddScoped<IOrderService,OrderService>();
+builder.Services.AddScoped<ICustomer,Customerrepo>();
+builder.Services.AddScoped<ICustomerService,CustomerService>();
 
 
 var app = builder.Build();
