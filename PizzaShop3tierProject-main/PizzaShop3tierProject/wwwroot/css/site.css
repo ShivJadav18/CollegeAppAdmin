@@ -452,3 +452,6 @@ height: 38px;
 .orange{
   color: orange;
 }
+#layout-nav{
+  height: 65px !important;
+}

@@ -230,6 +230,7 @@ public class OrderService : IOrderService
 
             Order order = _order.GetOrder(orderid);
             orderDetailsView.orderid = order.OrderId;
+            orderDetailsView.status = order.Orderstatus;
             orderDetailsView.orderDate = (DateTime) order.Orderdate;
             orderDetailsView.modifiedDate = (DateTime) order.Updatedat;
             orderDetailsView.Noofperson = (int) order.Noofperson;
@@ -239,13 +240,13 @@ public class OrderService : IOrderService
             orderDetailsView.contactNumber = customer.Contactnumber;
             orderDetailsView.customerEmail = customer.Email;
 
-            Ordertotable ordertotable = _order.GetOrdertotablesForOrder(orderid);
-            orderDetailsView.table = ordertotable.Table.Name;
+            // Ordertotable ordertotable = _order.GetOrdertotablesForOrder(orderid);
+            // orderDetailsView.table = ordertotable.Table.Name;
            
             // Table table = _order.GetTableForOrder((int) ordertotable.TableId);
 
-            Section section = _order.GetSectionForOrder(ordertotable.Table.SectionId);
-            orderDetailsView.section = section.Name;
+            // Section section = _order.GetSectionForOrder(ordertotable.Table.SectionId);
+            // orderDetailsView.section = section.Name;
 
             List<Ordertoitem> ordertoitems = _order.GetOrdertoitems(orderid);
             List<ItemDetailForOrder> Items = new List<ItemDetailForOrder>{};

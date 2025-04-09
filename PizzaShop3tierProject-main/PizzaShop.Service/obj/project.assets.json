@@ -10558,32 +10558,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pce65\\.nuget\\packages\\": {}
+    "C:\\Users\\dell_\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj",
+      "projectUniqueName": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj",
       "projectName": "PizzaShop.Service",
-      "projectPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj",
-      "packagesPath": "C:\\Users\\pce65\\.nuget\\packages\\",
-      "outputPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\obj\\",
+      "projectPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj",
+      "packagesPath": "C:\\Users\\dell_\\.nuget\\packages\\",
+      "outputPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\pce65\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dell_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
-              "projectPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj"
+            "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
+              "projectPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj"
             }
           }
         }
