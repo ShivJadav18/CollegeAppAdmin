@@ -769,10 +769,6 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\.~lock.CustomerTemplate.xlsx#",
-      "PackagePath": "staticwebassets\\templates\\.~lock.CustomerTemplate.xlsx#"
-    },
-    {
       "Id": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\CustomerTemplate.xlsx",
       "PackagePath": "staticwebassets\\templates\\CustomerTemplate.xlsx"
     },

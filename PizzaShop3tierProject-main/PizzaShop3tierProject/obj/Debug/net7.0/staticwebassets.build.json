@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YCT60CVeUs4ce/McFV/CbPLB7KF2pz+Zn7H3WdZYRCI=",
+  "Hash": "87tKg8XVQg+2i+PHzpdTEr3lUxF6tS/bn3cx11gtRkM=",
   "Source": "PizzaShop3tierProject",
   "BasePath": "_content/PizzaShop3tierProject",
   "Mode": "Default",
@@ -1528,23 +1528,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\.~lock.CustomerTemplate.xlsx#",
-      "SourceId": "PizzaShop3tierProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
-      "BasePath": "_content/PizzaShop3tierProject",
-      "RelativePath": "templates/.~lock.CustomerTemplate.xlsx#",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\templates\\.~lock.CustomerTemplate.xlsx#"
     },
     {
       "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\templates\\CustomerTemplate.xlsx",
