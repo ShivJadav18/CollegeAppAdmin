@@ -1847,15 +1847,15 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         }
@@ -6403,14 +6403,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -6419,13 +6420,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -10935,48 +10938,42 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
+      "Newtonsoft.Json >= 13.0.3",
       "PizzaShop.Repository >= 1.0.0",
       "PizzaShop.Service >= 1.0.0",
       "Select.Pdf.NetCore >= 24.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dell_\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\pce65\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\PizzaShop3tierProject.csproj",
+      "projectUniqueName": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\PizzaShop3tierProject.csproj",
       "projectName": "PizzaShop3tierProject",
-      "projectPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\PizzaShop3tierProject.csproj",
-      "packagesPath": "C:\\Users\\dell_\\.nuget\\packages\\",
-      "outputPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\",
+      "projectPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\PizzaShop3tierProject.csproj",
+      "packagesPath": "C:\\Users\\pce65\\.nuget\\packages\\",
+      "outputPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dell_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\pce65\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
-              "projectPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj"
+            "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
+              "projectPath": "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj"
             },
-            "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj": {
-              "projectPath": "D:\\CollegeAppAdmin\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj"
+            "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj": {
+              "projectPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Service\\PizzaShop.Service.csproj"
             }
           }
         }
@@ -10996,6 +10993,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "Select.Pdf.NetCore": {
             "target": "Package",

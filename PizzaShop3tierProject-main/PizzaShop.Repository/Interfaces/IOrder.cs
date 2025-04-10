@@ -16,4 +16,5 @@ public interface IOrder{
     public Table GetTableForOrder(int tableid);
     public Section GetSectionForOrder(int sectionid);
     public List<Orderitemmodifier> GetOrderitemmodifiers(int id);
+    public List<Ordertoitem> GetAllOrdertoItem();
 }

@@ -157,7 +157,7 @@ body, html{
   
 } */
 
-.second-part-dashboard div div{
+.second-part-dashboard div {
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -454,4 +454,14 @@ height: 38px;
 }
 #layout-nav{
   height: 65px !important;
+}
+.charts{
+  height: 300px;
+  width: 830 !important;
+}
+#chartContainer3{
+  height: 300px !important;
+}
+.canvasjs-chart-canvas{
+  border-radius: 10px;
 }

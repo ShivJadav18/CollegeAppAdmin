@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PizzaShop.Repository.Data;
 using PizzaShop.Repository.Interfaces;
+using PizzaShop.Repository.ViewModels;
 
 namespace PizzaShop.Repository.Implementations;
 
@@ -161,6 +162,15 @@ public class Orderr : IOrder{
             return new List<Orderitemmodifier>{};
         }
     }
+
+   public List<Ordertoitem> GetAllOrdertoItem(){
+    try{
+        List<Ordertoitem> ordertoitems = _context.Ordertoitems.Include(o => o.Item).ToList();
+        return ordertoitems;
+    }catch(Exception e){
+        return new List<Ordertoitem>{};
+    }
+   }
 
 
 }

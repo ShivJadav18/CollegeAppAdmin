@@ -1,87 +1,239 @@
+@model PizzaShop.Repository.ViewModels.DashboardAnalysisView
+@using PizzaShop.Repository.ViewModels
+@using Newtonsoft.Json
 @{
-    Layout="~/Views/Shared/_Layout.cshtml";
-    ViewData["title"]="Dashboard Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["title"] = "Dashboard Page";
 }
 
-            <div class="content w-100" id="content">
-                <div class="first-part d-flex justify-content-between p-2 w-100">
-                    <h2>Dashboard</h2>
-                    <div class="dropdown">
-                        <button class="btn btn-nonsecondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          CurrentMonth
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="second-part-dashboard row w-100 px-2">
-                    <div class="col-lg-3 col-md-4 shadow rounded">
-                        <div>
-                            <div class="d-flex justify-content-end w-100 p-2">
-                                <div class="second-part-img-cont text-center">
-                                    <img src="~/images/icons/total-sales.svg" alt="saving">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start w-100 p-2">
-                                <div>
-                                    <h3>1600$</h3>
-                                    <p>Total Sales</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 shadow rounded">
-                        <div>
-                            <div class="d-flex justify-content-end w-100 p-2">
-                                <div class="second-part-img-cont text-center">
-                                    <img src="~/images/icons/total-orders.svg" alt="total-orders">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start w-100 p-2">
-                                <div>
-                                    <h3>16</h3>
-                                    <p>Total Orders</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-lg-3 col-md-4 shadow rounded">
-                        <div>
-                            <div class="d-flex justify-content-end w-100 p-2">
-                                <div class="second-part-img-cont text-center">
-                                    <img src="~/images/icons/order-value.svg" alt="total-orders">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start w-100 p-2">
-                                <div>
-                                    <h3>1600$</h3>
-                                    <p>Avg Order Value</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 shadow rounded">
-                        <div>
-                            <div class="d-flex justify-content-end w-100 p-2">
-                                <div class="second-part-img-cont text-center">
-                                    <img src="~/images/icons/waiting-time.svg" alt="total-orders">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start w-100 p-2">
-                                <div>
-                                    <h3>6.69 mins</h3>
-                                    <p>Avg Waiting Time</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="third-part-dashboard">
+<div class="content w-100 m-2" id="content">
+    <div class="first-part d-flex justify-content-between p-2 w-100 mx-2">
+        <h2>Dashboard</h2>
 
+    </div>
+    <div class="second-part-dashboard row w-100 px-2 gap-1 mx-1">
+        <div class="col-lg col-md-4 shadow rounded p-0">
+            <div class="w-100">
+                <div class="d-flex justify-content-end w-100 p-2">
+                    <div class="second-part-img-cont text-center">
+                        <img src="~/images/icons/total-sales.svg" alt="saving">
+                    </div>
                 </div>
-
+                <div class="d-flex justify-content-start w-100 p-2">
+                    <div>
+                        <h3>@Model.valueData.TotalSales$</h3>
+                        <p>Total Sales</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-3 col-md-4 shadow rounded">
+            <div>
+                <div class="d-flex justify-content-end w-100 p-2">
+                    <div class="second-part-img-cont text-center">
+                        <img src="~/images/icons/total-orders.svg" alt="total-orders">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start w-100 p-2">
+                    <div>
+                        <h3>@Model.valueData.TotalOrders</h3>
+                        <p>Total Orders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 shadow rounded">
+            <div>
+                <div class="d-flex justify-content-end w-100 p-2">
+                    <div class="second-part-img-cont text-center">
+                        <img src="~/images/icons/order-value.svg" alt="total-orders">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start w-100 p-2">
+                    <div>
+                        <h3>@Model.valueData.AvgOrder.ToString("N")$</h3>
+                        <p>Avg Order Value</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 shadow rounded">
+            <div>
+                <div class="d-flex justify-content-end w-100 p-2">
+                    <div class="second-part-img-cont text-center">
+                        <img src="~/images/icons/total-sales.svg" alt="total-orders">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start w-100 p-2">
+                    <div>
+                        <h3>@Model.valueData.TotalProfit$</h3>
+                        <p>Total Profit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third-part-dashboard row w-100 mt-2 gap-2 mx-2 d-flex ">
+        <div id="chartContainer1" class="col-md-5 rounded shadow charts p-0">
+        </div>
+        <div id="chartContainer2" class="col-md-6 rounded shadow charts p-0">
+        </div>
+    </div>
+    <div class="fourth-part-dashboard row mx-2 gap-2 mt-2">
+        <div id="chartContainer3" class="col-12 rounded shadow p-0">
+
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var piechartdata = @Html.Raw(JsonConvert.SerializeObject(
+        Model.pievalues.Select(d => new {
+            y = d.Percentage.ToString("N"),
+            legendText = d.companyName, 
+            label = d.companyName
+        })
+    ));
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer1", {
+            theme: "light2",
+            animationEnabled: true,
+            title: {
+                text: "Revenue Month vise."
+            },
+            subtitles: [
+                { text: "Try Resizing the Browser" }
+            ],
+            data: [
+                {
+                    type: "column", //change type to bar, line, area, pie, etc
+                    dataPoints: [
+                        { label: "January", y: @Model.barChartData.janPer },
+                        { label: "February", y: @Model.barChartData.febPer},
+                        { label: "March", y: @Model.barChartData.marPer},
+                        { label: "April", y: @Model.barChartData.aprPer},
+                        { label: "May", y: @Model.barChartData.mayPer},
+                        { label: "June", y: @Model.barChartData.junPer},
+                        { label: "July", y: @Model.barChartData.julPer},
+                        { label: "August", y: @Model.barChartData.augPer},
+                        { label: "September", y: @Model.barChartData.sepPer},
+                        { label: "Octomber", y: @Model.barChartData.octPer},
+                        { label: "November", y: @Model.barChartData.novPer},
+                        { label: "December", y: @Model.barChartData.decPer},
+                    ]
+                }
+            ]
+        });
+        chart.render();
+        
+    @* @foreach (ForPie pie in Model.pievalues)
+    {   List<object> temp = new List<object>{};
+        temp.push({ y: 72.48, legendText: "Google", label: "Google" })
+    } *@
+         var chart = new CanvasJS.Chart("chartContainer2", {
+                title: {
+                    text: "Company Vise Sales This Year"
+                },
+                animationEnabled: true,
+                legend: {
+                    verticalAlign: "center",
+                    horizontalAlign: "left",
+                    fontSize: 20,
+                    fontFamily: "Helvetica"
+                },
+                theme: "light2",
+                data: [
+                    {
+                        type: "pie",
+                        indexLabelFontFamily: "Garamond",
+                        indexLabelFontSize: 20,
+                        indexLabel: "{label} {y}%",
+                        startAngle: -20,
+                        showInLegend: true,
+                        toolTipContent: "{legendText} {y}%",
+                        dataPoints: piechartdata
+                    }
+                ]
+            });
+        chart.render();
+        var chart = new CanvasJS.Chart("chartContainer3", {
+            title: {
+                text: "Cost Of Different Items"
+            },
+            animationEnabled: true,
+            axisY2: {
+                valueFormatString: "$ 0",
+            },
+            toolTip: {
+                shared: true
+            },
+            legend: {
+                verticalAlign: "top",
+                horizontalAlign: "center"
+            },
+
+            data: [
+                {
+                    type: "stackedBar",
+                    showInLegend: true,
+                    name: "Transpotation",
+                    axisYType: "secondary",
+                    color: "#7E8F74",
+                    dataPoints: [
+                        { y: 3, label: "TV" },
+                        { y: 5, label: "Mobile" },
+                        { y: 3, label: "Freze" },
+                        { y: 6, label: "Washing Machine" },
+                        { y: 7, label: "Computer" },
+                        { y: 5, label: "Printer" },
+                        { y: 5, label: "Camera" },
+                    ],
+
+                    //dataPoints: @Html.Raw(ViewBag.DataPoints),
+                },
+                {
+                    type: "stackedBar",
+                    showInLegend: true,
+                    name: "Labour",
+                    axisYType: "secondary",
+                    color: "#F0E6A7",
+                    dataPoints: [
+                        { y: .5, label: "Tv" },
+                        { y: 1.5, label: "Mobile" },
+                        { y: 1, label: "Freze" },
+                        { y: 2, label: "Washing Machine" },
+                        { y: 2, label: "Computer" },
+                        { y: 2.5, label: "Printer" },
+                        { y: 1.5, label: "Camera" },
+
+                    ],
+
+                    //dataPoints: @Html.Raw(ViewBag.DataPoints),
+                },
+                {
+                    type: "stackedBar",
+                    showInLegend: true,
+                    name: "Service",
+                    axisYType: "secondary",
+                    color: "#EBB88A",
+                    dataPoints: [
+                        { y: 2, label: "Tv" },
+                        { y: 3, label: "Mobile" },
+                        { y: 3, label: "Freze" },
+                        { y: 3, label: "Washing Machine" },
+                        { y: 4, label: "Computer" },
+                        { y: 3, label: "Printer" },
+                        { y: 4.5, label: "Camera" },
+
+                    ],
+
+                    //dataPoints: @Html.Raw(ViewBag.DataPoints),
+                }
+
+            ]
+        });
+        chart.render();
+    };
+</script>

@@ -57,6 +57,7 @@ builder.Services.AddScoped<IOrder,Orderr>();
 builder.Services.AddScoped<IOrderService,OrderService>();
 builder.Services.AddScoped<ICustomer,Customerrepo>();
 builder.Services.AddScoped<ICustomerService,CustomerService>();
+builder.Services.AddScoped<IDashbordService,DashboardService>();
 
 
 var app = builder.Build();

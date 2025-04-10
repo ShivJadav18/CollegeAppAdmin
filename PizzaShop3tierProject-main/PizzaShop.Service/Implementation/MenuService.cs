@@ -71,7 +71,7 @@ public class MenuService : IMenuService
 
             var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/UploadedImages");
             var path = Path.Combine(uploadsFolder, uniqueFileName);
-
+            Console.WriteLine("df;skf;"+uploadsFolder);
             using (var fileStream = new FileStream(path, FileMode.Create))
             {
                 editeditem.ItemImage.CopyTo(fileStream);
@@ -79,6 +79,15 @@ public class MenuService : IMenuService
 
             // Save the relative path to the usertemp property
             editeditem.Imageurl = $"UploadedImages/{uniqueFileName}";
+            uploadsFolder = "D:\\CollegeClientSide\\CollegeProj\\ElectroSphereProj\\wwwroot\\UploadedImages"; 
+           
+             Console.WriteLine("df;skf;2"+uploadsFolder);
+            path = Path.Combine(uploadsFolder, uniqueFileName);
+
+            using (var fileStream = new FileStream(path, FileMode.Create))
+            {
+                editeditem.ItemImage.CopyTo(fileStream);
+            }
         }
         editeditem.Updatedat = DateTime.Now;
         Message message = _menu.UpdateItem(editeditem);
