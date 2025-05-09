@@ -7,9 +7,9 @@ namespace PizzaShop.Repository.Implementations;
 
 public class TaxFees:ITaxFees{
 
-    private readonly PizzaShopDbContext _context;
+    private readonly ElectronicDataBaseContext _context;
 
-    public TaxFees(PizzaShopDbContext context){
+    public TaxFees(ElectronicDataBaseContext context){
         _context = context;
     }
 

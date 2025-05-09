@@ -141,8 +141,6 @@ public class OrderService : IOrderService
             OrdersElementView ordersElementView = new OrdersElementView { };
             Customer customer = _order.GetCustomerByCustomerId((int)order.CustomerId);
             ordersElementView.customer = customer.Firstname;
-            Rating rating = _order.GetRatingsByOrderId(order.OrderId);
-            ordersElementView.rating = (int)rating.Servicerate;
             Payment payment = _order.GetPaymentByOrderId(order.OrderId);
             ordersElementView.payment_mode = payment.Paymentmethod;
             ordersElementView.date = (DateTime)order.Orderdate;
@@ -233,7 +231,6 @@ public class OrderService : IOrderService
             orderDetailsView.status = order.Orderstatus;
             orderDetailsView.orderDate = (DateTime) order.Orderdate;
             orderDetailsView.modifiedDate = (DateTime) order.Updatedat;
-            orderDetailsView.Noofperson = (int) order.Noofperson;
 
             Customer customer = _order.GetCustomerByCustomerId((int) order.CustomerId);
             orderDetailsView.customerName = customer.Firstname + " " + customer.Lastname;

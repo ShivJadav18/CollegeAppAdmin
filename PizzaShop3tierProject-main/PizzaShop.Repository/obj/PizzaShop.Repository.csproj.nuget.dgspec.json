@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {}
+    "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {}
   },
   "projects": {
-    "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
+    "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
+        "projectUniqueName": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
         "projectName": "PizzaShop.Repository",
-        "projectPath": "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
+        "projectPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
         "packagesPath": "C:\\Users\\pce65\\.nuget\\packages\\",
-        "outputPath": "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\obj\\",
+        "outputPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pce65\\AppData\\Roaming\\NuGet\\NuGet.Config"

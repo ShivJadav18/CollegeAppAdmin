@@ -9,7 +9,6 @@
         <th data-sorttype = "3">Customer <i class="fa fa-long-arrow-up sort-order for-point" aria-hidden="true" data-sortmeth = "0"></i> <i class="fa fa-long-arrow-down sort-order for-point" aria-hidden="true" data-sortmeth = "1"></i></th>
         <th>Status</th>
         <th>Payment Mode</th>
-        <th>Rating</th>
         <th data-sorttype = "4">Total Amount <i class="fa fa-long-arrow-up sort-order for-point" aria-hidden="true" data-sortmeth = "0"></i> <i class="fa fa-long-arrow-down sort-order for-point" aria-hidden="true" data-sortmeth = "1"></i></th>
         <th>Action</th>
     </thead>
@@ -22,15 +21,6 @@
                 <td>@order.customer</td>
                 <td>@order.status</td>
                 <td>@order.payment_mode</td>
-                <td>
-                   @for(int i = 1 ;i<=5 ; i++){
-                    if(i<=order.rating){
-                        <span class="fa fa-star orange" aria-hidden="true"></span>
-                    }else{
-                        <span class="fa fa-star-o orange"></span>
-                    }
-                   }
-                </td>
                 <td>@order.total_amount</td>
                 <td>
                     <i class="fa fa-file-pdf-o me-2 for-point file-down" aria-hidden="true"></i>

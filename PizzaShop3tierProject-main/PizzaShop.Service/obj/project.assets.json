@@ -10582,8 +10582,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
-              "projectPath": "d:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj"
+            "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj": {
+              "projectPath": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop.Repository\\PizzaShop.Repository.csproj"
             }
           }
         }

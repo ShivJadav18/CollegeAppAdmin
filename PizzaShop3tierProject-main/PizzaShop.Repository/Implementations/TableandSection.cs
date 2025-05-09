@@ -9,9 +9,9 @@ namespace PizzaShop.Repository.Implementations;
 
 public class TableandSection : ITableandSection{
 
-    private readonly PizzaShopDbContext _context;
+    private readonly ElectronicDataBaseContext _context;
 
-    public TableandSection(PizzaShopDbContext context){
+    public TableandSection(ElectronicDataBaseContext context){
         _context = context;
     }
 

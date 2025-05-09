@@ -5,7 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous"></script> *@
-<div class="col-lg-2 d-lg-block d-none categories-list-sec sidebarformodules" >
+<div class="col-lg-2 d-lg-block d-none categories-list-sec sidebarformodules">
     <div class="header d-flex justify-content-between align-items-center p-1">
         <h5 class="text-center Category">Company</h5>
         <div class="btn add-Category">
@@ -83,13 +83,13 @@ crossorigin="anonymous"></script> *@
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="CategoryEditname" placeholder="Category Name">
                             <label for="CategoryEditname">Name</label>
-                        <p class="validation-msg" id="namecat-edit"></p>
+                            <p class="validation-msg" id="namecat-edit"></p>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="CategoryEditDescription"
                                 placeholder="Category Description">
                             <label for="CategoryEditDescription">Description</label>
-                        <p class="validation-msg" id="descriptioncat-edit"></p>
+                            <p class="validation-msg" id="descriptioncat-edit"></p>
                         </div>
                     </form>
                 </div>
@@ -160,8 +160,8 @@ crossorigin="anonymous"></script> *@
             New Item
         </div>
     </form>
-    <div class="modal fade" id="delete-multipleitems-conf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="delete-multipleitems-conf" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -173,7 +173,8 @@ crossorigin="anonymous"></script> *@
                     <p>Are you sure you want to delete these Items?</p>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button type="button" class="btn btn-nonsecondary imp" id="delete-multipleitems-conf-btn">Yes</button>
+                    <button type="button" class="btn btn-nonsecondary imp"
+                        id="delete-multipleitems-conf-btn">Yes</button>
                     <button type="button" class="btn btn-nonprimary imp" data-bs-dismiss="modal">No</button>
                 </div>
             </div>
@@ -215,18 +216,7 @@ crossorigin="anonymous"></script> *@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col mb-3">
-                                        <div class="form-floating">
-                                            <select name="Itemtype" id="ItemType" class="form-select"
-                                                placeholder="Select Type">
-                                                <option value="mobile">Mobiles</option>
-                                                <option value="Tv">Tv</option>
-                                                
-                                            </select>
-                                            <label for="ItemType">Item Type</label>
-                                        </div>
-                                        <p class="validation-msg" id="ItemType-msg"></p>
-                                    </div>
+
                                     <div class="col mb-3">
                                         <div class="form-floating">
                                             <input type="text" name="Rate" class="form-control" id="Rate"
@@ -245,12 +235,14 @@ crossorigin="anonymous"></script> *@
                                     </div>
                                     <div class="col mb-3">
                                         <div class="form-floating">
-                                            <select name="ItemType" name="UnitId" id="Unit" class="form-select"
-                                                placeholder="Select Unit">
-                                                <option value="1">Supplier-1</option>
-                                                <option value="2">Supplier-2</option>
+                                            <select name="ItemType" name="TypeId" id="Unit" class="form-select"
+                                                placeholder="Select Type">
+                                                <option value="1">Mobile</option>
+                                                <option value="2">TV</option>
+                                                <option value="3">Home Appliances</option>
+                                                <option value="4">Laptop</option>
                                             </select>
-                                            <label for="Unit">Supplier</label>
+                                            <label for="Unit">Item Type</label>
                                         </div>
                                         <p class="validation-msg" id="Unit-msg"></p>
                                     </div>
@@ -314,25 +306,26 @@ crossorigin="anonymous"></script> *@
                                 </div>
                             </div>
                             @* <div class="col-4 modifier-select-section">
-                                <div class="form-floating m-2">
-                                    <select name="ModifierGroup" id="GroupOptionsForItems" class="form-select"
-                                        placeholder="Select Modifier Group(s)">
-                                       
-                                        @foreach (var group in Model.modifiergroups)
-                                        {
-                                            <option value="@group.ModifiergroupId" data-name="@group.Groupname">
-                                                @group.Groupname</option>
-                                        }
-                                    </select>
-                                    <label for="ModifierGroupSelect">Select Modifier Group(s)</label>
-                                </div>
-                                <p id="selectgroup-msg" class="validation-msg"></p>
-                                <div class="selected-modifiers-section m-2">
-                                    
-                                    <div class="modifier-group-selected container overflow-y-scroll" style="height: 60vh;" id="modifier-group-selected">
+                            <div class="form-floating m-2">
+                            <select name="ModifierGroup" id="GroupOptionsForItems" class="form-select"
+                            placeholder="Select Modifier Group(s)">
 
-                                    </div>
-                                </div>
+                            @foreach (var group in Model.modifiergroups)
+                            {
+                            <option value="@group.ModifiergroupId" data-name="@group.Groupname">
+                            @group.Groupname</option>
+                            }
+                            </select>
+                            <label for="ModifierGroupSelect">Select Modifier Group(s)</label>
+                            </div>
+                            <p id="selectgroup-msg" class="validation-msg"></p>
+                            <div class="selected-modifiers-section m-2">
+
+                            <div class="modifier-group-selected container overflow-y-scroll" style="height: 60vh;"
+                            id="modifier-group-selected">
+
+                            </div>
+                            </div>
                             </div> *@
                         </div>
                     </form>
@@ -383,18 +376,7 @@ crossorigin="anonymous"></script> *@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col mb-3">
-                                        <div class="form-floating">
-                                            <select name="Itemtype" id="ItemTypeEdit" class="form-select"
-                                                placeholder="Select Type">
-                                                <option value="Mobile">Mobile</option>
-                                                <option value="Tv">Tv</option>
-                                                
-                                            </select>
-                                            <label for="ItemTypeEdit">Item Type</label>
-                                        </div>
-                                        <p class="validation-msg" id="ItemType-msg-Edit"></p>
-                                    </div>
+
                                     <div class="col mb-3">
                                         <div class="form-floating">
                                             <input type="text" name="RateEdit" class="form-control" id="RateEdit"
@@ -413,14 +395,16 @@ crossorigin="anonymous"></script> *@
                                     </div>
                                     <div class="col mb-3">
                                         <div class="form-floating">
-                                            <select name="ItemType" name="UnitId" id="UnitEdit" class="form-select"
-                                                placeholder="Select Unit">
-                                                <option value="1">Pcs</option>
-                                                <option value="2">gm</option>
+                                            <select name="ItemType" name="TypeId" id="UnitEdit" class="form-select"
+                                                placeholder="Select Type">
+                                                <option value="1">Mobile</option>
+                                                <option value="2">TV</option>
+                                                <option value="3">Home Appliances</option>
+                                                <option value="4">Laptop</option>
                                             </select>
-                                            <label for="UnitEdit">Unit</label>
+                                            <label for="Unit">Item Type</label>
                                         </div>
-                                        <p class="validation-msg" id="Unit-msg-Edit"></p>
+                                        <p class="validation-msg" id="Unit-msg"></p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -485,22 +469,23 @@ crossorigin="anonymous"></script> *@
                             </div>
 
                             @* <div class="col-4 modifier-select-section">
-                                <div class="form-floating m-2">
-                                    <select name="ModifierGroup" id="ModifierGroupSelectEdit" class="form-select"
-                                        placeholder="Select Modifier Group(s)">
-                                        @foreach (var group in Model.modifiergroups)
-                                        {
-                                            <option value="@group.ModifiergroupId" data-name="@group.Groupname">
-                                                @group.Groupname</option>
-                                        }
-                                    </select>
-                                    <label for="ModifierGroupSelect">Select Modifier Group(s)</label>
-                                </div>
-                                <div class="selected-modifiers-section-edit m-2">
-                                    <div class="modifier-group-selected-inedit container overflow-y-scroll" style="height: 60vh;" id="modifier-group-selected-inedit">
+                            <div class="form-floating m-2">
+                            <select name="ModifierGroup" id="ModifierGroupSelectEdit" class="form-select"
+                            placeholder="Select Modifier Group(s)">
+                            @foreach (var group in Model.modifiergroups)
+                            {
+                            <option value="@group.ModifiergroupId" data-name="@group.Groupname">
+                            @group.Groupname</option>
+                            }
+                            </select>
+                            <label for="ModifierGroupSelect">Select Modifier Group(s)</label>
+                            </div>
+                            <div class="selected-modifiers-section-edit m-2">
+                            <div class="modifier-group-selected-inedit container overflow-y-scroll" style="height:
+                            60vh;" id="modifier-group-selected-inedit">
 
-                                    </div>
-                                </div>
+                            </div>
+                            </div>
                             </div> *@
                         </div>
                     </form>
@@ -517,16 +502,16 @@ crossorigin="anonymous"></script> *@
 
 <script>
     $(document).ready(() => {
-        $("#GroupOptionsForItems").prop("selectedIndex",-1);
-        
+        $("#GroupOptionsForItems").prop("selectedIndex", -1);
+
         var category_id = null;
         window.categoryId = @Model.categories[0].CategoryId;
-        $("#Add-item-modal-open").click(function(e){
+        $("#Add-item-modal-open").click(function (e) {
             $("#modifier-group-selected").empty();
-            $("#GroupOptionsForItems").find(":disabled").each(function(){
-                $(this).prop("disabled",false);
+            $("#GroupOptionsForItems").find(":disabled").each(function () {
+                $(this).prop("disabled", false);
             })
-            $(".validation-msg").each(function(){
+            $(".validation-msg").each(function () {
                 $(this).text("");
             })
             $("#AddItem").modal("show");
@@ -550,12 +535,12 @@ crossorigin="anonymous"></script> *@
             $(this).children().last().removeClass("d-none");
 
         })
-        
+
         $(".Categories").mouseleave(function () {
             $(this).children().last().addClass("d-none");
         })
 
-        $(".add-Category").click(function(){
+        $(".add-Category").click(function () {
             $(".validation-msg").text("");
             $("#AddCategory").modal("show")
         })
@@ -570,11 +555,11 @@ crossorigin="anonymous"></script> *@
                 $("#Add-category-msg-name").text("Category name can not be Empty.");
                 isvalid = false;
             }
-             if (CategoryDescription == "") {
-                 $("#Add-category-msg-description").text("Category Description can not be Empty.");
-                 isvalid = false;
+            if (CategoryDescription == "") {
+                $("#Add-category-msg-description").text("Category Description can not be Empty.");
+                isvalid = false;
             }
-            if(!isvalid){
+            if (!isvalid) {
                 return;
             }
             $.ajax({
@@ -585,11 +570,11 @@ crossorigin="anonymous"></script> *@
                     Description: CategoryDescription
                 },
                 success: (response) => {
-                    if(typeof response == "string"){
-                           alert("You are not authorized to add Category.");
-                         return;
-                    }      
-                        window.location.reload();
+                    if (typeof response == "string") {
+                        alert("You are not authorized to add Category.");
+                        return;
+                    }
+                    window.location.reload();
                 }
             })
         })
@@ -609,9 +594,9 @@ crossorigin="anonymous"></script> *@
                         $("#CategoryEditname").val(response.name);
                         $(".validation-msg").text("");
                         $("#EditCategory").modal("show");
-                    }else{
-                            alert("You are not authorized to edit Category.");
-                        }
+                    } else {
+                        alert("You are not authorized to edit Category.");
+                    }
                 }
             })
         })
@@ -636,16 +621,16 @@ crossorigin="anonymous"></script> *@
             var description = $("#CategoryEditDescription").val();
             var isvalid = true;
 
-            if(name == ""){
+            if (name == "") {
                 $("#namecat-edit").text("Name can not be empty.");
                 isvalid = false;
             }
-            if(description == ""){
+            if (description == "") {
                 $("#descriptioncat-edit").text("Description can not be empty.");
                 isvalid = false;
             }
 
-            if(!isvalid){
+            if (!isvalid) {
                 return
             }
 
@@ -681,11 +666,11 @@ crossorigin="anonymous"></script> *@
                     id: category_id
                 },
                 success: (response) => {
-                    if(typeof response == "string"){
-                         alert("You are not authorized to delete category.");
-                         return;
-                    }   
-                        window.location.reload();
+                    if (typeof response == "string") {
+                        alert("You are not authorized to delete category.");
+                        return;
+                    }
+                    window.location.reload();
                 }
             })
         })
@@ -707,7 +692,7 @@ crossorigin="anonymous"></script> *@
             var Quantitypattern = /^[0-9]+$/
             var categoryid = $("#ItemsCategory").val();
             var name = $("#ItemName").val();
-            var ItemType = $("#ItemType").val();
+
             var Rate = parseFloat($("#Rate").val());
             var Quantity = $("#Quantity").val();
             var Unit = $("#Unit").val();
@@ -731,10 +716,6 @@ crossorigin="anonymous"></script> *@
                 $("#ItemName-msg").text("Name can not be Empty.")
                 isvalid = false;
             }
-            if (!ItemType) {
-                $("#ItemType-msg").text("Item Type can not be Empty.");
-                isvalid = false;
-            }
             if (!Rate) {
                 $("#Rate-msg").text("Rate can not be Empty.")
                 isvalid = false;
@@ -744,7 +725,7 @@ crossorigin="anonymous"></script> *@
                 isvalid = false;
             }
             if (!Unit) {
-                $("#Unit-msg").text("Unit can not be Empty");
+                $("#Unit-msg").text("Type can not be Empty");
                 isvalid = false;
             }
             if (!TaxPercentage) {
@@ -755,7 +736,7 @@ crossorigin="anonymous"></script> *@
                 $("#description-msg").text("Description can not be Empty");
                 isvalid = false;
             }
-            if(Groupselectval == "0"){
+            if (Groupselectval == "0") {
                 $("#selectgroup-msg").text("Description can not be Empty");
                 isvalid = false;
             }
@@ -777,9 +758,9 @@ crossorigin="anonymous"></script> *@
             if (!isvalid) {
                 return;
             }
-            Groupselect.find(":disabled").each(function ( index , value ) {
-                if(value != "" ){
-                GroupIds.push($(this).val());    
+            Groupselect.find(":disabled").each(function (index, value) {
+                if (value != "") {
+                    GroupIds.push($(this).val());
                 }
             })
             console.log(GroupIds);
@@ -787,17 +768,16 @@ crossorigin="anonymous"></script> *@
             formData.append("Name", name);
             formData.append("CategoryId", categoryid);
             formData.append("Description", description);
-            formData.append("UnitId", Unit);
-            formData.append("Itemtype", ItemType);
+            formData.append("TypeId", Unit);
             formData.append("Rate", Rate);
             formData.append("Taxpercentage", TaxPercentage);
             formData.append("Defaulttax", DefaultTax);
             formData.append("Quantity", Quantity);
             formData.append("Shortcode", ShortCode);
             formData.append("Isavailable", Isavailable);
-            
-            $.each(GroupIds , function ( index, value ){
-                formData.append(`Groups[${index}].groupid`,value);
+
+            $.each(GroupIds, function (index, value) {
+                formData.append(`Groups[${index}].groupid`, value);
                 formData.append(`Groups[${index}].minVal`, $(`#${value}-min`).val());
                 formData.append(`Groups[${index}].maxVal`, $(`#${value}-max`).val());
             })
@@ -805,6 +785,7 @@ crossorigin="anonymous"></script> *@
             if (Itemimage) {
                 formData.append("ItemImage", Itemimage);  // Append the file
             }
+            console.log(formData, "dsfd");
             $.ajax({
                 url: "/MenuModule/AddNewItemAction",
                 type: "POST",
@@ -812,10 +793,10 @@ crossorigin="anonymous"></script> *@
                 contentType: false,
                 data: formData,
                 success: (response) => {
-                    if(typeof response == "string"){
-                          alert("You are not authorized to add item.");
-                         return;
-                    }    
+                    if (typeof response == "string") {
+                        alert("You are not authorized to add item.");
+                        return;
+                    }
                     window.location.reload();
                 }
             })
@@ -826,7 +807,6 @@ crossorigin="anonymous"></script> *@
             var Quantitypattern = /^[0-9]+$/;
             var categoryid = $("#ItemsCategoryEdit").val();
             var name = $("#ItemNameEdit").val();
-            var ItemType = $("#ItemTypeEdit").val();
             var Quantity = $("#QuantityEdit").val();
             var Rate = parseFloat($("#RateEdit").val());
             var Unit = $("#UnitEdit").val();
@@ -849,10 +829,7 @@ crossorigin="anonymous"></script> *@
                 $("#ItemName-msg-Edit").text("Name can not be Empty.")
                 isvalid = false;
             }
-            if (!ItemType) {
-                $("#ItemType-msg-Edit").text("Item Type can not be Empty.");
-                isvalid = false;
-            }
+
             if (!Rate) {
                 $("#Rate-msg-Edit").text("Rate can not be Empty.")
                 isvalid = false;
@@ -887,9 +864,9 @@ crossorigin="anonymous"></script> *@
                 return;
             }
 
-            Groupselect.find(":disabled").each(function ( index , value ) {
-                if(value != "" ){
-                GroupIds.push($(this).val());    
+            Groupselect.find(":disabled").each(function (index, value) {
+                if (value != "") {
+                    GroupIds.push($(this).val());
                 }
             })
 
@@ -897,8 +874,8 @@ crossorigin="anonymous"></script> *@
             formData.append("Name", name);
             formData.append("CategoryId", categoryid);
             formData.append("Description", description);
-            formData.append("UnitId", Unit);
-            formData.append("Itemtype", ItemType);
+            formData.append("TypeId", Unit);
+
             formData.append("Rate", Rate);
             formData.append("Taxpercentage", TaxPercentage);
             formData.append("Defaulttax", DefaultTax);
@@ -907,8 +884,8 @@ crossorigin="anonymous"></script> *@
             formData.append("Isavailable", Isavailable);
             formData.append("itemid", itemid);
 
-            $.each(GroupIds , function ( index, value ){
-                formData.append(`Groups[${index}].groupid`,value);
+            $.each(GroupIds, function (index, value) {
+                formData.append(`Groups[${index}].groupid`, value);
                 formData.append(`Groups[${index}].minVal`, $(`#${value}-min`).val());
                 formData.append(`Groups[${index}].maxVal`, $(`#${value}-max`).val());
             })
@@ -935,25 +912,25 @@ crossorigin="anonymous"></script> *@
             e.stopPropagation();
             e.preventDefault();
             $("#delete-multipleitems-conf").modal("show");
-            
+
         })
-        $("#delete-multipleitems-conf-btn").click(function(){
+        $("#delete-multipleitems-conf-btn").click(function () {
             $(".item-checkboxes:checked").each(function () {
                 var itemsid = $(this).closest("tr").data("itemid");
                 itemsMultipleIds.push(parseInt(itemsid));
             })
             console.log(itemsMultipleIds);
-           
+
             $.ajax({
                 url: "/MenuModule/DeleteMultipleItems",
                 type: "POST",
                 contentType: "application/json",
                 data: JSON.stringify({ ids: itemsMultipleIds }),
                 success: (response) => {
-                    if(typeof response == "string"){
-                         alert("You are not authorized to delete items.");
-                         return;
-                    }                  
+                    if (typeof response == "string") {
+                        alert("You are not authorized to delete items.");
+                        return;
+                    }
                     window.location.reload();
                 }
             })
@@ -961,9 +938,9 @@ crossorigin="anonymous"></script> *@
         $("#GroupOptionsForItems").change(function (e) {
             var modifierGroupId = $(this).val();
             var selectedOption = $(this).find(":selected");
-            selectedOption.prop("disabled",true);
+            selectedOption.prop("disabled", true);
             var name = selectedOption.data("name");
-        
+
             $.ajax({
                 url: "/MenuModule/GetModifierForItemAdd",
                 data: {
@@ -979,7 +956,7 @@ crossorigin="anonymous"></script> *@
                                             <div class="col">
                                                 <select
                                                     class="form-selct rounded-pill w-100 ${modifierGroupId}-minmax" id="${modifierGroupId}-min">
-                                                    
+
                                                 </select>
                                                 <ul id="${modifierGroupId}-name">
 
@@ -988,7 +965,7 @@ crossorigin="anonymous"></script> *@
                                             <div class="col">
                                                 <select 
                                                     class="form-selct rounded-pill w-100 ${modifierGroupId}-minmax" id = "${modifierGroupId}-max">
-                                                    
+
                                                 </select>
                                                 <ul class="list-unstyled text-end" id = "${modifierGroupId}-rate">
                                                 </ul>
@@ -997,19 +974,19 @@ crossorigin="anonymous"></script> *@
                                         </div>`)
 
 
-                    $.each(response.modifiers,function (index,value){
+                    $.each(response.modifiers, function (index, value) {
                         $(`#${modifierGroupId}-name`).append(`<li>${value.modifiername}</li>`);
                         $(`#${modifierGroupId}-rate`).append(`<li>${value.rate}</li>`)
                     })
-                    $(`#${modifierGroupId}-delete`).click(function(e){
+                    $(`#${modifierGroupId}-delete`).click(function (e) {
                         $(`#GroupOptionsForItems`).find(":disabled").each(function () {
-                            if( $(this).val() == modifierGroupId ){
+                            if ($(this).val() == modifierGroupId) {
                                 $(this).prop("disabled", false);
                             }
                         })
                         $(`#${modifierGroupId}-section`).remove();
                     })
-                    for(var i = 0 ; i < response.modifiers.length ; i++){
+                    for (var i = 0; i < response.modifiers.length; i++) {
                         $(`.${modifierGroupId}-minmax`).append(`<option value = "${i}">${i}</option>`)
                     }
                     console.log(response);
@@ -1020,9 +997,9 @@ crossorigin="anonymous"></script> *@
         $("#ModifierGroupSelectEdit").change(function (e) {
             var modifierGroupId = $(this).val();
             var selectedOption = $(this).find(":selected");
-            selectedOption.prop("disabled",true);
+            selectedOption.prop("disabled", true);
             var name = selectedOption.data("name");
-        
+
             $.ajax({
                 url: "/MenuModule/GetModifierForItemAdd",
                 data: {
@@ -1038,7 +1015,7 @@ crossorigin="anonymous"></script> *@
                                             <div class="col">
                                                 <select
                                                     class="form-selct rounded-pill w-100 ${modifierGroupId}-edit-minmax" id="${modifierGroupId}-edit-min">
-                                                    
+
                                                 </select>
                                                 <ul id="${modifierGroupId}-edit-name">
 
@@ -1047,7 +1024,7 @@ crossorigin="anonymous"></script> *@
                                             <div class="col">
                                                 <select 
                                                     class="form-selct rounded-pill w-100 ${modifierGroupId}-edit-minmax" id = "${modifierGroupId}-edit-max">
-                                                    
+
                                                 </select>
                                                 <ul class="list-unstyled text-end" id = "${modifierGroupId}-edit-rate">
                                                 </ul>
@@ -1056,19 +1033,19 @@ crossorigin="anonymous"></script> *@
                                         </div>`)
 
 
-                    $.each(response.modifiers,function (index,value){
+                    $.each(response.modifiers, function (index, value) {
                         $(`#${modifierGroupId}-edit-name`).append(`<li>${value.modifiername}</li>`);
                         $(`#${modifierGroupId}-edit-rate`).append(`<li>${value.rate}</li>`)
                     })
-                    $(`#${modifierGroupId}-edit-delete`).click(function(e){
+                    $(`#${modifierGroupId}-edit-delete`).click(function (e) {
                         $(`#ModifierGroupSelectEdit`).find(":disabled").each(function () {
-                            if( $(this).val() == modifierGroupId ){
+                            if ($(this).val() == modifierGroupId) {
                                 $(this).prop("disabled", false);
                             }
                         })
                         $(`#${modifierGroupId}-edit-section`).remove();
                     })
-                    for(var i = 0 ; i < response.modifiers.length ; i++){
+                    for (var i = 0; i < response.modifiers.length; i++) {
                         $(`.${modifierGroupId}-edit-minmax`).append(`<option value = "${i}">${i}</option>`)
                     }
                     console.log(response);

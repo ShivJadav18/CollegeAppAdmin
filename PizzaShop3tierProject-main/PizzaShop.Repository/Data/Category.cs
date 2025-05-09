@@ -21,6 +21,8 @@ public partial class Category
 
     public bool? Isdeleted { get; set; }
 
+    public int? Orderfield { get; set; }
+
     public virtual User? CreatedbyNavigation { get; set; }
 
     public virtual ICollection<Item> Items { get; } = new List<Item>();

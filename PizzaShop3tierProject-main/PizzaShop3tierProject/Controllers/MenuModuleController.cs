@@ -46,24 +46,17 @@ public class MenuModuleController : Controller{
             TempData["error"] = "There is some internal error.";
             return Json(new { success  = false});
         }
-        List<Itemtomodifiergroup> itemtomodifiergroups = _menuservice.GetItemtomodifiergroupsByItemIdService(itemid);
+       
         // List<ModifierForAddItem> modifierForAddItems = new List<ModifierForAddItem>{};
         // foreach(Itemtomodifiergroup itemtomodifiergroup in itemtomodifiergroups){
 
         // }
-        List<EditItemModifierGroup> editItemModifierGroups = new List<EditItemModifierGroup>{};
-        foreach(Itemtomodifiergroup itemtomodifiergroup in itemtomodifiergroups){
-            EditItemModifierGroup editItemModifierGroup = _menuservice.GetGroupandModifierforEditItem((int)itemtomodifiergroup.ModifiergroupId);
-            editItemModifierGroup.maxVal = (int)itemtomodifiergroup.Maxval;
-            editItemModifierGroup.minVal = (int)itemtomodifiergroup.Minval;
-            editItemModifierGroup.groupid = (int)itemtomodifiergroup.ModifiergroupId;
-            editItemModifierGroups.Add(editItemModifierGroup);
-        }
+        
 
         return Json(new { success = true, 
-        Name = item.Name ,Imageurl = item.Imageurl,Description = item.Description, UnitId = item.UnitId, Itemtype = item.Itemtype, Rate = item.Rate, 
-        Quantity = item.Quantity, Defaulttax = item.Defaulttax
-        , Taxpercentage = item.Taxpercentage, Isavailable = item.Isavailable, CategoryId = item.CategoryId, Shortcode = item.Shortcode, groups = editItemModifierGroups});
+        Name = item.Name ,Imageurl = item.Imageurl,Description = item.Description, Rate = item.Rate, 
+        Quantity = item.Quantity, Defaulttax = item.Defaulttax,TypeId = item.Typeid
+        , Taxpercentage = item.Taxpercentage, Isavailable = item.Isavailable, CategoryId = item.CategoryId, Shortcode = item.Shortcode});
     }
 
    [CustomAuthorize("4","CanAddEdit")]
@@ -116,13 +109,7 @@ public class MenuModuleController : Controller{
         return PartialView("_ItemPartialView",categoriesanditem);
     }
 
-    [Authorize]
-    public IActionResult ForModifiers(){
-
-        ModifierGroupandModifier modifierGroupandModifier = _menuservice.GetModifierGroupandModifierService();
-
-        return PartialView("_ModifierPartialView",modifierGroupandModifier);
-    }
+    
 
    [CustomAuthorize("4","CanAddEdit")]
     [HttpPost]
@@ -204,212 +191,6 @@ public class MenuModuleController : Controller{
 
         TempData["success"] = message.errorMessage;
         return Json(new {success = true});
-
-    }
-
-    [Authorize]
-    public IActionResult GetModifiersFunction(int groupid,int count,int pageno,string searchval = ""){
-        Modifiers modifiersModel = _menuservice.GetModifiersModel(groupid,count,pageno,searchval);
-
-        return PartialView("_modifiers",modifiersModel);
-    }
-
-    [CustomAuthorize("4","CanAddEdit")]
-    [HttpPost]
-    public IActionResult AddModifierGroup([FromBody] ModifierGroupViewModel modifierGroupViewModel){
-
-        string token = Request.Cookies["jwtCookie"];
-        var id = GetClaimValueHelper(token,"Userid");
-        modifierGroupViewModel.Createdby = Convert.ToInt32(id);
-        modifierGroupViewModel.Updatedby = Convert.ToInt32(id);
-
-        Message message = _menuservice.AddModifierGroupService(modifierGroupViewModel);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json(new {success = false});
-        }
-        TempData["success"] = "Modifier Group is Added Successfully";
-         return Json(new {success = true});
-    }
-
-    [CustomAuthorize("4","CanAddEdit")]
-    [HttpPost]
-    public IActionResult AddModifier(ModifierViewModel modifierViewModel){
-
-        string token = Request.Cookies["jwtCookie"];
-        var id = GetClaimValueHelper(token,"Userid");
-        modifierViewModel.Createdby = Convert.ToInt32(id);
-        modifierViewModel.Updatedby = Convert.ToInt32(id);
-        Message message = _menuservice.AddModifierService(modifierViewModel);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json(new { success = false});
-        }
-
-        TempData["success"] = "Modifier is successfully Added.";
-        return Json(new { success = true });
-
-    }
-
-    [CustomAuthorize("4","CanAddEdit")]
-    public IActionResult EditModifier(int modifierid){
-        Modifier modifier = _menuservice.GetModifierByIdService(modifierid);
-
-        if(modifier.ModifierId == null) {
-            return Json(new {success = false , message = "There is some internal error."});
-        }
-
-        return Json(new {success = true, name = modifier.Modifiername ,ModifierId = modifierid , Description = modifier.Description , Rate = modifier.Rate , Quantity = modifier.Quantity, UnitId = modifier.UnitId});
-    }
-
-    [CustomAuthorize("4","CanAddEdit")]
-    [HttpPost]
-    public IActionResult EditModifier(ModifierViewModel modifierViewModel){
-
-        string token = Request.Cookies["jwtCookie"];
-        var id = GetClaimValueHelper(token,"Userid");
-
-        modifierViewModel.Updatedby = Convert.ToInt32(id);
-
-        Message message = _menuservice.EditModifierService(modifierViewModel);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json(new { success = false });
-        }
-        TempData["success"] = "Modifier is Successfully Updated.";
-        return Json(new {success = true });
-
-    }
-
-    [CustomAuthorize("4","CanDelete")]
-    public IActionResult RemoveModifier(int modifierid , int groupid){
-        Message message = _menuservice.RemoveModifierService(modifierid,groupid);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json(new { success = false });
-        }
-
-        TempData["success"] = "Modifier is Successfully Deleted.";
-        return Json(new {success = true });
-    }
-
-    [Authorize]
-    public IActionResult PaginationForExistingModifiers(Modifiers modifiers){
-
-        Modifiers modifiers1 = _menuservice.GetModifiersViewModelForExistingModifiers(modifiers);
-
-        // if(modifiers.flag == true){
-        //     return PartialView("_ExistingModifiersForEdit",modifiers1);
-        // }
-
-        return PartialView("_ExistingModifiers",modifiers1);
-
-    }
-
-    [Authorize]
-    public IActionResult PaginationForExistingModifiersInEdit(Modifiers modifiers){
-
-        Modifiers modifiers1 = _menuservice.GetModifiersViewModelForExistingModifiers(modifiers);
-
-        // if(modifiers.flag == true){
-        //     return PartialView("_ExistingModifiersForEdit",modifiers1);
-        // }
-
-        return PartialView("_ExistingModifersForEdit",modifiers1);
-
-    }
-
-    [CustomAuthorize("4","CanDelete")]
-    public IActionResult RemoveModifierGroup(int modifiergroupid){
-
-        Message message = _menuservice.RemoveModifierGroupService(modifiergroupid);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json(new { success = false });
-        }
-
-        TempData["success"] = "Modifier Group is successfully deleted.";
-        return Json(new { success = true });
-    }
-
-    [CustomAuthorize("4","CanDelete")]
-
-    public IActionResult DeleteMultipleModifiers([FromBody] DeleteItemsViewModel deleteItemsViewModel){
-
-        if(!deleteItemsViewModel.ids.Any()){
-            TempData["error"] = "You have not selected any modifier.";
-            return Json(new {success = false});
-        }
-
-        Message message = _menuservice.RemoveMultipleModifiersService(deleteItemsViewModel.ids);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json(new {success = false});
-        }
-
-        TempData["success"] = "Modifiers are successfully deleted.";
-        return Json(new {success = true});
-
-    }
-
-    [CustomAuthorize("4","CanAddEdit")]
-    public IActionResult EditModifierGroup(int groupid){
-
-        ModifiergroupEditViewModel modifiergroup = _menuservice.GetModifiergroupByIdService(groupid);
-
-        if(modifiergroup.modifiers == null){
-            TempData["error"] = "There is some internal error.";
-            return Json( new { success = false });
-        }
-        List<string> names = new List<string>{};
-        List<int> ids = new List<int>{};
-        foreach(Modifier modifier in modifiergroup.modifiers){
-            names.Add(modifier.Modifiername);
-            ids.Add(modifier.ModifierId);
-        }
-
-        return Json( new {success = true , name = modifiergroup.Groupname , Description = modifiergroup.Description , modifiersname = names , ids = ids });
-
-    }
-
-    [CustomAuthorize("4","CanAddEdit")]
-    [HttpPost]
-
-    public IActionResult EditModifierGroup([FromBody] ModifierGroupViewModel modifierGroupViewModel){
-        
-        Message message = _menuservice.EditModifierGroupService(modifierGroupViewModel);
-
-        if(message.error){
-            TempData["error"] = message.errorMessage;
-            return Json( new{ success = false });
-        }
-
-        TempData["success"] = "Modifier Group is Updated Successfully.";
-        return Json( new { success = true });
-    }
-
-    [Authorize] 
-
-    public IActionResult GetModifierForItemAdd(int groupid){
-
-        List<Modifier> modifiers = _menuservice.GetModifiersForItemAddService(groupid);
-        List<ModifierForAddItem> modifierForAddItems = new List<ModifierForAddItem>{};
-
-        if( !modifiers.Any() || modifiers[0] == null ){
-            return Json(new { success = true , modifiers = modifierForAddItems });
-        }
-
-        foreach(Modifier modifier in modifiers){
-            ModifierForAddItem modifierForAddItem = new ModifierForAddItem { modifierId = modifier.ModifierId , Rate = modifier.Rate , modifiername = modifier.Modifiername};
-            modifierForAddItems.Add(modifierForAddItem);
-        }
-        return Json(new { success = true , modifiers = modifierForAddItems });
 
     }
 }

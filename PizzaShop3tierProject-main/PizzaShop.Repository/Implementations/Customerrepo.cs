@@ -5,9 +5,9 @@ using PizzaShop.Repository.Interfaces;
 namespace PizzaShop.Repository.Implementations;
 
 public class Customerrepo : ICustomer{
-    private readonly PizzaShopDbContext _context;
+    private readonly ElectronicDataBaseContext _context;
 
-    public Customerrepo(PizzaShopDbContext context){
+    public Customerrepo(ElectronicDataBaseContext context){
         _context = context;
     }
 

@@ -35,7 +35,7 @@ public class DashboardService:IDashbordService{
         List<Order> orders = _order.GetOrders();
 
         var ordersPerMonth = orders
-                            .GroupBy(o => new { Month = o.Orderdate.Month, Year = o.Orderdate.Year})
+                            .GroupBy(o => new { Month = o.Orderdate.Value.Month, Year = o.Orderdate.Value.Year})
                             .Select(g => new {
                                 Year = g.Key.Year,
                                 Month = g.Key.Month,

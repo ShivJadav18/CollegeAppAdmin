@@ -11,8 +11,6 @@ public partial class Item
 
     public string? Description { get; set; }
 
-    public string? Itemtype { get; set; }
-
     public decimal? Rate { get; set; }
 
     public int? Quantity { get; set; }
@@ -23,7 +21,7 @@ public partial class Item
 
     public bool? Isdeleted { get; set; }
 
-    public int? UnitId { get; set; }
+    public int? Typeid { get; set; }
 
     public bool? Defaulttax { get; set; }
 
@@ -41,17 +39,17 @@ public partial class Item
 
     public int? Updatedby { get; set; }
 
+    public virtual ICollection<Cartdetailtable> Cartdetailtables { get; } = new List<Cartdetailtable>();
+
     public virtual Category? Category { get; set; }
 
     public virtual User? CreatedbyNavigation { get; set; }
 
     public virtual ICollection<Favouriteitem> Favouriteitems { get; } = new List<Favouriteitem>();
 
-    public virtual ICollection<Itemtomodifiergroup> Itemtomodifiergroups { get; } = new List<Itemtomodifiergroup>();
-
     public virtual ICollection<Ordertoitem> Ordertoitems { get; } = new List<Ordertoitem>();
 
-    public virtual Unit? Unit { get; set; }
+    public virtual Typetable? Type { get; set; }
 
     public virtual User? UpdatedbyNavigation { get; set; }
 }

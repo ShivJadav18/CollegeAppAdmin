@@ -29,8 +29,8 @@ public class NewItem{
     [Required(ErrorMessage = "Item Category can not be empty.")]
     public int? CategoryId { get; set; }
 
-    [Required(ErrorMessage = "Item Unit can not be empty.")]
-    public int? UnitId { get; set; }
+    [Required(ErrorMessage = "Item Type can not be empty.")]
+    public int? TypeId { get; set; }
 
     public bool Defaulttax { get; set; }
 

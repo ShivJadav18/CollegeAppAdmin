@@ -22,6 +22,4 @@ public partial class Ordertoitem
     public virtual Item? Item { get; set; }
 
     public virtual Order? Order { get; set; }
-
-    public virtual ICollection<Orderitemmodifier> Orderitemmodifiers { get; } = new List<Orderitemmodifier>();
 }

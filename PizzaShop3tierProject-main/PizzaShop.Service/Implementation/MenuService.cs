@@ -43,14 +43,7 @@ public class MenuService : IMenuService
 
     }
 
-    public List<Itemtomodifiergroup> GetItemtomodifiergroupsByItemIdService(int itemid)
-    {
-
-        List<Itemtomodifiergroup> itemtomodifiergroups = _menu.GetItemtomodifiergroupsByItemId(itemid);
-
-        return itemtomodifiergroups;
-
-    }
+   
 
     public Message DeleteItemService(int itemid)
     {
@@ -171,9 +164,8 @@ public class MenuService : IMenuService
             Name = newItem.Name,
             CategoryId = newItem.CategoryId,
             Description = newItem.Description,
-            UnitId = newItem.UnitId,
+            Typeid = newItem.TypeId,
             Imageurl = newItem.Imageurl,
-            Itemtype = newItem.Itemtype,
             Rate = newItem.Rate,
             Taxpercentage = newItem.Taxpercentage,
             Defaulttax = newItem.Defaulttax,
@@ -226,13 +218,11 @@ public class MenuService : IMenuService
             pageno = pageno
         };
         var itemmodel = GetItemsModel(itemobj);
-        List<Modifiergroup> modifiergroups = _menu.GetModifierGroups();
 
         ItemsandCategories ItemsandCategories = new ItemsandCategories
         {
             categories = categories,
             itemmodel = itemmodel,
-            modifiergroups = modifiergroups
         };
 
         return ItemsandCategories;
@@ -276,194 +266,6 @@ public class MenuService : IMenuService
         Message message = _menu.DeleteMultipleItems(ids);
 
         return message;
-
-    }
-
-    public Modifiers GetModifiersModel(int groupid, int count, int pageno, string searchval = "")
-    {
-
-        List<Modifier> modifiers = _menu.GetModifiersFromGroupIds(groupid, searchval);
-
-        List<Modifier> finalModifiers = modifiers.Skip((pageno - 1) * count).Take(count).ToList();
-
-        Modifiers modifiers1 = new Modifiers
-        {
-            modifiers = finalModifiers,
-            count = count,
-            pageno = pageno,
-            totalmodifiers = modifiers.Count(),
-            groupid = groupid
-        };
-
-        return modifiers1;
-
-    }
-
-    public ModifierGroupandModifier GetModifierGroupandModifierService()
-    {
-
-        List<Modifiergroup> modifiergroups = _menu.GetModifierGroups();
-
-        if (modifiergroups == null || modifiergroups.Count() == 0)
-        {
-            return new ModifierGroupandModifier
-            {
-                modifiergroups = modifiergroups
-            };
-        }
-        Modifiers modifiers2 = GetModifiersModel(modifiergroups[0].ModifiergroupId, 5, 1, "");
-        Modifiers temp = new Modifiers
-        {
-            count = 5,
-            searchval = "",
-            pageno = 1,
-        };
-        Modifiers modifiers3 = GetModifiersViewModelForExistingModifiers(temp);
-        ModifierGroupandModifier modifierGroupandModifiers = new ModifierGroupandModifier
-        {
-            modifiers1 = modifiers2,
-            modifiers2 = modifiers3,
-            modifiergroups = modifiergroups
-        };
-
-        return modifierGroupandModifiers;
-    }
-
-    public Message AddModifierGroupService(ModifierGroupViewModel modifierGroupViewModel)
-    {
-
-        Message message = _menu.AddModifierGroup(modifierGroupViewModel);
-
-        return message;
-    }
-
-    public Message AddModifierService(ModifierViewModel modifierViewModel)
-    {
-
-        Modifier modifier = new Modifier
-        {
-            Modifiername = modifierViewModel.Modifiername,
-            Description = modifierViewModel.Description,
-            Rate = modifierViewModel.Rate,
-            Quantity = modifierViewModel.Quantity,
-            UnitId = modifierViewModel.UnitId,
-            Createdby = (int)modifierViewModel.Createdby,
-            Updatedby = (int)modifierViewModel.Updatedby
-        };
-
-
-
-        Message message = _menu.AddModifier(modifier, modifierViewModel.GroupId);
-
-        return message;
-    }
-
-    public Modifier GetModifierByIdService(int modifierid)
-    {
-
-        Modifier modifier = _menu.GetModifierById(modifierid);
-
-        return modifier;
-
-    }
-
-    public Message EditModifierService(ModifierViewModel modifierViewModel)
-    {
-
-        modifierViewModel.Updatedat = DateTime.Now;
-
-        Message message = _menu.UpdateModifier(modifierViewModel);
-
-        return message;
-    }
-
-    public Message RemoveModifierService(int modifierid, int groupid)
-    {
-
-        Message message = _menu.RemoveModifier(modifierid);
-
-        return message;
-    }
-
-    public Modifiers GetModifiersViewModelForExistingModifiers(Modifiers modifiers)
-    {
-
-        List<Modifier> modifiers1 = _menu.GetAllModifiers(modifiers.searchval);
-
-        List<Modifier> finalModifiers = modifiers1.Skip((modifiers.pageno - 1) * modifiers.count).Take(modifiers.count).ToList();
-
-        Modifiers modifiers2 = new Modifiers
-        {
-            count = modifiers.count,
-            totalmodifiers = modifiers1.Count(),
-            modifiers = finalModifiers,
-            searchval = modifiers.searchval,
-            pageno = modifiers.pageno
-        };
-
-        return modifiers2;
-
-    }
-
-    public Message RemoveModifierGroupService(int modifiergroupid)
-    {
-
-        Message message = _menu.RemoveModifierGroup(modifiergroupid);
-
-        return message;
-    }
-
-    public Message RemoveMultipleModifiersService(List<int> ids)
-    {
-
-        foreach (int id in ids)
-        {
-            Message message = _menu.RemoveModifier(id);
-            if (message.error)
-            {
-                return message;
-            }
-        }
-        return new Message { error = false };
-    }
-
-    public ModifiergroupEditViewModel GetModifiergroupByIdService(int groupid)
-    {
-
-        Modifiergroup modifiergroup = _menu.GetModifiergroupById(groupid);
-
-        List<Modifier> modifiers = _menu.GetModifiersFromGroupIds(groupid, "");
-
-        return new ModifiergroupEditViewModel { Groupname = modifiergroup.Groupname, Description = modifiergroup.Description, modifiers = modifiers };
-    }
-
-    public Message EditModifierGroupService(ModifierGroupViewModel modifierGroupViewModel)
-    {
-
-        Message message = _menu.EditModifierGroup(modifierGroupViewModel);
-
-        return message;
-    }
-
-    public List<Modifier> GetModifiersForItemAddService(int groupid)
-    {
-        List<Modifier> modifiers = _menu.GetModifiersFromGroupIds(groupid, "");
-
-        return modifiers;
-    }
-
-    public EditItemModifierGroup GetGroupandModifierforEditItem(int groupid)
-    {
-
-        List<Modifier> modifiers = _menu.GetModifiersFromGroupIds(groupid, "");
-        List<ModifierForAddItem> modifierForAddItems = new List<ModifierForAddItem> { };
-        foreach (Modifier modifier in modifiers)
-        {
-            ModifierForAddItem modifierForAddItem = new ModifierForAddItem { modifierId = modifier.ModifierId, modifiername = modifier.Modifiername, Rate = modifier.Rate };
-            modifierForAddItems.Add(modifierForAddItem);
-        }
-
-        return new EditItemModifierGroup { modifiers = modifierForAddItems };
 
     }
 

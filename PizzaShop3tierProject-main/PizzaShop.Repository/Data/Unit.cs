@@ -21,9 +21,5 @@ public partial class Unit
 
     public virtual User? CreatedbyNavigation { get; set; }
 
-    public virtual ICollection<Item> Items { get; } = new List<Item>();
-
-    public virtual ICollection<Modifier> Modifiers { get; } = new List<Modifier>();
-
     public virtual User? UpdatedbyNavigation { get; set; }
 }

@@ -7,9 +7,9 @@ namespace PizzaShop.Repository.Implementations;
 
 public class RoleandPermission : IRoleandPermission{
 
-    private readonly PizzaShopDbContext _context;
+    private readonly ElectronicDataBaseContext _context;
 
-    public RoleandPermission(PizzaShopDbContext context){
+    public RoleandPermission(ElectronicDataBaseContext context){
         _context = context;
     }
 

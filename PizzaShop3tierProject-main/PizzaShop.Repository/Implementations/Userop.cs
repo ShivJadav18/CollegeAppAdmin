@@ -7,8 +7,8 @@ using PizzaShop.Repository.ViewModels;
 namespace PizzaShop.Repository.Implementations;
 
 public class Userop : IUser{
-    private readonly PizzaShopDbContext _context;
-    public Userop(PizzaShopDbContext context){
+    private readonly ElectronicDataBaseContext _context;
+    public Userop(ElectronicDataBaseContext context){
         _context = context;
     }
  

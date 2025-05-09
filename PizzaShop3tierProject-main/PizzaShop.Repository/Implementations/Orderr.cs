@@ -6,9 +6,9 @@ using PizzaShop.Repository.ViewModels;
 namespace PizzaShop.Repository.Implementations;
 
 public class Orderr : IOrder{
-    private readonly PizzaShopDbContext _context;
+    private readonly ElectronicDataBaseContext _context;
 
-    public Orderr(PizzaShopDbContext context){
+    public Orderr(ElectronicDataBaseContext context){
         _context = context;
     }
 
@@ -154,15 +154,7 @@ public class Orderr : IOrder{
         }
     }
 
-    public List<Orderitemmodifier> GetOrderitemmodifiers(int id){
-        try{
-            List<Orderitemmodifier> orderitemmodifiers = _context.Orderitemmodifiers.Include(o => o.Modifier).Where(o => o.OrdertoitemId == id).ToList();
-            return orderitemmodifiers;
-        }catch(Exception e){
-            return new List<Orderitemmodifier>{};
-        }
-    }
-
+    
    public List<Ordertoitem> GetAllOrdertoItem(){
     try{
         List<Ordertoitem> ordertoitems = _context.Ordertoitems.Include(o => o.Item).ToList();

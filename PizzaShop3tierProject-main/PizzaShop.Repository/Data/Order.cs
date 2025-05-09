@@ -11,11 +11,9 @@ public partial class Order
 
     public string? Orderstatus { get; set; }
 
-    public DateTime Orderdate { get; set; }
+    public DateTime? Orderdate { get; set; }
 
     public decimal? Totalamount { get; set; }
-
-    public int? Noofperson { get; set; }
 
     public DateTime? Createdat { get; set; }
 
@@ -24,6 +22,8 @@ public partial class Order
     public int? Createdby { get; set; }
 
     public int? Updatedby { get; set; }
+
+    public string? Ordertype { get; set; }
 
     public virtual User? CreatedbyNavigation { get; set; }
 

@@ -29,34 +29,4 @@ public interface IMenuService{
      public Message DeleteItemService(int itemid);
 
      public Message DeleteMultipleItemsService(List<int> ids);
-
-     public ModifierGroupandModifier GetModifierGroupandModifierService();
-
-      public Modifiers GetModifiersModel(int groupid,int count,int pageno ,string searchval);
-
-      public Message AddModifierGroupService(ModifierGroupViewModel modifierGroupViewModel);
-
-      public Message AddModifierService(ModifierViewModel modifierViewModel);
-
-      public Modifier GetModifierByIdService(int modifierid);
-
-      public Message EditModifierService(ModifierViewModel modifierViewModel);
-
-      public Message RemoveModifierService(int modifierid, int groupid);
-
-      public Modifiers GetModifiersViewModelForExistingModifiers(Modifiers modifiers);
-
-      public Message RemoveModifierGroupService(int modifiergroupid);
-
-       public Message RemoveMultipleModifiersService(List<int> ids);
-
-       public ModifiergroupEditViewModel GetModifiergroupByIdService(int groupid);
-
-       public Message EditModifierGroupService(ModifierGroupViewModel modifierGroupViewModel);
-
-        public List<Modifier> GetModifiersForItemAddService(int groupid);
-
-        public List<Itemtomodifiergroup> GetItemtomodifiergroupsByItemIdService(int itemid);
-
-        public EditItemModifierGroup GetGroupandModifierforEditItem(int groupid);
 }

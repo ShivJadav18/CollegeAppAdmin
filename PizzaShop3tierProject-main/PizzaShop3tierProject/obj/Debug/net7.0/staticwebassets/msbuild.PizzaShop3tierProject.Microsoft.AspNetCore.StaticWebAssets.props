@@ -2288,6 +2288,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadedImages\img3_32ca89c9-417f-45cb-a886-3d364e349ca9.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadedImages\img3_91e99ce6-0218-43e6-9b14-46e478929d79.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PizzaShop3tierProject</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PizzaShop3tierProject</BasePath>
+      <RelativePath>UploadedImages/img3_91e99ce6-0218-43e6-9b14-46e478929d79.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadedImages\img3_91e99ce6-0218-43e6-9b14-46e478929d79.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\UploadedImages\img3_b6f5e2b5-25dc-459e-a303-ffa37b7a60ee.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PizzaShop3tierProject</SourceId>

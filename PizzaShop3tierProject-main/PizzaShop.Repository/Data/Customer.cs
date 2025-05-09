@@ -25,6 +25,12 @@ public partial class Customer
 
     public bool? Isdeleted { get; set; }
 
+    public string? Password { get; set; }
+
+    public virtual ICollection<Cartdetailtable> Cartdetailtables { get; } = new List<Cartdetailtable>();
+
+    public virtual ICollection<Carttable> Carttables { get; } = new List<Carttable>();
+
     public virtual User CreatedbyNavigation { get; set; } = null!;
 
     public virtual ICollection<Order> Orders { get; } = new List<Order>();

@@ -12,10 +12,10 @@ namespace PizzaShop3tierProject.Controllers{
     [CustomAuthorize]
     public class DashboardController : Controller {
 
-        private readonly PizzaShopDbContext _context;
+        private readonly ElectronicDataBaseContext _context;
         private readonly IDashbordService _dashbordService;
 
-        public DashboardController(PizzaShopDbContext context,IDashbordService dashbordService){
+        public DashboardController(ElectronicDataBaseContext context,IDashbordService dashbordService){
             _dashbordService = dashbordService;
             _context = context;
 
