@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qCPF0wX4nEe/yX85E1510QQjeQuHQ3T2bTO/i465Qd0=",
+  "Hash": "gBtzcBH4vpNNBKuMKcP+iJDgjIvjDHBjaXTL6FqNPDs=",
   "Source": "PizzaShop3tierProject",
   "BasePath": "_content/PizzaShop3tierProject",
   "Mode": "Default",
@@ -2446,6 +2446,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadedImages\\img2_b0d5507b-41c6-4822-a1d4-d384c58d15bb.jpg"
+    },
+    {
+      "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\img3_17d14bde-a5d0-4e5e-ae97-d457a7da72ff.jpg",
+      "SourceId": "PizzaShop3tierProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\",
+      "BasePath": "_content/PizzaShop3tierProject",
+      "RelativePath": "UploadedImages/img3_17d14bde-a5d0-4e5e-ae97-d457a7da72ff.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedImages\\img3_17d14bde-a5d0-4e5e-ae97-d457a7da72ff.jpg"
     },
     {
       "Identity": "D:\\CollegeAdminSide\\CollegeAppAdmin\\PizzaShop3tierProject-main\\PizzaShop3tierProject\\wwwroot\\UploadedImages\\img3_32ca89c9-417f-45cb-a886-3d364e349ca9.jpg",
